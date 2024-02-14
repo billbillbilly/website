@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title>viewscape - My website</title>
-<meta property="og:title" content="viewscape - My website">
+<title>viewscape - xiaohaoyang</title>
+<meta property="og:title" content="viewscape - xiaohaoyang">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -50,8 +50,6 @@
     
     <li><a href="https://github.com/billbillbilly">GitHub</a></li>
     
-    <li><a href="/news/">News</a></li>
-    
     <li><a href="/publications/">Publications</a></li>
     
   </ul>
@@ -75,7 +73,11 @@
 
     <div class="article-content">
       
-      <pre><code class="language-r">a &lt;-1
+      <p>This is an integrated tutorial about <code>viewscape</code> and <code>dsmSearch</code>. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the <code>dsmSearch</code>, which was two functions for searching and downloading point cloud data via API.</p>
+<p>Of course, <code>viewscape</code> is not designed for computing the viewshed even if this is the core of the package. A set of function for calculating viewscape metrics (<a href="https://github.com/land-info-lab/viewscape/blob/master/README.md">see details</a>) is the main contribution of this package. What&rsquo;s more, it provides the functionality to subset the viewshed based on the angle and orientation of the field of view.</p>
+<p>To compute a viewshed, a viewpoint and a DSM are essential. Let&rsquo;s download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate the area to download the data.</p>
+<pre><code class="language-r"># bbox finder: http://bboxfinder.com/
+bbox &lt;- c(-73.976440,40.768793,-73.969628,40.773295)
 </code></pre>
 
     </div>

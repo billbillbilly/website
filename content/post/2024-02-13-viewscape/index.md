@@ -1,5 +1,5 @@
 ---
-title: viewscape
+title: viewscape in R
 author: Xiaohao Yang
 date: '2024-02-13'
 slug: viewscape
@@ -7,7 +7,48 @@ categories: ["Tool"]
 tags: ["R package"]
 ---
 
+This is an integrated tutorial about `viewscape` and `dsmSearch`. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the `dsmSearch`, which was two functions for searching and downloading point cloud data via API.
+
+Of course, `viewscape` is not designed for computing the viewshed even if this is the core of the package. A set of function for calculating viewscape metrics ([see details](https://github.com/land-info-lab/viewscape/blob/master/README.md)) is the main contribution of this package. What's more, it provides the functionality to subset the viewshed based on the angle and orientation of the field of view. 
+
 
 ```r
-a <-1
+# install packages
+install.pakcages("lidR")
+install.pakcages("viewscape")
+install.pakcages("dsmSearch")
 ```
+
+### 1.Compute viewshed
+To compute a viewshed, a viewpoint and a DSM are essential. Let's download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate the area to download the data. `lidR` is a powerful tool for processing LiDAR data. It is used to generate DSM/DEM.
+
+
+```r
+# bbox finder: http://bboxfinder.com/
+bbox <- c(-73.976440,40.768793,-73.969628,40.773295)
+
+# download LiDAR (.las) 
+las <- dsmSearch::get_lidar(bbox = bbox, epsg = 2263)
+# constrct DSM and DEM using .las data
+dsm <- lidR::rasterize_canopy(las, 5, lidR::dsmtin())
+dsm <- lidR::rasterize_terrain(las, 5, lidR::tin())
+```
+
+In this case, I just set the center point of the DSM as the viewpoint.
+
+
+```r
+row <- trunc(terra::nrow(dsm)/2)
+col <- trunc(terra::ncol(dsm)/2)
+viewpoint <- terra::cellFromRowCol(dsm, row, col)
+
+# compute viewshed
+# the height of the viewpoint is set as 6 feet
+viewshed <- viewscape::compute_viewshed(dsm, 
+                                        viewpoint, 
+                                        offset_viewpoint = 6)
+```
+
+
+
+

@@ -12,8 +12,6 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: News
-      url: /news/
     - name: Publications
       url: /publications/
     - name: About

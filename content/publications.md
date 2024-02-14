@@ -5,7 +5,7 @@ date: ''
 
 Chen, C., Xia, Y., & Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027
 
-CHEN Chongxian,YANG Xiaohao,XIA Yu*.Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J].Landscape Architecture Journal, 2019, 26(9):75-82.
+CHEN Chongxian, YANG Xiaohao, XIA Yu*. Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J]. Landscape Architecture, 2019, 26(9): 75-82. DOI: 10.14085/j.fjyl.2019.09.0075.08
 
 Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Study on the Impact of Residential Outdoor Environments on Mood in the Elderly in Guangzhou, China. Sustainability, 12(9), 3933.
 

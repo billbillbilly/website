@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My website</title>
+    <title>xiaohaoyang</title>
     <link>/</link>
-    <description>Recent content on My website</description>
+    <description>Recent content on xiaohaoyang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 13 Feb 2024 02:22:51 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>News update</title>
-      <link>/news/</link>
-      <pubDate>Tue, 13 Feb 2024 02:22:51 -0700</pubDate>
-      <guid>/news/</guid>
-      <description>R package: viewscape has been on CRAN!&#xA;R package: dsmSearch has been on CRAN!</description>
-    </item>
     <item>
       <title>viewscape</title>
       <link>/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       <guid>/2024/02/13/viewscape/</guid>
-      <description>a &amp;lt;-1 </description>
+      <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for computing the viewshed even if this is the core of the package.</description>
     </item>
     <item>
       <title></title>
       <link>/about/</link>
       <pubDate>Sat, 10 Feb 2024 02:22:51 -0700</pubDate>
       <guid>/about/</guid>
-      <description> I am a big fan of R! I am a coder of design, art, games, tools, and research. I am doing research on soundscape and landscape at the University of Michigan, Ann Arbor. I am trying to do everything I want even if I know I can&amp;rsquo;t. </description>
+      <description>I am a big fan of R! I am a coder of design, art, games, and tools. I am doing research on soundscape and landscape at the University of Michigan, Ann Arbor. I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. News update !!! R package: viewscape has been on CRAN!&#xA;R package: dsmSearch has been on CRAN!</description>
     </item>
     <item>
-      <title>Hello R Markdown</title>
-      <link>/2020/12/01/hello-r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>/2020/12/01/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.&#xA;You can embed an R code chunk like this:&#xA;summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <title></title>
+      <link>/artworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/artworks/</guid>
+      <description></description>
     </item>
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&#xA;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc. There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+      <title></title>
+      <link>/designworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/designworks/</guid>
+      <description></description>
     </item>
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      <guid>/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <title></title>
+      <link>/games/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/games/</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
       <link>/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/publications/</guid>
-      <description>Chen, C., Xia, Y., &amp;amp; Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027&#xA;CHEN Chongxian,YANG Xiaohao,XIA Yu*.Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J].Landscape Architecture Journal, 2019, 26(9):75-82.&#xA;Chen, C., Luo, W., Kang, N., Li, H., Yang, X., &amp;amp; Xia, Y. (2020). Study on the Impact of Residential Outdoor Environments on Mood in the Elderly in Guangzhou, China.</description>
+      <description>Chen, C., Xia, Y., &amp;amp; Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027&#xA;CHEN Chongxian, YANG Xiaohao, XIA Yu*. Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J]. Landscape Architecture, 2019, 26(9): 75-82. DOI: 10.14085/j.fjyl.2019.09.0075.08&#xA;Chen, C., Luo, W., Kang, N., Li, H., Yang, X., &amp;amp; Xia, Y.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tools/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
