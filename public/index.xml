@@ -9,7 +9,7 @@
     <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>viewscape</title>
+      <title>viewscape in R</title>
       <link>/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       <guid>/2024/02/13/viewscape/</guid>
@@ -20,14 +20,14 @@
       <link>/about/</link>
       <pubDate>Sat, 10 Feb 2024 02:22:51 -0700</pubDate>
       <guid>/about/</guid>
-      <description>I am a big fan of R! I am a coder of design, art, games, and tools. I am doing research on soundscape and landscape at the University of Michigan, Ann Arbor. I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. News update !!! R package: viewscape has been on CRAN!&#xA;R package: dsmSearch has been on CRAN!</description>
+      <description>This is Xiaohao Yang&amp;rsquo;s website. I built it with blogdown. I usually fill (ruin) my schedule with my interests. Deadline always help me focus on priority.&#xA;I am a big fan of R! I am a coder of design, art, games, and tools. I am a researcher on soundscape and landscape at the University of Michigan, Ann Arbor. I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t.</description>
     </item>
     <item>
       <title></title>
       <link>/artworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/artworks/</guid>
-      <description></description>
+      <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some interesting 3D patterns with Python in Rhinoceros&#xA;Yo-yoCap Yo-yoCap explores the enhancement of yo-yo performance art through the application of motion capture technology, aiming to create a more dynamic and interactive audio-visual spectacle. By utilizing 2D motion capture with OpenCV and transmitting data to MAX/MSP for processing, this research investigates how real-time tracking of yo-yo movements can alter background music and visualizations.</description>
     </item>
     <item>
       <title></title>
@@ -41,7 +41,7 @@
       <link>/games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/games/</guid>
-      <description></description>
+      <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switch to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card.</description>
     </item>
     <item>
       <title></title>
@@ -55,7 +55,7 @@
       <link>/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tools/</guid>
-      <description></description>
+      <description>I make either useful or useless tools for research (fun)&#xA;viewscape Viewshed-based viewscape analysis supports a range of scientific domains, including urban planning and ecosystem service research, focusing on enhancing well-being benefits. However, most viewshed tools and applications are proprietary and may not be accessible to all. Here, we introduce the open-source R package viewscape created for reproducible calculations of visual landscape metrics within the R environment.&#xA;dsmSearch The package dsmSearch offers functions for retrieving high-resolution Digital Surface Models (DSM) and Light Detection and Ranging (LiDAR) data, providing a toolkit to collect remote sensing data effectively for research and analysis in fields such as ecology, geography, urban planning, and forestry.</description>
     </item>
   </channel>
 </rss>

@@ -49,8 +49,11 @@ viewshed <- viewscape::compute_viewshed(dsm,
                                         offset_viewpoint = 6)
 ```
 
-```{r eval = FALSE}
+In real life, we can not see all theoretical visible objects at once with the limited view angle. To present a more realistic viewscape analysis, `sector_mask` is provided to extract
 
+```{r eval = FALSE}
+# subset the viewshed
+sub_viewshed <- viewscape::sector_mask(viewshed, c(10,100))
 ```
 
 The output 'viewshed' object can be written in raster format using `visualize_viewshed` for further analysis and visualization.
@@ -63,4 +66,9 @@ terra::plot(dsm, legend = FALSE)
 terra::plot(viewshed_raster, add=TRUE, col = "red")
 ```
 
+Binary viewshed only present the locations of visible contents, however, people may be also interested in quantifying the contribution of the visible content in a scene. Therefore, visual magnitude is used to estimate the proportion of each visible area unit within a viewshed. `visual_magnitude` function implements the visual magnitude algorithm for this purpose.
+
+```{r eval = FALSE}
+viewscape::visual_magnitude()
+```
 

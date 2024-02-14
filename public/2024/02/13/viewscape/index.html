@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title>viewscape - xiaohaoyang</title>
-<meta property="og:title" content="viewscape - xiaohaoyang">
+<title>viewscape in R - xiaohaoyang</title>
+<meta property="og:title" content="viewscape in R - xiaohaoyang">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -62,10 +62,10 @@
 
   <article class="article">
     
-    <span class="article-duration">1 min read</span>
+    <span class="article-duration">3 min read</span>
     
 
-    <h1 class="article-title">viewscape</h1>
+    <h1 class="article-title">viewscape in R</h1>
 
     
     <span class="article-date">2024-02-13</span>
@@ -75,9 +75,48 @@
       
       <p>This is an integrated tutorial about <code>viewscape</code> and <code>dsmSearch</code>. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the <code>dsmSearch</code>, which was two functions for searching and downloading point cloud data via API.</p>
 <p>Of course, <code>viewscape</code> is not designed for computing the viewshed even if this is the core of the package. A set of function for calculating viewscape metrics (<a href="https://github.com/land-info-lab/viewscape/blob/master/README.md">see details</a>) is the main contribution of this package. What&rsquo;s more, it provides the functionality to subset the viewshed based on the angle and orientation of the field of view.</p>
-<p>To compute a viewshed, a viewpoint and a DSM are essential. Let&rsquo;s download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate the area to download the data.</p>
+<p>What is &lsquo;viewshed&rsquo; and what is &lsquo;viewscape&rsquo; by the way? Basically, I would say viewscape is a concept of analysis relying on viewshed, which is the visible area that can be seen from the  location of a observer. Viewscape analysis is to understand the composition of landscape and the structure of viewshed itself and visible objects within the viewshed.</p>
+<pre><code class="language-r"># install packages
+install.pakcages(&quot;lidR&quot;)
+install.pakcages(&quot;viewscape&quot;)
+install.pakcages(&quot;dsmSearch&quot;)
+</code></pre>
+<h3 id="1compute-viewshed">1.Compute viewshed</h3>
+<p>To compute a viewshed, a viewpoint and a DSM are essential. Let&rsquo;s download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate the area to download the data. <code>lidR</code>, a powerful tool for processing LiDAR data, is used to generate DSM/DEM.</p>
 <pre><code class="language-r"># bbox finder: http://bboxfinder.com/
 bbox &lt;- c(-73.976440,40.768793,-73.969628,40.773295)
+
+# download LiDAR (.las) 
+las &lt;- dsmSearch::get_lidar(bbox = bbox, epsg = 2263)
+# constrct DSM and DEM using .las data
+dsm &lt;- lidR::rasterize_canopy(las, 5, lidR::dsmtin())
+dem &lt;- lidR::rasterize_terrain(las, 5, lidR::tin())
+</code></pre>
+<p>In this case, I just set the center point of the DSM as the viewpoint.</p>
+<pre><code class="language-r">row &lt;- trunc(terra::nrow(dsm)/2)
+col &lt;- trunc(terra::ncol(dsm)/2)
+cell &lt;- terra::cellFromRowCol(dsm, row, col)
+xy &lt;- terra::xyFromCell(dsm, cell)
+viewpoint &lt;- c(xy[,1], xy[,2])
+# compute viewshed
+# the height of the viewpoint is set as 6 feet
+viewshed &lt;- viewscape::compute_viewshed(dsm,
+                                        viewpoint,
+                                        offset_viewpoint = 6)
+</code></pre>
+<p>In real life, we can not see all theoretical visible objects at once with the limited view angle. To present a more realistic viewscape analysis, <code>sector_mask</code> is provided to extract</p>
+<pre><code class="language-r"># subset the viewshed
+sub_viewshed &lt;- viewscape::sector_mask(viewshed, c(10,100))
+</code></pre>
+<p>The output &lsquo;viewshed&rsquo; object can be written in raster format using <code>visualize_viewshed</code> for further analysis and visualization.</p>
+<pre><code class="language-r"># create a raster of viewshed
+viewshed_raster &lt;- viewscape::visualize_viewshed(viewshed, outputtype = &quot;raster&quot;)
+# plot viewshed overlapping with the DSM
+terra::plot(dsm, legend = FALSE)
+terra::plot(viewshed_raster, add=TRUE, col = &quot;red&quot;)
+</code></pre>
+<p>Binary viewshed only present the locations of visible contents, however, people may be also interested in quantifying the contribution of the visible content in a scene. Therefore, visual magnitude is used to estimate the proportion of each visible area unit within a viewshed. <code>visual_magnitude</code> function implements the visual magnitude algorithm for this purpose.</p>
+<pre><code class="language-r">viewscape::visual_magnitude()
 </code></pre>
 
     </div>

@@ -33,6 +33,8 @@ img {
   max-width: 100%;
 }
 
+img[alt="package"] {width: 30%}
+
 .wrapper {
   overflow: hidden;
   position: relative;
