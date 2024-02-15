@@ -75,6 +75,6 @@ Binary viewshed only present the locations of visible contents, however, people 
 
 
 ```r
-viewscape::visual_magnitude()
+vm <- viewscape::visual_magnitude(viewshed, dsm)
 ```
 

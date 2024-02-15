@@ -69,6 +69,6 @@ terra::plot(viewshed_raster, add=TRUE, col = "red")
 Binary viewshed only present the locations of visible contents, however, people may be also interested in quantifying the contribution of the visible content in a scene. Therefore, visual magnitude is used to estimate the proportion of each visible area unit within a viewshed. `visual_magnitude` function implements the visual magnitude algorithm for this purpose.
 
 ```{r eval = FALSE}
-viewscape::visual_magnitude()
+vm <- viewscape::visual_magnitude(viewshed, dsm)
 ```
 

@@ -20,7 +20,7 @@
       <link>/about/</link>
       <pubDate>Sat, 10 Feb 2024 02:22:51 -0700</pubDate>
       <guid>/about/</guid>
-      <description>This is Xiaohao Yang&amp;rsquo;s website. I built it with blogdown. I usually fill (ruin) my schedule with my interests. Deadline always help me focus on priority.&#xA;I am a big fan of R! I am a coder of design, art, games, and tools. I am a researcher on soundscape and landscape at the University of Michigan, Ann Arbor. I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t.</description>
+      <description>This is Xiaohao Yang&amp;rsquo;s website. I built it with blogdown. My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019).&#xA;I usually fill (ruin) my schedule with my work (interests). Deadline always help me focus on priority.&#xA;I am a big fan of R! I am a coder of design, art, games, and tools. I am a researcher on soundscape and landscape at the University of Michigan, Ann Arbor.</description>
     </item>
     <item>
       <title></title>
@@ -31,17 +31,24 @@
     </item>
     <item>
       <title></title>
+      <link>/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/cv/</guid>
+      <description> Education 2014-2018 South China Agricultural University (SCAU), China - Bachelor of Engineering in Landscape Architecture - Graduation Thesis: Salty Agriculture in the Pearl River Delta - selected for exhibition by Symposium on Chinese Landscape Architecture Education 2018 2019-2022 </description>
+    </item>
+    <item>
+      <title></title>
       <link>/designworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/designworks/</guid>
-      <description></description>
+      <description>Maybe I would do some games in R one day.&#xA;randomStairBranch This is a simple scipt developed with RhinoScriptSyntax in Python. A simple agent method was implemented.&#xA;terrain </description>
     </item>
     <item>
       <title></title>
       <link>/games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/games/</guid>
-      <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switch to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card.</description>
+      <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switch to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card. Now, I am working on a game series SillySimilation.&#xA;SillySimilation There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game.</description>
     </item>
     <item>
       <title></title>
