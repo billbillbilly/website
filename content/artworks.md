@@ -15,7 +15,7 @@ Coding art is fun. I got one self-motivated project (the first one) and several 
 ---
 
 # spank2skate (This project is cool and could be cooler)
-`spank2skate` 
+Skateboarding is always cool. However, some people may be unable to enjoy playing it physically as well as others due to some limitations such as skills, age, disabilities, and even psychological fear. The concept of `spank2skate` is to embrace more people outside the skateboard community and let them have some fun.
 
 ---
 

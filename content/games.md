@@ -13,7 +13,9 @@ In `Cowland`, the cow can propagate and eat grass very fast until it dies. Even 
 
 ![game_fig](https://raw.githubusercontent.com/billbillbilly/SillySimulation/main/cowland/images/cowland_diagram-01.jpg)
 
-### 2. Island
+### 2. [Island](https://billbillbilly.itch.io/sillysimulation-2-island)
 `Island` is the imagination of urbanization in the doomsday. Most of the land has been submerged as the sea level keeps rising. The trash, however, becomes an important resource for survivors.
+
+![game_fig](https://raw.githubusercontent.com/billbillbilly/SillySimulation/main/island/images/relation.png)
 
 ### 3. TBD

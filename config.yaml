@@ -20,7 +20,7 @@ menu:
       url: https://github.com/billbillbilly
     - name: CV
       url: /cv/
-    - name: Portfolio
+    - name: Projects
       url: https://www.xiaohaoy.com/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
