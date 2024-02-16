@@ -12,15 +12,9 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: Publications
-      url: /publications/
-    - name: About
-      url: /about/
-    - name: GitHub
-      url: https://github.com/billbillbilly
-    - name: CV
-      url: /cv/
-    - name: Projects
+    - name: Posts
+      url: /
+    - name: Archived Projects
       url: https://www.xiaohaoy.com/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
