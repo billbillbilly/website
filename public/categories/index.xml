@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xiaohaoyang</title>
-    <link>xiaohaoyportfolio.com/about/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on xiaohaoyang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="xiaohaoyportfolio.com/about/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tool</title>
-      <link>xiaohaoyportfolio.com/about/categories/tool/</link>
+      <link>/categories/tool/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>xiaohaoyportfolio.com/about/categories/tool/</guid>
+      <guid>/categories/tool/</guid>
       <description></description>
     </item>
   </channel>

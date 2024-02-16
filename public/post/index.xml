@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on xiaohaoyang</title>
-    <link>xiaohaoyportfolio.com/about/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on xiaohaoyang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="xiaohaoyportfolio.com/about/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>viewscape in R</title>
-      <link>xiaohaoyportfolio.com/about/2024/02/13/viewscape/</link>
+      <link>/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>xiaohaoyportfolio.com/about/2024/02/13/viewscape/</guid>
+      <guid>/2024/02/13/viewscape/</guid>
       <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for computing the viewshed even if this is the core of the package.</description>
     </item>
   </channel>

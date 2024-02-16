@@ -1,4 +1,4 @@
-baseurl: http://xiaohaoyportfolio.com/about/
+baseurl: /
 languageCode: en-US
 title: xiaohaoyang
 theme: hugo-lithium
@@ -13,11 +13,14 @@ permalinks:
 menu:
   main:
     - name: About
-      url: /about/
-    - name: Posts
       url: /
+      weight: 1
+    - name: Posts
+      url: /post/
+      weight: 2
     - name: Archived Projects
       url: https://www.xiaohaoy.com/
+      weight: 3
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

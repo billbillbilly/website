@@ -2,36 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>xiaohaoyportfolio.com/about/categories/</loc>
+    <loc>/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/post/</loc>
+    <loc>/categories/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/tags/r-package/</loc>
+    <loc>/post/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/tags/</loc>
+    <loc>/tags/r-package/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/categories/tool/</loc>
+    <loc>/tags/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/2024/02/13/viewscape/</loc>
+    <loc>/categories/tool/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/</loc>
+    <loc>/2024/02/13/viewscape/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/about/</loc>
-    <lastmod>2024-02-10T02:22:51-07:00</lastmod>
+    <loc>/artworks/</loc>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/artworks/</loc>
+    <loc>/designworks/</loc>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/designworks/</loc>
+    <loc>/games/</loc>
   </url><url>
-    <loc>xiaohaoyportfolio.com/about/games/</loc>
-  </url><url>
-    <loc>xiaohaoyportfolio.com/about/tools/</loc>
+    <loc>/tools/</loc>
   </url>
 </urlset>

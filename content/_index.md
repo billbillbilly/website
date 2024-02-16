@@ -1,5 +1,5 @@
 ---
-date: "2024-02-10T2:22:51-07:00"
+site: blogdown:::blogdown_site
 home: true
 ---
 <a id='top' class="anchors"></a>

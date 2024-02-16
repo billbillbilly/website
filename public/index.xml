@@ -2,52 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xiaohaoyang</title>
-    <link>xiaohaoyportfolio.com/about/</link>
+    <link>/</link>
     <description>Recent content on xiaohaoyang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="xiaohaoyportfolio.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>viewscape in R</title>
-      <link>xiaohaoyportfolio.com/about/2024/02/13/viewscape/</link>
+      <link>/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>xiaohaoyportfolio.com/about/2024/02/13/viewscape/</guid>
+      <guid>/2024/02/13/viewscape/</guid>
       <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for computing the viewshed even if this is the core of the package.</description>
     </item>
     <item>
       <title></title>
-      <link>xiaohaoyportfolio.com/about/about/</link>
-      <pubDate>Sat, 10 Feb 2024 02:22:51 -0700</pubDate>
-      <guid>xiaohaoyportfolio.com/about/about/</guid>
-      <description>[Me] [News] [Publications] [Resume] [This Website] [Contact]&#xA;[Me] I am a big fan of R and cellular automata! I am a coder [] of design , art , games , and R tools (viewscape and dsmSearch). I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. Hi, I am Xiaohao Yang|楊瀟豪, an environment researcher on soundscape and landscape at the University of Michigan, Ann Arbor.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>xiaohaoyportfolio.com/about/artworks/</link>
+      <link>/artworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>xiaohaoyportfolio.com/about/artworks/</guid>
+      <guid>/artworks/</guid>
       <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some interesting 3D patterns with Python in Rhinoceros. [] []&#xA;Yo-yoCap Yo-yoCap explores the enhancement of yo-yo performance art through the application of motion capture technology, aiming to create a more dynamic and interactive audio-visual spectacle.</description>
     </item>
     <item>
       <title></title>
-      <link>xiaohaoyportfolio.com/about/designworks/</link>
+      <link>/designworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>xiaohaoyportfolio.com/about/designworks/</guid>
+      <guid>/designworks/</guid>
       <description>Maybe I would do some games in R one day. I coded 3D with RhinoScriptSyntax in Python.&#xA;randomStairBranch This is a simple script developed with RhinoScriptSyntax. A simple agent method integrated with random walk was implemented.&#xA;terrain This script enable generating 3D terrain with interaction in Rhino.</description>
     </item>
     <item>
       <title></title>
-      <link>xiaohaoyportfolio.com/about/games/</link>
+      <link>/games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>xiaohaoyportfolio.com/about/games/</guid>
+      <guid>/games/</guid>
       <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switch to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card. Now, I am working on a game series SillySimilation.&#xA;SillySimilation There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game.</description>
     </item>
     <item>
       <title></title>
-      <link>xiaohaoyportfolio.com/about/tools/</link>
+      <link>/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>xiaohaoyportfolio.com/about/tools/</guid>
+      <guid>/tools/</guid>
       <description>I make either useful or useless tools for research (fun)&#xA;viewscape Viewshed-based viewscape analysis supports a range of scientific domains, including urban planning and ecosystem service research, focusing on enhancing well-being benefits. However, most viewshed tools and applications are proprietary and may not be accessible to all. Here, we introduce the open-source R package viewscape created for reproducible calculations of visual landscape metrics within the R environment.&#xA;dsmSearch The package dsmSearch offers functions for retrieving high-resolution Digital Surface Models (DSM) and Light Detection and Ranging (LiDAR) data, providing a toolkit to collect remote sensing data effectively for research and analysis in fields such as ecology, geography, urban planning, and forestry.</description>
     </item>
   </channel>
