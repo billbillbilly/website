@@ -2,12 +2,12 @@
 date: "2024-02-10T2:22:51-07:00"
 ---
 <a id='top' class="anchors"></a>
-[[Me]](#me) [[News]](#new) [[Publications]](#plc) [[Resume]](#cv) [[This Website]](#site) [[Contact]](#contact)
+<i class="fa-solid fa-hand-point-right"></i> [[Me]](#me) [[News]](#new) [[Publications]](#plc) [[Resume]](#cv) [[This Website]](#site) [[Contact]](#contact)
 
 <a id='me' class="anch"></a>
-# [[Me]](#top)
+# [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
 - I am a big fan of [R](https://cran.r-project.org/) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
-- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [design](/designworks/), [art](/artworks/), [games](/games/), and R [tools](/tools/) (`viewscape` and `dsmSearch`).
+- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of **design** [<i class="fa-solid fa-link" alt="link"></i>](/designworks/), **art** [<i class="fa-solid fa-link" alt="link"></i>](/artworks/), **games** [<i class="fa-solid fa-link" alt="link"></i>](/games/), and **R tools** [<i class="fa-solid fa-link" alt="link"></i>](/tools/) (`viewscape` and `dsmSearch`).
 - I am trying to do everything I think is interesting even if I know I can't. 
 
 Hi, I am Xiaohao Yang|楊瀟豪, an environment [researcher](https://scholar.google.com/citations?hl=en&user=7gBKKAUAAAAJ) on soundscape and landscape at the University of Michigan, Ann Arbor.
@@ -19,15 +19,15 @@ I often fill (ruin) my schedule with my work (interests). I want to be defined b
 ---
 
 <a id='new' class="anch"></a>
-# [[News]](#top)
-R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been on [CRAN](https://cran.r-project.org/web/packages/viewscape/)!
+# [News] [<i class="fa-solid fa-turn-up"></i>](#top)
+🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been on [CRAN](https://cran.r-project.org/web/packages/viewscape/)!
 
-R package: [`dsmSearch`](https://github.com/land-info-lab/dsmSearch) has been on [CRAN](https://cran.r-project.org/web/packages/dsmSearch/)!
+🔥 R package: [`dsmSearch`](https://github.com/land-info-lab/dsmSearch) has been on [CRAN](https://cran.r-project.org/web/packages/dsmSearch/)!
 
 ---
 
 <a id='plc' class="anch"></a>
-# [[Publications]](#top)
+# [Publications] [<i class="fa-solid fa-turn-up"></i>](#top)
 Chen, C., Xia, Y., & Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027
 
 CHEN Chongxian, YANG Xiaohao, XIA Yu*. Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J]. Landscape Architecture, 2019, 26(9): 75-82. DOI: 10.14085/j.fjyl.2019.09.0075.08
@@ -41,7 +41,7 @@ Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Serial Mediatio
 ---
 
 <a id='cv' class="anch"></a>
-# [[Resume]](#top)
+# [Resume] [<i class="fa-solid fa-turn-up"></i>](#top)
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Education</b>
@@ -278,11 +278,11 @@ Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Serial Mediatio
 ---
 
 <a id='site' class="anch"></a>
-# [[Website]](#top)
+# [Website] [<i class="fa-solid fa-turn-up"></i>](#top)
 I built this website with [`blogdown`](https://bookdown.org/yihui/blogdown/) using the default theme [(yihui/hugo-lithium)](https://github.com/yihui/hugo-lithium). 
 
 ---
 
 <a id='contact' class="anch"></a>
-# [[Contact]](#top)
+# [Contact] [<i class="fa-solid fa-turn-up"></i>](#top)
 xiaohaoy[at]umich[dot]edu

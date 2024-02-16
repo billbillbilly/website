@@ -12,6 +12,8 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
+    - name: About
+      url: /about/
     - name: Posts
       url: /
     - name: Archived Projects
