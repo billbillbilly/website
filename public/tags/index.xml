@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on xiaohaoyang</title>
-    <link>/tags/</link>
+    <link>xiaohaoyportfolio.com/about/tags/</link>
     <description>Recent content in Tags on xiaohaoyang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="xiaohaoyportfolio.com/about/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R package</title>
-      <link>/tags/r-package/</link>
+      <link>xiaohaoyportfolio.com/about/tags/r-package/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/tags/r-package/</guid>
+      <guid>xiaohaoyportfolio.com/about/tags/r-package/</guid>
       <description></description>
     </item>
   </channel>

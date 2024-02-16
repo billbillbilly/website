@@ -2,59 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xiaohaoyang</title>
-    <link>/</link>
+    <link>xiaohaoyportfolio.com/about/</link>
     <description>Recent content on xiaohaoyang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="xiaohaoyportfolio.com/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>viewscape in R</title>
-      <link>/2024/02/13/viewscape/</link>
+      <link>xiaohaoyportfolio.com/about/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/2024/02/13/viewscape/</guid>
+      <guid>xiaohaoyportfolio.com/about/2024/02/13/viewscape/</guid>
       <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for computing the viewshed even if this is the core of the package.</description>
     </item>
     <item>
       <title></title>
-      <link>/about/</link>
+      <link>xiaohaoyportfolio.com/about/about/</link>
       <pubDate>Sat, 10 Feb 2024 02:22:51 -0700</pubDate>
-      <guid>/about/</guid>
-      <description>[Me] [News] [Publications] [Resume] [This Website] [Contact]&#xA;[Me] I am a big fan of R and cellular automata! I am a coder [] of design, art, games, and R tools (viewscape and dsmSearch). I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. Hi, I am Xiaohao Yang|楊瀟豪, an environment researcher on soundscape and landscape at the University of Michigan, Ann Arbor. My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019).</description>
+      <guid>xiaohaoyportfolio.com/about/about/</guid>
+      <description>[Me] [News] [Publications] [Resume] [This Website] [Contact]&#xA;[Me] I am a big fan of R and cellular automata! I am a coder [] of design , art , games , and R tools (viewscape and dsmSearch). I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. Hi, I am Xiaohao Yang|楊瀟豪, an environment researcher on soundscape and landscape at the University of Michigan, Ann Arbor.</description>
     </item>
     <item>
       <title></title>
-      <link>/artworks/</link>
+      <link>xiaohaoyportfolio.com/about/artworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/artworks/</guid>
-      <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some interesting 3D patterns with Python in Rhinoceros&#xA;Yo-yoCap Yo-yoCap explores the enhancement of yo-yo performance art through the application of motion capture technology, aiming to create a more dynamic and interactive audio-visual spectacle. By utilizing 2D motion capture with OpenCV and transmitting data to MAX/MSP for processing, this research investigates how real-time tracking of yo-yo movements can alter background music and visualizations.</description>
+      <guid>xiaohaoyportfolio.com/about/artworks/</guid>
+      <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some interesting 3D patterns with Python in Rhinoceros. [] []&#xA;Yo-yoCap Yo-yoCap explores the enhancement of yo-yo performance art through the application of motion capture technology, aiming to create a more dynamic and interactive audio-visual spectacle.</description>
     </item>
     <item>
       <title></title>
-      <link>/designworks/</link>
+      <link>xiaohaoyportfolio.com/about/designworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/designworks/</guid>
+      <guid>xiaohaoyportfolio.com/about/designworks/</guid>
       <description>Maybe I would do some games in R one day. I coded 3D with RhinoScriptSyntax in Python.&#xA;randomStairBranch This is a simple script developed with RhinoScriptSyntax. A simple agent method integrated with random walk was implemented.&#xA;terrain This script enable generating 3D terrain with interaction in Rhino.</description>
     </item>
     <item>
       <title></title>
-      <link>/games/</link>
+      <link>xiaohaoyportfolio.com/about/games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/games/</guid>
+      <guid>xiaohaoyportfolio.com/about/games/</guid>
       <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switch to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card. Now, I am working on a game series SillySimilation.&#xA;SillySimilation There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game.</description>
     </item>
     <item>
       <title></title>
-      <link>/publications/</link>
+      <link>xiaohaoyportfolio.com/about/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/publications/</guid>
-      <description>Chen, C., Xia, Y., &amp;amp; Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027&#xA;CHEN Chongxian, YANG Xiaohao, XIA Yu*. Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J]. Landscape Architecture, 2019, 26(9): 75-82. DOI: 10.14085/j.fjyl.2019.09.0075.08&#xA;Chen, C., Luo, W., Kang, N., Li, H., Yang, X., &amp;amp; Xia, Y.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>/tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tools/</guid>
+      <guid>xiaohaoyportfolio.com/about/tools/</guid>
       <description>I make either useful or useless tools for research (fun)&#xA;viewscape Viewshed-based viewscape analysis supports a range of scientific domains, including urban planning and ecosystem service research, focusing on enhancing well-being benefits. However, most viewshed tools and applications are proprietary and may not be accessible to all. Here, we introduce the open-source R package viewscape created for reproducible calculations of visual landscape metrics within the R environment.&#xA;dsmSearch The package dsmSearch offers functions for retrieving high-resolution Digital Surface Models (DSM) and Light Detection and Ranging (LiDAR) data, providing a toolkit to collect remote sensing data effectively for research and analysis in fields such as ecology, geography, urban planning, and forestry.</description>
     </item>
   </channel>

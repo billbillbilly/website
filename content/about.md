@@ -1,5 +1,6 @@
 ---
 date: "2024-02-10T2:22:51-07:00"
+home: true
 ---
 <a id='top' class="anchors"></a>
 <i class="fa-solid fa-hand-point-right"></i> [[Me]](#me) [[News]](#new) [[Publications]](#plc) [[Resume]](#cv) [[This Website]](#site) [[Contact]](#contact)

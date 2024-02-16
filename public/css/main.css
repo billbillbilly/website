@@ -35,6 +35,8 @@ img {
 
 img[alt="package"] {width: 30%}
 
+i[alt="link"] {font-size: 0.65em;}
+
 .wrapper {
   overflow: hidden;
   position: relative;
