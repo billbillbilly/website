@@ -4,7 +4,7 @@ date: ''
 ---
 
 <a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> [[Me]](#me) [[News]](#new) [[Publications]](#plc) [[Resume]](#cv) [[This Website]](#site) [[Contact]](#contact)
+<i class="fa-solid fa-hand-point-right"></i> [#Me](#me) [#News](#new) [#Publications](#plc) [#Resume](#cv) [#This website](#site) [#Contact](#contact)
 
 <div class="splitline">
   <hr>

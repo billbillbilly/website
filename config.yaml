@@ -18,7 +18,7 @@ menu:
     - name: Posts
       url: /post/
       weight: 2
-    - name: Archived Projects
+    - name: Archives
       url: https://www.xiaohaoy.com/
       weight: 3
 params:
