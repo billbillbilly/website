@@ -127,7 +127,36 @@ The first part of this template allow the main conted to be displayed and the re
 ```
 
 ### 3. Style modification
+One of main changes I did for the style of this website was fixing the navigation bar. I made the modification in `/themes/hugo-lithium/static/css/main.css`. Basically, I did two things: change the  position attribute of `header` tag and add `padding-top` to `content` class:
+```
+.header {
+  padding: 20px 0;
+  position: fixed;
+  background: #f5f5f5;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
 
+.content {
+  max-width: 700px;
+  margin: 40px auto 10px;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  padding-top: 35px;
+}
+```
+I also kept the changes consistent in `@media (min-width: 600px) {}`. Basically, any style-related or layout-related modification should be done in `/themes`. But this maybe make it more difficult to pull updates of this theme in the future. More approaches for theme customization are accessible in the [**book**](https://bookdown.org/yihui/blogdown/custom-layouts.html) of `blogdown`.
 
-### 
+### 3. Deployment
+To make the website visible to everyone, I pushed this git repo to **github** and deployed the website on [**Netlify**](https://app.netlify.com/) by connecting the github repo. The free domain provided by Netlify was fine but I would like to have my own domain. Netlify does support adding domain alias. Google does not provide domain services any more thus I went with [**Squarespace**](https://domains.squarespace.com/?channel=bd&subchannel=google-domain&campaign=&subcampaign=&source=google_domain_referral&utm_source=google_domain_referral&utm_medium=bd&utm_content=google-domain&utm_term=&utm_campaign=). Squarespace provides basic customized domain $20/yr. 
 
+After purchasing a domain from Squarespace, I added it to the domain management panel of Netlify. Meanwhile, I made serveral changes in domain management of Squarespace. First, I unlocked "domain lock" so that I can transfer it to Netlify. Then, I removed all default DNS settings and added Custom Records:
+```
+Host: @
+Type: A
+Priority: 
+Data: 75.2.60.5
+```
+Finally, I verified the domain and renewed the SSL/TLS certificate on Netlify. It just took a couple of hours to set up the new domain for my website.
