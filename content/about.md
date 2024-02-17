@@ -1,101 +1,52 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.122.0">
+---
+title: ''
+date: ''
+---
 
+<a id='top' class="anchors"></a>
+<i class="fa-solid fa-hand-point-right"></i> [[Me]](#me) [[News]](#new) [[Publications]](#plc) [[Resume]](#cv) [[This Website]](#site) [[Contact]](#contact)
 
-<title> - xiaohaoyang</title>
-<meta property="og:title" content=" - xiaohaoyang">
-
-
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
-
-
-
-  
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/css/fonts.css" media="all">
-<link rel="stylesheet" href="/css/main.css" media="all">
-
-<script src="https://kit.fontawesome.com/8a2a3f076e.js" crossorigin="anonymous"></script>
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-  <a href="/" class="nav-logo">
-    <img src="/images/logo.png"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/post/">Posts</a></li>
-    
-    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
-    
-  </ul>
-</nav>
-
-      </header>
-
-
-<main class="content" role="main">
-
-  <article class="article">
-    
-
-    <h1 class="article-title"></h1>
-
-    
-
-    <div class="article-content">
-      
-      <p><a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> <a href="#me">[Me]</a> <a href="#new">[News]</a> <a href="#plc">[Publications]</a> <a href="#cv">[Resume]</a> <a href="#site">[This Website]</a> <a href="#contact">[Contact]</a></p>
 <div class="splitline">
   <hr>
 </div>
-<p><a id='me' class="anch"></a></p>
-<h1 id="me-i-classfa-solid-fa-turn-upitop">[Me] <a href="#top"><i class="fa-solid fa-turn-up"></i></a></h1>
-<ul>
-<li>I am a big fan of <a href="https://cran.r-project.org/"><strong>R</strong></a> and <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata">cellular automata</a>!</li>
-<li>I am a coder <a href="https://github.com/billbillbilly">[<i class="fa-brands fa-git"></i>]</a> of <strong>design</strong> <a href="/designworks/"><i class="fa-solid fa-link" alt="link"></i></a>, <strong>art</strong> <a href="/artworks/"><i class="fa-solid fa-link" alt="link"></i></a>, <strong>games</strong> <a href="/games/"><i class="fa-solid fa-link" alt="link"></i></a>, and <strong>R tools</strong> <a href="/tools/"><i class="fa-solid fa-link" alt="link"></i></a> (<code>viewscape</code> and <code>dsmSearch</code>).</li>
-<li>I am trying to do everything I think is interesting even if I know I can&rsquo;t.</li>
-</ul>
-<p>My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019).
-I sees myself as an interdisciplinary researcher and is passionate about merging data and a design perspective to uncover the relationship and interaction between the built environment and multi-sensory perception, with a focus on promoting environmental sustainability and encouraging human-centered design and decision-making.</p>
-<p>In the recent years, I code (sit) in front of my computer over two hours every day and often fill (ruin) my schedule with my work (interests). I want to be defined by what I want to do instead of things I have done. Deadline always push me back to work.</p>
-<hr>
-<p><a id='new' class="anch"></a></p>
-<h1 id="news-i-classfa-solid-fa-turn-upitop">[News] <a href="#top"><i class="fa-solid fa-turn-up"></i></a></h1>
-<p>🔥 R package: <a href="https://github.com/land-info-lab/viewscape"><code>viewscape</code></a> has been on <a href="https://cran.r-project.org/web/packages/viewscape/">CRAN</a>!</p>
-<p>🔥 R package: <a href="https://github.com/land-info-lab/dsmSearch"><code>dsmSearch</code></a> has been on <a href="https://cran.r-project.org/web/packages/dsmSearch/">CRAN</a>!</p>
-<hr>
-<p><a id='plc' class="anch"></a></p>
-<h1 id="publications-i-classfa-solid-fa-turn-upitop">[Publications] <a href="#top"><i class="fa-solid fa-turn-up"></i></a></h1>
-<p>Chen, C., Xia, Y., &amp; Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. <a href="https://doi.org/10.15302/J-LAF-1-020027">https://doi.org/10.15302/J-LAF-1-020027</a></p>
-<p>CHEN Chongxian, YANG Xiaohao, XIA Yu*. Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J]. Landscape Architecture, 2019, 26(9): 75-82. DOI: 10.14085/j.fjyl.2019.09.0075.08</p>
-<p>Chen, C., Luo, W., Kang, N., Li, H., Yang, X., &amp; Xia, Y. (2020). Study on the Impact of Residential Outdoor Environments on Mood in the Elderly in Guangzhou, China. Sustainability, 12(9), 3933.</p>
-<p>Chen, C., Luo, W., Li, H., Zhang, D., Kang, N., Yang, X., &amp; Xia, Y. (2020). Impact of perception of green space for health promotion on willingness to use parks and actual use among young urban residents. International journal of environmental research and public health, 17(15), 5560.</p>
-<p>Chen, C., Luo, W., Kang, N., Li, H., Yang, X., &amp; Xia, Y. (2020). Serial Mediation of Environmental Preference and Place Attachment in the Relationship between Perceived Street Walkability and Mood of the Elderly. International Journal of Environmental Research and Public Health, 17(13), 4620.</p>
-<hr>
-<p><a id='cv' class="anch"></a></p>
-<h1 id="resume-i-classfa-solid-fa-turn-upitop">[Resume] <a href="#top"><i class="fa-solid fa-turn-up"></i></a></h1>
+
+<a id='me' class="anch"></a>
+# [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
+- I am a big fan of [**R**](https://cran.r-project.org/) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
+- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of **design** [<i class="fa-solid fa-link" alt="link"></i>](/designworks/), **art** [<i class="fa-solid fa-link" alt="link"></i>](/artworks/), **games** [<i class="fa-solid fa-link" alt="link"></i>](/games/), and **R tools** [<i class="fa-solid fa-link" alt="link"></i>](/tools/) (`viewscape` and `dsmSearch`).
+- I am trying to do everything I think is interesting even if I know I can't. 
+
+My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019). 
+I sees myself as an interdisciplinary researcher and is passionate about merging data and a design perspective to uncover the relationship and interaction between the built environment and multi-sensory perception, with a focus on promoting environmental sustainability and encouraging human-centered design and decision-making.  
+
+In the recent years, I code (sit) in front of my computer over two hours every day and often fill (ruin) my schedule with my work (interests). I want to be defined by what I want to do instead of things I have done. Deadline always push me back to work. 
+
+---
+
+<a id='new' class="anch"></a>
+# [News] [<i class="fa-solid fa-turn-up"></i>](#top)
+🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been on [CRAN](https://cran.r-project.org/web/packages/viewscape/)!
+
+🔥 R package: [`dsmSearch`](https://github.com/land-info-lab/dsmSearch) has been on [CRAN](https://cran.r-project.org/web/packages/dsmSearch/)!
+
+---
+
+<a id='plc' class="anch"></a>
+# [Publications] [<i class="fa-solid fa-turn-up"></i>](#top)
+Chen, C., Xia, Y., & Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027
+
+CHEN Chongxian, YANG Xiaohao, XIA Yu*. Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J]. Landscape Architecture, 2019, 26(9): 75-82. DOI: 10.14085/j.fjyl.2019.09.0075.08
+
+Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Study on the Impact of Residential Outdoor Environments on Mood in the Elderly in Guangzhou, China. Sustainability, 12(9), 3933.
+
+Chen, C., Luo, W., Li, H., Zhang, D., Kang, N., Yang, X., & Xia, Y. (2020). Impact of perception of green space for health promotion on willingness to use parks and actual use among young urban residents. International journal of environmental research and public health, 17(15), 5560.
+
+Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Serial Mediation of Environmental Preference and Place Attachment in the Relationship between Perceived Street Walkability and Mood of the Elderly. International Journal of Environmental Research and Public Health, 17(13), 4620.
+
+---
+
+<a id='cv' class="anch"></a>
+# [Resume] [<i class="fa-solid fa-turn-up"></i>](#top)
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Education</b>
@@ -139,6 +90,7 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
     </td>
   </tr>
 </table>
+
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Honour</b>
@@ -176,7 +128,9 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
     </td>
   </tr>
 </table>
-<hr>
+
+---
+
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Grant</b>
@@ -190,7 +144,9 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
     </td>
   </tr>
 </table>
-<hr>
+
+---
+
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Experiences</b>
@@ -246,7 +202,9 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
     </td>
   </tr>
 </table>
-<hr>
+
+---
+
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Teaching</b>
@@ -278,7 +236,9 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
     </td>
   </tr>
 </table>
-<hr>
+
+---
+
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Tools</b>
@@ -291,6 +251,7 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
       <b style="font-size:15px">Python, R, C#, C++, Javascript, HTML</b>
     </td>
   </tr>
+  
   <tr style="line-height:normal; font-family:Monospace">
     <td style="width:max(15vw, 150px); vertical-align:top">
       <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">Modeling</b>
@@ -299,6 +260,7 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
       <b style="font-size:15px">Rhino (Grasshopper, Rhinoscript), Unity, Unreal Engine, Twinmotion, AutoCAD, Blender, SketchUp</b>
     </td>
   </tr>
+  
   <tr style="line-height:normal; font-family:Monospace">
     <td style="width:max(15vw, 150px); vertical-align:top">
       <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">GIS</b>
@@ -307,6 +269,7 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
       <b style="font-size:15px">Qgis, GRASS GIS, ArcGIS, Google Earth Engine</b>
     </td>
   </tr>
+  
   <tr style="line-height:normal; font-family:Monospace">
     <td style="width:max(15vw, 150px); vertical-align:top">
       <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">Design</b>
@@ -316,39 +279,16 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
     </td>
   </tr>
 </table>
-<hr>
-<p><a id='site' class="anch"></a></p>
-<h1 id="website-i-classfa-solid-fa-turn-upitop">[Website] <a href="#top"><i class="fa-solid fa-turn-up"></i></a></h1>
-<p>I built this website with <a href="https://bookdown.org/yihui/blogdown/"><code>blogdown</code></a> using the default theme <a href="https://github.com/yihui/hugo-lithium">(yihui/hugo-lithium)</a>.</p>
-<hr>
-<p><a id='contact' class="anch"></a></p>
-<h1 id="contact-i-classfa-solid-fa-turn-upitop">[Contact] <a href="#top"><i class="fa-solid fa-turn-up"></i></a></h1>
-<p><i class="fa-solid fa-envelope"></i> xiaohaoy[at]umich[dot]edu <br></p>
 
-    </div>
-  </article>
+---
 
-  
+<a id='site' class="anch"></a>
+# [Website] [<i class="fa-solid fa-turn-up"></i>](#top)
+I built this website with [`blogdown`](https://bookdown.org/yihui/blogdown/) using the default theme [(yihui/hugo-lithium)](https://github.com/yihui/hugo-lithium). 
 
+---
 
-</main>
-
-      <footer class="footer">
-        <ul class="footer-links">
-          
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
-
-    </div>
-    
-
-    
-
-    
-  </body>
-</html>
+<a id='contact' class="anch"></a>
+# [Contact] [<i class="fa-solid fa-turn-up"></i>](#top)
+<i class="fa-solid fa-envelope"></i> xiaohaoy[at]umich[dot]edu <br>
 

@@ -13,7 +13,7 @@ permalinks:
 menu:
   main:
     - name: About
-      url: /
+      url: /about/
       weight: 1
     - name: Posts
       url: /post/
@@ -44,3 +44,5 @@ markup:
       unsafe: yes
   highlight:
     codeFences: no
+taxonomies:
+  tag: "tags"

@@ -7,15 +7,18 @@ categories: ["tutorials"]
 tags: ["R"]
 ---
 
-The initial idea of building a personal website is just showcasing some of my works from design studios, I used to directly craft my HTML5 website without any framework and then handle my portfolio on  platforms that provide cloud-based web development services. As I got more projects done recently, I became increasingly lazy to update my portfolio website and the price for using the cloud-based web services is incredibly expensive. So, I was looking for a more interesting way to organize my staffs. Yes, `blogdown` enable me to rebuild my website using R and Markdown with a little bit of work on HTML5 and CSS. In this post, I am sharing my experience with customizing a website using the `blogdown` package. 
+The initial idea of building a personal website is just showcasing some of my works from design studios, I used to directly craft my HTML5 website without any framework and then handle my portfolio on  platforms that provide cloud-based web development services. As I got more projects done recently, I became increasingly lazy to update my portfolio website and the price for using the cloud-based web services is incredibly expensive. So, I was looking for a more interesting way to organize my staffs. Yes, `blogdown` enabled me to rebuild my website using R and Markdown with a little bit of work on HTML5 and CSS. In this post, I am sharing my experience with customizing a website using the `blogdown` package. My website is available in this [**repo**](https://github.com/billbillbilly/website).
 
 ### 1. Setup
-I had not used `blogdown` before so I just installed it first: `install.packages('blogdown')`. Then, the first step was to setup a project using Rstudio: `File -> New project... -> New directory -> website using blogdown`. I like concise layout so I just went with the default theme `yihui/hugo-lithium`. Or, `blogdown::build_site()` can do the same thing. After creating this new project, I ran `blogdown::serve_site()` to locally preview the website in the 'Viewer' tab of Rstudio. Clicking the `show in the window` button can open the website in the browser.
+I had not used `blogdown` before so I just installed it first: 
+```
+install.packages('blogdown')
+``` 
+Then, the first step was to setup a project using Rstudio: `File -> New project... -> New directory -> website using blogdown`. I like concise layout so I just went with the default theme `yihui/hugo-lithium`. Or, `blogdown::new_site(theme = 'yihui/hugo-lithium')` can do the same thing. After creating this new project, I ran `blogdown::serve_site()` to locally preview the website in the 'Viewer' tab of Rstudio. Clicking the `show in the window` button can open the website in the browser.
 
 ### 2. Customized home page
 A blogdown project includes these documents and folders for customization purposes: <br>
 <i class="fa-solid fa-file"></i> **config.yaml**: website configuration <br>
-<i class="fa-solid fa-file"></i> **index.Rmd**: default home page <br>
 <i class="fa-solid fa-folder"></i> **content**: pages and posts <br>
 <i class="fa-solid fa-folder"></i> **public**: all files for deploying the website <br>
 <i class="fa-solid fa-folder"></i> **themes**: templates for the website <br>

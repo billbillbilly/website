@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.122.0">
+
+
+<title>Customize the website with blogdown - xiaohaoyang</title>
+<meta property="og:title" content="Customize the website with blogdown - xiaohaoyang">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+<script src="https://kit.fontawesome.com/8a2a3f076e.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="/post/">Posts</a></li>
+    
+    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">6 min read</span>
+    
+
+    <h1 class="article-title">Customize the website with blogdown</h1>
+
+    
+    <span class="article-date">2024-02-16</span>
+    <br>
+    
+    <a class="tags" href="/tags/r">R</a>
+    
+    
+
+    <div class="article-content">
+      
+      <p>The initial idea of building a personal website is just showcasing some of my works from design studios, I used to directly craft my HTML5 website without any framework and then handle my portfolio on  platforms that provide cloud-based web development services. As I got more projects done recently, I became increasingly lazy to update my portfolio website and the price for using the cloud-based web services is incredibly expensive. So, I was looking for a more interesting way to organize my staffs. Yes, <code>blogdown</code> enabled me to rebuild my website using R and Markdown with a little bit of work on HTML5 and CSS. In this post, I am sharing my experience with customizing a website using the <code>blogdown</code> package. My website is available in this <a href="https://github.com/billbillbilly/website"><strong>repo</strong></a>.</p>
+<h3 id="1-setup">1. Setup</h3>
+<p>I had not used <code>blogdown</code> before so I just installed it first:</p>
+<pre><code>install.packages('blogdown')
+</code></pre>
+<p>Then, the first step was to setup a project using Rstudio: <code>File -&gt; New project... -&gt; New directory -&gt; website using blogdown</code>. I like concise layout so I just went with the default theme <code>yihui/hugo-lithium</code>. Or, <code>blogdown::new_site(theme = 'yihui/hugo-lithium')</code> can do the same thing. After creating this new project, I ran <code>blogdown::serve_site()</code> to locally preview the website in the &lsquo;Viewer&rsquo; tab of Rstudio. Clicking the <code>show in the window</code> button can open the website in the browser.</p>
+<h3 id="2-customized-home-page">2. Customized home page</h3>
+<p>A blogdown project includes these documents and folders for customization purposes: <br>
+<i class="fa-solid fa-file"></i> <strong>config.yaml</strong>: website configuration <br>
+<i class="fa-solid fa-folder"></i> <strong>content</strong>: pages and posts <br>
+<i class="fa-solid fa-folder"></i> <strong>public</strong>: all files for deploying the website <br>
+<i class="fa-solid fa-folder"></i> <strong>themes</strong>: templates for the website <br></p>
+<p>In my case, I wanted a page for introducing all things about me. I ran <code>blogdown:::new_content(&quot;about.md&quot;)</code> to create a new page using Markdown in the &ldquo;content&rdquo; folder. This what I had in the <code>/content</code>:</p>
+<pre><code>/content
+├── about.md
+└── post &lt;- posts are in this dirctory
+</code></pre>
+<p>I also needed to make sure it can be accessible. Therefore, I modified <strong>config.yaml</strong> to add a button in the navigation bar and link it to&quot;about.md&quot;:</p>
+<pre><code>menu:
+  main:
+  - name: About
+    url: /about/ 
+</code></pre>
+<p>In addition, I added another button linked to my previous design portfolio website because I don&rsquo;t want to relocate over 400MB images at this point so I just linked to it (this has said one can link any external page using url):</p>
+<pre><code>menu:
+  main:
+  - name: About
+    url: /about/ 
+  - name: Archived Projects
+    url: https://www.xxxxxx.com/
+</code></pre>
+<p>Eventually, I didn&rsquo;t felt like using the page filled with posts as my home page. Thus, I added ome more button <code>Posts</code> and changed the urls in <strong>config.yaml</strong>:</p>
+<pre><code>menu:
+  main:
+    - name: About
+      url: /
+      weight: 1
+    - name: Posts
+      url: /post/
+      weight: 2
+    - name: Archived Projects
+      url: https://www.xiaohaoy.com/
+      weight: 3
+</code></pre>
+<p><code>/</code> is the home page address. Since all posts are in <code>/content/post</code>, I.  By the way, I reorder the navigation buttons by setting <code>weight</code>. However, &ldquo;About&rdquo; was still not my home page even if I chnaged the url because the home page <code>index.html</code> is automatically generated by the template in <code>/themes</code>. And <code>about.md</code> are not able to be recognized as anything like <code>index.html</code>.</p>
+<p>I found the solution in <a href="https://stackoverflow.com/questions/53765404/how-do-i-post-some-introductory-paragraphs-on-the-main-page-of-my-blogdown-site"><strong>this post</strong></a>. First, under <code>/content</code>, I renamed <code>about.md</code> as <code>_index.md</code> so it can be seen as main page. Then, I modified <strong>_index.md</strong> to build it as home page:</p>
+<pre><code>---
+site: blogdown:::blogdown_site
+---
+</code></pre>
+<p>After doing this, the post page were no longer my home page and it can be accessed through the navigation bar. In other word, the previous <code>about.md</code> became the main page that can be accessed via root directory <code>/</code> while the post page is on <code>/post</code>. However, both the content of current home page and the list of posts were displayed on the home page while the list of posts had been a separate page. This was cased by the <a href="https://github.com/yihui/hugo-lithium/commit/23d456ea0acde1299d9b839352339d59fd342d5a">change</a> of <code>hugo-lithium</code>. Well, it was not an issue but I needed to revert it somehow.</p>
+<p>Second, I overwrote the setting for the template of post page <code>/themes/hugo-lithium/layouts/_default/list.html</code> to prevent displaying main content and the list of posts together. <strong>list.html</strong> looked like something like this:</p>
+<pre><code>{{ partial &quot;header.html&quot; . }}
+&lt;main class=&quot;content&quot; role=&quot;main&quot;&gt;
+  {{ if .Content }}
+  &lt;article class=&quot;article&quot;&gt;
+    &lt;div class=&quot;article-content&quot;&gt;
+      {{ .Content }}
+    &lt;/div&gt;
+  &lt;/article&gt;
+  {{ end }}
+  &lt;div class=&quot;archive&quot;&gt;
+    {{ range (where .Data.Pages &quot;Section&quot; &quot;!=&quot; &quot;&quot;).GroupByDate &quot;2006&quot; }}
+    &lt;h2 class=&quot;archive-title&quot;&gt;{{ .Key }}&lt;/h2&gt;
+    {{ range .Pages }}
+    &lt;article class=&quot;archive-item&quot;&gt;
+      &lt;a href=&quot;{{ .RelPermalink }}&quot; class=&quot;archive-item-link&quot;&gt;{{ .Title }}&lt;/a&gt;
+      &lt;span class=&quot;archive-item-date&quot;&gt;
+        {{ .Date.Format &quot;2006/01/02&quot; }}
+      &lt;/span&gt;
+    &lt;/article&gt;
+    {{ end }}
+    {{ end }}
+  &lt;/div&gt;
+&lt;/main&gt;
+{{ partial &quot;footer.html&quot; . }}
+</code></pre>
+<p>The first part of this template allow the main conted to be displayed and the rest of it can display all posts in a list. What I did was adding a condition statement for the second part to exclude the post list when building the <strong>index.html</strong>:</p>
+<pre><code>{{ partial &quot;header.html&quot; . }}
+&lt;main class=&quot;content&quot; role=&quot;main&quot;&gt;
+  {{ if .Content }}
+  &lt;article class=&quot;article&quot;&gt;
+    {{ if .Title }}
+    &lt;h1 class=&quot;article-title&quot;&gt;{{ .Title }}&lt;/h1&gt;
+    {{ end }}
+    &lt;div class=&quot;article-content&quot;&gt;
+      {{ .Content }}
+    &lt;/div&gt;
+  &lt;/article&gt;
+  {{ end }}
+  {{ if not .IsHome }}
+  &lt;div class=&quot;archive&quot;&gt;
+    {{ range (where .Data.Pages &quot;Section&quot; &quot;!=&quot; &quot;&quot;).GroupByDate &quot;2006&quot; }}
+    &lt;h2 class=&quot;archive-title&quot;&gt;{{ .Key }}&lt;/h2&gt;
+    {{ range .Pages }}
+    &lt;article class=&quot;archive-item&quot;&gt;
+      &lt;a href=&quot;{{ .RelPermalink }}&quot; class=&quot;archive-item-link&quot;&gt;{{ .Title }}&lt;/a&gt;
+      &lt;span class=&quot;archive-item-date&quot;&gt;
+        {{ .Date.Format &quot;2006/01/02&quot; }}
+      &lt;/span&gt;
+    &lt;/article&gt;
+    {{ end }}
+    {{ end }}
+  &lt;/div&gt;
+  {{ end }}
+&lt;/main&gt;
+{{ partial &quot;footer.html&quot; . }}
+</code></pre>
+<h3 id="3-style-modification">3. Style modification</h3>
+<p>One of main changes I did for the style of this website was fixing the navigation bar. I made the modification in <code>/themes/hugo-lithium/static/css/main.css</code>. Basically, I did two things: change the  position attribute of <code>header</code> tag and add <code>padding-top</code> to <code>content</code> class:</p>
+<pre><code>.header {
+  padding: 20px 0;
+  position: fixed;
+  background: #f5f5f5;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
+
+.content {
+  max-width: 700px;
+  margin: 40px auto 10px;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  padding-top: 35px;
+}
+</code></pre>
+<p>I also kept the changes consistent in <code>@media (min-width: 600px) {}</code>. Basically, any style-related or layout-related modification should be done in <code>/themes</code>. But this maybe make it more difficult to pull updates of this theme in the future. More approaches for theme customization are accessible in the <a href="https://bookdown.org/yihui/blogdown/custom-layouts.html"><strong>book</strong></a> of <code>blogdown</code>.</p>
+<h3 id="3-deployment">3. Deployment</h3>
+<p>To make the website visible to everyone, I pushed this git repo to <strong>github</strong> and deployed the website on <a href="https://app.netlify.com/"><strong>Netlify</strong></a> by connecting the github repo. The free domain provided by Netlify was fine but I would like to have my own domain. Netlify does support adding domain alias. Google does not provide domain services any more thus I went with <a href="https://domains.squarespace.com/?channel=bd&amp;subchannel=google-domain&amp;campaign=&amp;subcampaign=&amp;source=google_domain_referral&amp;utm_source=google_domain_referral&amp;utm_medium=bd&amp;utm_content=google-domain&amp;utm_term=&amp;utm_campaign="><strong>Squarespace</strong></a>. Squarespace provides basic customized domain $20/yr.</p>
+<p>After purchasing a domain from Squarespace, I added it to the domain management panel of Netlify. Meanwhile, I made serveral changes in domain management of Squarespace. First, I unlocked &ldquo;domain lock&rdquo; so that I can transfer it to Netlify. Then, I removed all default DNS settings and added Custom Records:</p>
+<pre><code>Host: @
+Type: A
+Priority: 
+Data: 75.2.60.5
+</code></pre>
+<p>Finally, I verified the domain and renewed the SSL/TLS certificate on Netlify. It just took a couple of hours to set up the new domain for my website.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

@@ -38,7 +38,6 @@ dem <- lidR::rasterize_terrain(las, 5, lidR::tin())
 
 In this case, I just set the center point of the DSM as the viewpoint. 
 
-
 ```r
 row <- trunc(terra::nrow(dsm)/2)
 col <- trunc(terra::ncol(dsm)/2)
