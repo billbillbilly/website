@@ -3,8 +3,8 @@ title: viewscape in R
 author: Xiaohao Yang
 date: '2024-02-13'
 slug: viewscape
-categories: ["Tool"]
-tags: ["R package"]
+categories: ["tutorials"]
+tags: ["R", "R package"]
 ---
 
 This is an integrated tutorial about `viewscape` and `dsmSearch`. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the `dsmSearch`, which was two functions for searching and downloading point cloud data via API.

@@ -11,11 +11,11 @@ home: true
 - I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of **design** [<i class="fa-solid fa-link" alt="link"></i>](/designworks/), **art** [<i class="fa-solid fa-link" alt="link"></i>](/artworks/), **games** [<i class="fa-solid fa-link" alt="link"></i>](/games/), and **R tools** [<i class="fa-solid fa-link" alt="link"></i>](/tools/) (`viewscape` and `dsmSearch`).
 - I am trying to do everything I think is interesting even if I know I can't. 
 
-Hi, I am Xiaohao Yang|楊瀟豪, an environment [researcher](https://scholar.google.com/citations?hl=en&user=7gBKKAUAAAAJ) on soundscape and landscape at the University of Michigan, Ann Arbor.
+Hi, I am Xiaohao Yang|楊瀟豪, an environment [researcher](https://scholar.google.com/citations?hl=en&user=7gBKKAUAAAAJ) on soundscape and landscape, supervised by [Dr.Mark Lindquist](https://seas.umich.edu/research/faculty/mark-lindquist) and [Dr.Derek Van Berkel](https://seas.umich.edu/research/faculty/derek-van-berkel), at the University of Michigan, Ann Arbor.
 My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019). 
 I sees myself as an interdisciplinary researcher and is passionate about merging data and a design perspective to uncover the relationship and interaction between the built environment and multi-sensory perception, with a focus on promoting environmental sustainability and encouraging human-centered design and decision-making.  
 
-I often fill (ruin) my schedule with my work (interests). I want to be defined by what I want to do instead of things I have done. Deadline always push me back to work. 
+In the recent years, I code (sit) in front of my computer over two hours every day and often fill (ruin) my schedule with my work (interests). I want to be defined by what I want to do instead of things I have done. Deadline always push me back to work. 
 
 ---
 
