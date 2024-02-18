@@ -5,9 +5,10 @@
          height="{{ .Site.Params.logo.height }}"
          alt="{{ .Site.Params.logo.alt }}">
   </a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navlist">
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
-    </ul>
+  </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
 </nav>

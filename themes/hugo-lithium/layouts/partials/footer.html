@@ -18,5 +18,14 @@
     {{ partial "footer_highlightjs" . }}
     {{ partial "footer_mathjax" . }}
     {{ template "_internal/google_analytics.html" . }}
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>

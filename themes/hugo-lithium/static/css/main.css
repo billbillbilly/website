@@ -58,8 +58,12 @@ i[alt="link"] {font-size: 0.65em;}
 }
 
 .banner {
+  position: relative;
   background: #f5f5f5;
   border-bottom: 2px solid #eaeaea;
+  transform: translateY(-2800%);
+  transition: transform 0.5s ease;
+  z-index: -999;
 }
 
 .nav {
@@ -89,16 +93,35 @@ i[alt="link"] {font-size: 0.65em;}
   box-shadow: 0px 0px 20px lightgray;
 }
 
+.nav-list {
+  float: right;
+  margin-top: -10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  transition: transform 150ms ease-out;
+  box-shadow: 0px 0px 1px darkgray;
+}
+
 .nav-links {
-  margin: 0;
+  margin: 0 35px 0 0;
   padding: 0;
   font-size: 14px;
   list-style: none;
+  transform: translateY(-200%);
+  transition: transform 0.5s ease;
+}
+
+ul.open {
+  transform: translateY(0);
+}
+
+div.open {
+  transform: translateY(0);
 }
 
 .nav-links li {
   display: inline-block;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0px;
 }
 
 .nav-links li:first-child {
@@ -137,7 +160,7 @@ i[alt="link"] {font-size: 0.65em;}
   font-size: 16px;
   line-height: 1.7;
   color: #333;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .article-title {
@@ -236,7 +259,7 @@ i[alt="link"] {font-size: 0.65em;}
 
 .archive-title {
   font-size: 32px;
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 .archive-item {
@@ -325,6 +348,14 @@ i[alt="link"] {font-size: 0.65em;}
     max-height: 50px;
   }
 
+  .nav-list {
+    margin-top: -10px;
+  }
+
+  .nav-list:hover {
+    transform: rotate(90deg);
+  }
+
   .nav-links {
     font-size: 18px;
   }
@@ -336,7 +367,7 @@ i[alt="link"] {font-size: 0.65em;}
   .content {
     font-size: 19px;
     line-height: 1.8;
-    padding-top: 20px;
+    padding-top: 45px;
   }
 
   .highlight {
