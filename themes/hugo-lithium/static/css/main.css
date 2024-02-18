@@ -47,11 +47,19 @@ i[alt="link"] {font-size: 0.65em;}
 
 .header {
   padding: 20px 0 10px 0;
+  max-width: 100%;
   position: fixed;
+  width: 100%;
+  /*
   background: #f5f5f5;
   border-bottom: 1px solid #eaeaea;
-  width: 100%;
   box-shadow: 0px 0px 10px lightgray;
+  */
+}
+
+.banner {
+  background: #f5f5f5;
+  border-bottom: 2px solid #eaeaea;
 }
 
 .nav {
@@ -65,6 +73,8 @@ i[alt="link"] {font-size: 0.65em;}
   float: left;
   margin-top: -10px;
   transition: transform 150ms ease-out;
+  border-radius: 50%;
+  box-shadow: 0px 3px 4px darkgray;
 }
 
 .nav-logo:hover {
@@ -76,6 +86,7 @@ i[alt="link"] {font-size: 0.65em;}
   max-height: 40px;
   width: auto;
   border-radius: 50%;
+  box-shadow: 0px 0px 20px lightgray;
 }
 
 .nav-links {
@@ -114,7 +125,7 @@ i[alt="link"] {font-size: 0.65em;}
 
 .anch {
   display: block;
-  top: -100px;
+  top: -70px;
   position: relative;
   visibility: hidden;
 }
@@ -126,7 +137,7 @@ i[alt="link"] {font-size: 0.65em;}
   font-size: 16px;
   line-height: 1.7;
   color: #333;
-  padding-top: 35px;
+  padding-top: 15px;
 }
 
 .article-title {
@@ -325,7 +336,7 @@ i[alt="link"] {font-size: 0.65em;}
   .content {
     font-size: 19px;
     line-height: 1.8;
-    padding-top: 90px;
+    padding-top: 20px;
   }
 
   .highlight {
