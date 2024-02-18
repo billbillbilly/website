@@ -11,7 +11,7 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
 <div style="display: flex;">
   <div style="flex: 50%; margin: 0 10px;">
     <p style="font-size: min(18px,3vw);">
-      I am doing research on soundscape and landscape, under the supervison of Dr.Mark Lindquist and Dr.Derek Van Berkel, at the University of Michigan, Ann Arbor.
+      In the recent years, I code (sit) in front of my computer over two hours every day and often fill (ruin) my schedule with my work (interests). I want to be defined by what I want to do instead of things I have done. Deadline always push me back to work. 
     </p>
   </div>
   <div style="flex: 50%; margin: 15px 10px;">

@@ -13,13 +13,12 @@ date: ''
 <a id='me' class="anch"></a>
 # [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
 - I am a big fan of [**R**](https://cran.r-project.org/) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
-- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of **design** [<i class="fa-solid fa-link" alt="link"></i>](/designworks/), **art** [<i class="fa-solid fa-link" alt="link"></i>](/artworks/), **games** [<i class="fa-solid fa-link" alt="link"></i>](/games/), and **R tools** [<i class="fa-solid fa-link" alt="link"></i>](/tools/) (`viewscape` and `dsmSearch`).
+- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [<b><ins>design</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/designworks/)], [<b><ins>art</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/artworks/)], [<b><ins>games</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/games/)], and [<b><ins>R tools</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/tools/)] (`viewscape` and `dsmSearch`).
 - I am trying to do everything I think is interesting even if I know I can't. 
 
+I am doing research on soundscape and landscape, under the supervison of Dr.Mark Lindquist and Dr.Derek Van Berkel, at the University of Michigan, Ann Arbor.
 My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019). 
 I sees myself as an interdisciplinary researcher and is passionate about merging data and a design perspective to uncover the relationship and interaction between the built environment and multi-sensory perception, with a focus on promoting environmental sustainability and encouraging human-centered design and decision-making.  
-
-In the recent years, I code (sit) in front of my computer over two hours every day and often fill (ruin) my schedule with my work (interests). I want to be defined by what I want to do instead of things I have done. Deadline always push me back to work. 
 
 ---
 
