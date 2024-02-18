@@ -290,5 +290,5 @@ I built this website with [`blogdown`](https://bookdown.org/yihui/blogdown/) usi
 
 <a id='contact' class="anch"></a>
 # [Contact] [<i class="fa-solid fa-turn-up"></i>](#top)
-<i class="fa-solid fa-envelope"></i> xiaohaoy[at]umich[dot]edu <br>
+<i class="fa-regular fa-envelope"></i> xiaohaoy[at]umich[dot]edu <br>
 

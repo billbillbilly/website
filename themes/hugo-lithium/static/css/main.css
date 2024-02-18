@@ -46,11 +46,12 @@ i[alt="link"] {font-size: 0.65em;}
 }
 
 .header {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
   position: fixed;
   background: #f5f5f5;
   border-bottom: 1px solid #eaeaea;
   width: 100%;
+  box-shadow: 0px 0px 10px lightgray;
 }
 
 .nav {
@@ -96,10 +97,12 @@ i[alt="link"] {font-size: 0.65em;}
 .nav-links a {
   text-decoration: none;
   color: #111;
+  border-radius: 5px;
+  padding: 4px 4px 4px 4px;
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: #8C8687;
 }
 
 .anchors {
@@ -149,7 +152,7 @@ i[alt="link"] {font-size: 0.65em;}
 }
 
 .article-content p {
-  margin: 15px 0 20px;
+  margin: 15px 0 15px;
 }
 
 .article-content a {
@@ -178,6 +181,14 @@ i[alt="link"] {font-size: 0.65em;}
 .article-content .splitline hr{
   width: 100%;
   margin: 0px;
+}
+
+.content .pagecard {
+  max-width: 670px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 0px 0.84em 0.1em 0.84em;
+  box-shadow: 0px 2px 5px lightgray;
 }
 
 .tags {
@@ -292,7 +303,7 @@ i[alt="link"] {font-size: 0.65em;}
 
 @media (min-width: 600px) {
   .header {
-    padding: 18px 0;
+    padding: 18px 0 10px 0;
   }
 
   .nav-logo {
