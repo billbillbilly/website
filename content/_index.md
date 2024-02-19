@@ -29,3 +29,10 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
   </div>
 </div>
 
+<script>
+  const audio = document.getElementById("audio");
+  const playPauseButton = document.getElementById("play-button");
+  playPauseButton.addEventListener("click", () => {
+    audio.play();
+  });
+</script>
