@@ -26,6 +26,11 @@
         banner.classList.toggle('open');
         ul.classList.toggle('open');
       });
+      const audio = document.getElementById("audio");
+      const playPauseButton = document.getElementById("play-button");
+      playPauseButton.addEventListener("click", () => {
+        audio.play();
+      });
     </script>
   </body>
 </html>

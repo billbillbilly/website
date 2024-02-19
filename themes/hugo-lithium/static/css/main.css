@@ -335,6 +335,10 @@ div.open {
   margin-left: 2px;
 }
 
+#play-button:hover {
+  transform: scale(1.2);
+}
+
 @media (min-width: 600px) {
   .header {
     padding: 18px 0 10px 0;

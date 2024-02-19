@@ -38,6 +38,7 @@ dem <- lidR::rasterize_terrain(las, 5, lidR::tin())
 
 In this case, I just set the center point of the DSM as the viewpoint. 
 
+
 ```r
 row <- trunc(terra::nrow(dsm)/2)
 col <- trunc(terra::ncol(dsm)/2)
@@ -79,5 +80,31 @@ vm <- viewscape::visual_magnitude(viewshed, dsm)
 ```
 
 ### 3. Compute viewscape metrics
-Viewscape metrics are meaningful in understanding the experience of urban landscapes, such as percieved restorativeness and visual walkability.  
+Viewscape metrics are meaningful in understanding the experience of urban landscapes, such as percieved restorativeness and visual walkability. I used sample data of this package to demonstrate whole process of computating viewscape metrics for multiple viewpoints.
+
+
+```r
+# read a viewpoint
+viewpoints <- sf::read_sf(system.file("test_viewpoints.shp", 
+                                     package = "viewscape"))
+
+# read DSM and DTM
+dsm <- terra::rast(system.file("test_dsm.tif",
+                               package ="viewscape"))
+dtm <- terra::rast(system.file("test_dtm.tif", 
+                               package ="viewscape"))
+
+# read rasters of land use, canopy coverage, and building footprints
+landuse <- terra::rast(system.file("test_landuse.tif",
+                                   package ="viewscape"))
+canopy <- terra::rast(system.file("test_canopy.tif", 
+                                  package ="viewscape"))
+building <- terra::rast(system.file("test_building.tif", 
+                                    package ="viewscape"))
+
+# compute viewshed
+viewsheds <- viewscape::compute_viewshed(dsm = dsm,
+                                        viewpoints = viewpoints, 
+                                        offset_viewpoint = 6)
+```
 
