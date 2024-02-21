@@ -5,7 +5,7 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
 ---
 
 [#**github**](https://github.com/billbillbilly)
-[#**glitch**](https://glitch.com/@xiaohaoy)
+[#**googlescholar**](https://scholar.google.com/citations?hl=en&user=7gBKKAUAAAAJ)
 [#**instagram**](https://www.instagram.com/xiaohao._y/?utm_source=ig_embed&amp;utm_campaign=loading)
 
 <div>

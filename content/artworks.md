@@ -4,6 +4,9 @@ date: ''
 ---
 Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.
 
+<div class="splitline">
+  <hr>
+</div>
 
 <div class="pagecard">
 

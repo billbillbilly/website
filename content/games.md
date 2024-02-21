@@ -3,7 +3,11 @@ title: 'GAMES'
 date: ''
 ---
 
-I like video games (PC/XBOX/SWITCH/Mobile games...) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows. Thanks to Mac's graphic card. Now, I am working on a game series called **SillySimilation** with Unity.
+I like video games (PC/XBOX/SWITCH/Mobile games...) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows. Thanks to Mac's graphic card. I used to play and make some VR games deployed on Oculus quest 2, but I am not a fan of VR because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2. Now, I am working on a game series called **SillySimilation** with Unity.
+
+<div class="splitline">
+  <hr>
+</div>
 
 # SillySimilation
 There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game. [[**Github**]](https://github.com/billbillbilly/SillySimulation)

@@ -5,6 +5,10 @@ date: ''
 
 Maybe I would do some games in R one day. I coded 3D with [`RhinoScriptSyntax`](https://developer.rhino3d.com/api/RhinoScriptSyntax/) in Python.
 
+<div class="splitline">
+  <hr>
+</div>
+
 <div class="pagecard">
 
 # [randomStairBranch](https://github.com/billbillbilly/Random_stair_branch)
