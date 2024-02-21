@@ -4,7 +4,7 @@ date: ''
 ---
 
 <a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> [#Me](#me) [#News](#new) [#Publications](#plc) [#Resume](#cv) [#This website](#site) [#Contact](#contact)
+<i class="fa-solid fa-hand-point-right"></i> [Me <i class="fa-solid fa-turn-down"></i> ](#me) [News <i class="fa-solid fa-turn-down"></i> ](#new) [Publications <i class="fa-solid fa-turn-down"></i> ](#plc) [Resume <i class="fa-solid fa-turn-down"></i> ](#cv) [This website <i class="fa-solid fa-turn-down"></i> ](#site) [Contact <i class="fa-solid fa-turn-down"></i> ](#contact)
 
 <div class="splitline">
   <hr>
@@ -13,7 +13,7 @@ date: ''
 <a id='me' class="anch"></a>
 # [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
 - I am a big fan of [**R**](https://cran.r-project.org/) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
-- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [<b><ins>design</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/designworks/)], [<b><ins>art</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/artworks/)], [<b><ins>games</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/games/)], and [<b><ins>R tools</ins></b> [<i class="fa-solid fa-link" alt="link"></i>](/tools/)] (`viewscape` and `dsmSearch`).
+- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [[<b><ins>design</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/designworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>art</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/artworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>games</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/games/) <i class="fa-solid fa-hand-point-left"></i> ], and [[<b><ins>R tools</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/tools/) <i class="fa-solid fa-hand-point-left"></i> ] (`viewscape` and `dsmSearch`).
 - I am trying to do everything I think is interesting even if I know I can't. 
 
 I am doing research on soundscape and landscape, under the supervison of Dr.Mark Lindquist and Dr.Derek Van Berkel, at the University of Michigan, Ann Arbor.
