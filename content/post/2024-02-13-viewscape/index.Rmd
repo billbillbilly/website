@@ -9,19 +9,18 @@ tags: ["R", "R package"]
 
 This is an integrated tutorial about `viewscape` and `dsmSearch`. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the `dsmSearch`, which was two functions for searching and downloading point cloud data via API.
 
-Of course, `viewscape` is not designed for computing the viewshed even if this is the core of the package. A set of function for calculating viewscape metrics ([see details](https://github.com/land-info-lab/viewscape/blob/master/README.md)) is the main contribution of this package. What's more, it provides the functionality to subset the viewshed based on the angle and orientation of the field of view. 
+Of course, `viewscape` is not designed for just computing the viewshed even if this is the core of the package. A set of function for calculating viewscape metrics ([see details](https://github.com/land-info-lab/viewscape/blob/master/README.md)) is the main contribution of this package. What's more, it provides the functionality to subset the viewshed based on the angle and orientation of the field of view and compute the [visual magnitude]() within the viewshed. 
 
-What is 'viewshed' and what is 'viewscape' by the way? Basically, I would say viewscape is a concept of analysis relying on viewshed, which is the visible area that can be seen from the  location of a observer. Viewscape analysis is to understand the composition of landscape and the structure of viewshed itself and visible objects within the viewshed.
+Before I start, what is 'viewshed' and what is 'viewscape' by the way? Basically, I would say viewscape is a concept of analysis relying on viewshed, which is the visible area that can be seen from the  location of a observer. Viewscape analysis is to understand the composition of landscape and the structure of viewshed itself and visible objects within the viewshed.
 
 ```{r eval = FALSE}
 # install packages
-install.pakcages("lidR")
 install.pakcages("viewscape")
 install.pakcages("dsmSearch")
 ```
 
 ### 1.Compute viewshed
-To compute a viewshed, a viewpoint and a DSM are essential. Let's download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate the area to download the data. `lidR`, a powerful tool for processing LiDAR data, is used to generate DSM/DEM.
+To compute a viewshed, a viewpoint and a DSM are essential. Let's download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate an area to download the data. `lidR`, a powerful tool for processing LiDAR data, is used to generate DSM/DEM.
 
 ```{r eval = FALSE}
 # bbox finder: http://bboxfinder.com/
@@ -29,6 +28,7 @@ bbox <- c(-73.976440,40.768793,-73.969628,40.773295)
 
 # download LiDAR (.las) 
 las <- dsmSearch::get_lidar(bbox = bbox, epsg = 2263)
+
 # constrct DSM and DEM using .las data
 dsm <- lidR::rasterize_canopy(las, 5, lidR::dsmtin())
 dem <- lidR::rasterize_terrain(las, 5, lidR::tin())
@@ -73,10 +73,12 @@ Binary viewshed only present the locations of visible contents, however, people 
 vm <- viewscape::visual_magnitude(viewshed, dsm)
 ```
 
-### 3. Compute viewscape metrics
-Viewscape metrics are meaningful in understanding the experience of urban landscapes, such as percieved restorativeness and visual walkability. I used sample data of this package to demonstrate whole process of computating viewscape metrics for multiple viewpoints.
+### 3. Compute viewscape metrics for multiple viewpoints
+Viewscape metrics are meaningful in understanding the experience of urban landscapes, such as perceived restorativeness and visual walkability. I used built-in data of this package to demonstrate whole process of computing viewscape metrics for multiple viewpoints.
 
-```{r eval = FALSE}
+First, I loaded in all data needed for the viewscape analysis. If you don't have DSM (or DTM), you can use your DTM (or DSM) as DSM (or DTM).
+
+```{r}
 # read a viewpoint
 viewpoints <- sf::read_sf(system.file("test_viewpoints.shp", 
                                      package = "viewscape"))
@@ -94,12 +96,87 @@ canopy <- terra::rast(system.file("test_canopy.tif",
                                   package ="viewscape"))
 building <- terra::rast(system.file("test_building.tif", 
                                     package ="viewscape"))
+```
 
+```{r figures-side, fig.show="hold", out.width="50%"}
+terra::plot(dsm)
+terra::plot(dtm)
+terra::plot(landuse)
+terra::plot(canopy)
+terra::plot(building)
+```
+
+Second, I computed viewsheds for multiple viewpoints and specified `parallel` and `workers` in `compute_viewshed()`.
+
+```{r}
 # compute viewshed
 viewsheds <- viewscape::compute_viewshed(dsm = dsm,
-                                        viewpoints = viewpoints, 
-                                        offset_viewpoint = 6)
-
-
+                                         viewpoints = viewpoints, 
+                                         offset_viewpoint = 6)
 ```
+
+Third, I used functions, including `calculate_diversity()`, `calculate_feature()`, and `calculate_viewmetrics()`, to calculate: 
+- Shanon Diversity Index (SDI), 
+- depth,
+- vdepth,
+- extent,
+- horizontal,
+- relief,
+- skyline,
+- percentage of canopy and building,
+- Number of patches (Nump),
+- Mean shape index (MSI),
+- Edge density (ED),
+- Patch size (PS),
+- Patch density (PD)
+
+Let's define a wrapped function. This has been saying that if one doesn't have some layers, for example canopy and buildings
+
+```{r}
+calculate <- function(viewsheds, dsm, dtm, land, canopy, building) {
+  results <- matrix(0,length(viewsheds),16)
+  colnames(results) <- c("x", "y", "Nump", "MSI", "ED", "PS", "PD",
+                         "extent", "depth", "vdepth",
+                         "horizontal", "relief", "skyline",
+                         "sdi", "canopy", "building")
+  masks <- list(canopy, building)
+  for (i in 1:length(viewsheds)) {
+    this_viewshed <- viewsheds[[i]]
+    v_point <- this_viewshed@viewpoint
+    metrics <- viewscape::calculate_viewmetrics(this_viewshed, 
+                                                dsm, 
+                                                dtm, 
+                                                masks = masks)
+    results[i,1] <- v_point[1] # x
+    results[i,2] <- v_point[2] # y
+    results[i,3] <- metrics$Nump # Nump
+    results[i,4] <- metrics$MSI # MSI
+    results[i,5] <- metrics$ED # ED
+    results[i,6] <- metrics$PS # PS
+    results[i,7] <- metrics$PD # PD
+    results[i,8] <- metrics$extent # extent
+    results[i,9] <- metrics$depth # depth
+    results[i,10] <- metrics$vdepth # vdepth
+    results[i,11] <- metrics$horizontal # horizontal
+    results[i,12] <- metrics$relief # relief
+    results[i,13] <- metrics$skyline # skyline
+    results[i,14] <- viewscape::calculate_diversity(this_viewshed, land) # sdi
+    results[i,15] <- viewscape::calculate_feature(this_viewshed, 
+                                                  canopy, type = 2,
+                                                  exclude_value = 0) # canopy
+    results[i,16] <- viewscape::calculate_feature(this_viewshed, 
+                                                  building, type = 2,
+                                                  exclude_value = 0) # building
+  }
+  return(results)
+} 
+```
+
+Now, run the function and check out the result.
+
+```{r}
+result <- calculate(viewsheds, dsm, dtm, landuse, canopy, building)
+head(result)
+```
+
 
