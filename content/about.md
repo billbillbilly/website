@@ -132,6 +132,24 @@ Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Serial Mediatio
 
 <table border="0">
   <tr>
+    <b style="font-family:Monospace">Presentation</b>
+  </tr>
+  <tr style="line-height:normal; font-family:Monospace">
+    <td style="width:max(15vw, 150px); vertical-align:top">
+      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">02.23.2024</b>
+    </td>
+    <td>
+      <b style="font-size:15px">Graduate Conference in Religion & Ecology AT YALE DIVINITY SCHOOL</b>
+      <br>
+      <b style="font-size:12px">Exploring Acoustic Landscapes of Places of Worship for Environmental Planning</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+<table border="0">
+  <tr>
     <b style="font-family:Monospace">Grant</b>
   </tr>
   <tr style="line-height:normal; font-family:Monospace">
