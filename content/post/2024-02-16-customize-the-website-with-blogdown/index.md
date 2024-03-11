@@ -1,6 +1,6 @@
 ---
 title: Customize the website with blogdown
-author: Simon Urbanek
+author: Xiaohao Yang
 date: '2024-02-16'
 slug: customize-the-website-with-blogdown
 categories: ["tutorials"]
