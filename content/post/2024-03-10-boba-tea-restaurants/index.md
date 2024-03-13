@@ -292,3 +292,326 @@ Both highly-rated and lower-rated businesses are scattered throughout the area, 
 
 <a id='babo-fig-3' class="anch"></a>
 ![map_rate](/images/map_rate.png) *Figure 3*
+
+# Code
+
+
+```r
+# ------------------Study Area and Search Grid------------------------
+
+# download the boundary of Monterey Park and Alhambra
+place_poly <- tigris::places('CA')
+MP_poly <- place_poly[place_poly$NAME=='Monterey Park',]
+A_poly <- place_poly[place_poly$NAME=='Alhambra',]
+place_poly <- sf::st_union(rbind(MP_poly, A_poly))
+# create grids for searching Yelp POIs
+place_grid <- sf::st_make_grid(
+  place_poly,
+  n=c(10,10),
+  crs = sf::st_crs(place_poly)
+)
+place_grid <- sf::st_intersection(place_grid, place_poly)
+
+#------------------collect poi data------------------------
+
+# set up api key and url
+API_key <- readr::read_file('api.txt')
+url <- "https://api.yelp.com/v3/businesses/search"
+
+# scratch babo tea store POIs via Yelp api
+get_poi <- function(grid, url, API_key, keyword) {
+  # get bbox of this grid
+  bbox <- sf::st_bbox(grid)
+  xmin <- bbox[1]
+  ymin <- bbox[2]
+  xmax <- bbox[3]
+  ymax <- bbox[4]
+  # make two diagonal points
+  pt1 <- sf::st_sfc(sf::st_point(c(xmin, ymin)))
+  pt1 <- pt1 %>% sf::st_set_crs(4326) %>%
+    sf::st_transform(6423)
+  pt2 <- sf::st_sfc(sf::st_point(c(xmax, ymax)))
+  pt2 <- pt2 %>% sf::st_set_crs(4326) %>%
+    sf::st_transform(6423)
+  # calculate the center of the bbox
+  center_x <- (xmin + xmax) / 2
+  center_y <- (ymin + ymax) / 2
+  # Calculate the radius to cover the bbox area
+  # for searching data
+  radius <- sf::st_distance(pt1, pt2) / 2
+  # request POIs
+  response <- httr::GET(
+    url,
+    httr::add_headers(Authorization = paste("Bearer", API_key)),
+    query = list(
+      term = keyword,
+      latitude = center_y,
+      longitude = center_x,
+      radius = as.integer(radius),
+      sort_by = "best_match",
+      limit = 50
+    )
+  )
+  results <- httr::content(response, "parsed")
+  pois <- lapply(results$businesses, function(poi) {
+    list(id = poi$id,
+         name = poi$name,
+         x = poi$coordinates$longitude,
+         y = poi$coordinates$latitude,
+         rate = poi$rating,
+         review = poi$review_count)
+  })
+  pois_df <- do.call(rbind.data.frame, pois)
+  return(pois_df)
+}
+
+df_list <- list()
+for (i in 1:length(place_grid)) {
+  df <- get_poi(place_grid[[i]], url, API_key, "boba tea")
+  if (nrow(df) > 0) {
+    df_list[[length(df_list)+1]] <- df
+  }
+}
+boba_shops <- do.call(rbind.data.frame,df_list)
+# remove duplicated rows
+boba_shops <- unique(boba_shops)
+
+# scratch restaurant POIs
+df_list <- list()
+for (i in 1:length(place_grid)) {
+  df <- get_poi(place_grid[[i]], url, API_key, "restaurant")
+  if (nrow(df) > 0) {
+    df_list[[length(df_list)+1]] <- df
+  }
+}
+restaurant <- do.call(rbind.data.frame,df_list)
+# remove duplicated rows
+restaurant <- unique(restaurant)
+restaurant <- dplyr::anti_join(restaurant, boba_shops)
+
+#------------------prepare data for data analysis and visualization------------------------
+
+# create edge document, connecting restaurants to babo-tea shops
+edge <- expand.grid(restaurant$id,
+                    boba_shops$id)
+names(edge) <- c('restaurant', 'shop')
+# also add the rate of boba-tea shops and restaurants to the edge document
+edge <- dplyr::left_join(
+  edge,
+  restaurant[,c('id', 'rate', 'review')],
+  dplyr::join_by(restaurant == id)
+)
+edge <- dplyr::left_join(
+  edge,
+  boba_shops[,c('id', 'rate', 'review')],
+  dplyr::join_by(shop == id)
+)
+names(edge) <- c("restaurant", "shop",
+                 "rate.restaurant", "review.restaurant",
+                 "rate.shop", "review.shop")
+
+# combine the boba-tea shop and restaurant data frames as node document
+node <- rbind(restaurant, boba_shops)
+node$type <- ''
+node['type'] <- unlist(lapply(node[,'id'], function(x){
+  if (x %in% restaurant$id) {
+    return('restaurant')
+  } else {
+    return('boba_tea_shop')
+  }
+}))
+
+# create sf objects for spatial visualization
+nodeSpatial <- node %>%
+  sf::st_as_sf(coords=c("x", "y"), crs = 4326) %>%
+  sf::st_transform(6423)
+# create edge geometry and add wights based on length
+edge2line <- stplanr::od2line(edge, nodeSpatial)
+edge2line <- edge2line %>%
+  dplyr::mutate(distance = as.numeric(sf::st_length(geometry)))
+# drop the edges with length longer than 10-minute walk distance (800m)
+edge2line <- subset(edge2line, distance <= 800)
+# redefine edge by removing long connections
+edge <- dplyr::inner_join(edge[,c(1,2)], edge2line[,c(1,2)])[,c(1,2)]
+# normalize the weight
+edge2line$weight <- unlist(lapply(edge2line$distance, function(x){
+  (x - min(edge2line$distance))/(max(edge2line$distance) - min(edge2line$distance))
+}))
+
+brks <- quantile(edge2line$weight, probs=c(0, 0.5, 0.9, 0.99, 1))
+edge2line <- edge2line %>% dplyr::mutate(
+  line_width = dplyr::case_when(
+    weight >= brks[1] & weight <= brks[2] ~ 0.1,
+    weight > brks[2] & weight <= brks[3] ~ 0.3,
+    weight > brks[3] & weight <= brks[4] ~ 0.5,
+    weight > brks[4] & weight <= brks[5] ~ 1
+  )
+)
+# create degree column for each node
+g <- igraph::graph_from_data_frame(
+  edge,
+  directed = FALSE,
+  vertices=nodeSpatial[,c('id', 'geometry')]
+)
+nodeSpatial$degree <- igraph::degree(g)
+
+# calculate average and minimum walking distance for each node
+nodeSpatial$mean_weight <- unlist(
+  lapply(nodeSpatial$id, function(x){
+    if (x %in% restaurant$id) {
+      sub_edge <- subset(edge2line, restaurant == x)
+    } else {
+      sub_edge <- subset(edge2line, shop == x)
+    }
+    out <- mean(sub_edge$weight)
+    if (is.na(out)) {
+      out <- 0
+    }
+    return(out)
+  })
+)
+
+nodeSpatial$min_weight <- unlist(
+  lapply(nodeSpatial$id, function(x){
+    if (x %in% restaurant$id) {
+      sub_edge <- subset(edge2line, restaurant == x)
+    } else {
+      sub_edge <- subset(edge2line, shop == x)
+    }
+    out <- min(sub_edge$weight)
+    if (is.infinite(out)) {
+      out <- 0
+    }
+    return(out)
+  })
+)
+
+#------------------data analysis------------------------
+
+plot_data <- function(data, info) {
+  if (info == 'rate') {
+    bilan <- aggregate(rate~type , data=data , mean)
+    stdev <- aggregate(rate~type , data=data , sd)
+  } else if (info == 'degree') {
+    bilan <- aggregate(degree~type , data=data , mean)
+    stdev <- aggregate(degree~type , data=data , sd)
+  } else if (info == 'review') {
+    bilan <- aggregate(review~type , data=data , mean)
+    stdev <- aggregate(review~type , data=data , sd)
+  }
+  rownames(bilan) <- bilan[,1]
+  bilan <- as.matrix(bilan[,-1])
+  # Plot boundaries
+  lim <- 1.2*max(bilan)
+  # A function to add arrows on the chart
+  error.bar <- function(x, y, upper, lower=upper, length=0.1,...){
+    arrows(x,y+upper, x, y-lower, angle=90, code=3, length=length, ...)
+  }
+  # calculate the standard deviation for each specie and condition:
+  rownames(stdev) <- stdev[,1]
+  stdev <- as.matrix(stdev[,-1]) * 1.96 / 10
+  # add the error bar on the plot using my "error bar" function
+  out_barplot <- barplot(bilan, beside=T, legend.text=T,
+                         col=c(rgb(0.3,0.1,0.4,0.6),
+                               rgb(0.3,0.9,0.4,0.6)),
+                         ylim=c(0,lim), ylab=info)
+  error.bar(out_barplot, bilan, stdev)
+  legend("topright", legend=c("Boba-tea shop", "Restaurant"),
+         fill=c(rgb(0.3,0.1,0.4,0.6), rgb(0.3,0.9,0.4,0.6)))
+}
+
+par(mfrow = c(1, 3))
+# mean of rate of restaurants and shops
+plot_data(nodeSpatial, 'rate')
+# mean  of node degree of restaurants and shops
+plot_data(nodeSpatial, 'review')
+# mean of node degree of restaurants and shops
+plot_data(nodeSpatial, 'degree')
+
+# analyze the relationship between rate and degree and distance
+model1 <- lm(review ~ degree + min_weight + mean_weight,
+             data=nodeSpatial)
+
+model2 <- lm(rate ~ degree + min_weight + mean_weight,
+             data=nodeSpatial)
+
+summary(model1)
+summary(model2)
+
+#------------------data visualization------------------------
+
+# download road from OSM for map background
+query <- osmdata::opq(bbox = sf::st_bbox(place_poly),
+                      timeout = 20000) %>%
+  osmdata::add_osm_feature(
+    key = "highway",
+    value = c('primary',
+              'secondary',
+              'tertiary',
+              'unclassified',
+              'residential')
+  )
+osm_data <- try({
+  osmdata::osmdata_sf(query)
+}, silent = TRUE)
+road_lines <- osm_data$osm_lines$geometry
+# clip
+road_lines <- sf::st_transform(road_lines,
+                               sf::st_crs(place_poly))
+road_lines <- sf::st_intersection(road_lines,
+                                  place_poly)
+
+# spatial network
+const_map <- function(show) {
+  map <-
+    tmap::tm_shape(road_lines) +
+    tmap::tm_lines(col = 'grey', alpha=0.5, lwd=0.5) +
+    tmap::tm_shape(A_poly) +
+    tmap::tm_polygons(alpha=0, border.col = 'grey') +
+    tmap::tm_shape(MP_poly) +
+    tmap::tm_polygons(alpha=0, border.col = 'grey') +
+    tmap::tm_shape(place_poly) +
+    tmap::tm_polygons(alpha=0, border.col = 'black') +
+    tmap::tm_shape(dplyr::arrange(edge2line, dplyr::desc(weight))) +
+    tmap::tm_lines(
+      #arguments that define the styles for color
+      col="weight", alpha=0.2,
+      breaks = brks,
+      style="fixed", n = 4,
+      palette=c('#ecda9a', '#f3ad6a', '#f97b57', '#ee4d5a'),
+      legend.col.show = FALSE,
+      #arguments that define the styles for line width
+      lwd='line_width', scale=2,
+      legend.lwd.show = FALSE
+    ) +
+    tmap::tm_add_legend(
+      type=c('line'),
+      col=c('#ecda9a', '#f3ad6a', '#f97b57', '#ee4d5a'),
+      lwd=c(0.1, 0.3, 0.5, 1)*3,
+      labels=c('0-366','367-696','697-787','788-800'),
+      title='Distance (m)') +
+    tmap::tm_shape(nodeSpatial) +
+    tmap::tm_symbols(size=show,
+                     scale=1.5,
+                     col='type',
+                     palette=c(rgb(0.3,0.9,0.4,0.6), rgb(0.3,0.1,0.4,0.6)),
+                     alpha=0.3,
+                     border.col='white',
+                     border.alpha = 1,
+                     border.lwd = 0.2,
+                     shapes.legend.fill='gray',
+                     title.size=c(show)) +
+    tmap::tm_layout(legend.position = c('left', 'bottom'),
+                    inner.margins = c(0.1,0.2,0.05,0.05),
+                    title = paste0('Distance - ', show))
+}
+# make maps
+map_degree <- const_map('degree')
+map_review <- const_map('review')
+map_rate <- const_map('rate')
+# plot maps
+tmap::tmap_mode('plot')
+map_degree
+map_review
+map_rate
+```
