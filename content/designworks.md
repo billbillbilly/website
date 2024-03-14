@@ -20,6 +20,7 @@ This is a simple script developed with `RhinoScriptSyntax`. A simple agent metho
 <div class="pagecard">
 
 # terrain
+![](/images/terrain.gif)
 This script enable generating 3D terrain with interaction in Rhino.
 
 </div>

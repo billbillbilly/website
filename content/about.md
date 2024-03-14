@@ -4,7 +4,7 @@ date: ''
 ---
 
 <a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> [Me <i class="fa-solid fa-turn-down"></i> ](#me) [News <i class="fa-solid fa-turn-down"></i> ](#new) [Publications <i class="fa-solid fa-turn-down"></i> ](#plc) [Resume <i class="fa-solid fa-turn-down"></i> ](#cv) [This website <i class="fa-solid fa-turn-down"></i> ](#site) [Contact <i class="fa-solid fa-turn-down"></i> ](#contact)
+<i class="fa-solid fa-hand-point-right"></i> [Me <i class="fa-solid fa-turn-down"></i> ](#me) [News <i class="fa-solid fa-turn-down"></i> ](#new) [Publications <i class="fa-solid fa-turn-down"></i> ](#plc) [Peer review <i class="fa-solid fa-turn-down"></i> ](#pr) [Resume <i class="fa-solid fa-turn-down"></i> ](#cv) [This website <i class="fa-solid fa-turn-down"></i> ](#site) [Contact <i class="fa-solid fa-turn-down"></i> ](#contact)
 
 <div class="splitline">
   <hr>
@@ -41,6 +41,12 @@ Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Study on the Im
 Chen, C., Luo, W., Li, H., Zhang, D., Kang, N., Yang, X., & Xia, Y. (2020). Impact of perception of green space for health promotion on willingness to use parks and actual use among young urban residents. International journal of environmental research and public health, 17(15), 5560.
 
 Chen, C., Luo, W., Kang, N., Li, H., Yang, X., & Xia, Y. (2020). Serial Mediation of Environmental Preference and Place Attachment in the Relationship between Perceived Street Walkability and Mood of the Elderly. International Journal of Environmental Research and Public Health, 17(13), 4620.
+
+---
+
+<a id='pr' class="anch"></a>
+# [Peer review] [<i class="fa-solid fa-turn-up"></i>](#top)
+Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audio and Visual Factors on Mental Restoration in a Large-Scale Urban Greenway: Perspectives from Wuhan, China. Land, 11(11), 2017.
 
 ---
 
