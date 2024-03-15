@@ -71,7 +71,7 @@ The function `get_lidar` can download data and store it in the memory if the dir
 for(each in d_grid) {
   bbox <- sf::st_bbox(each)
   # convert the crs if it is not degree (optinal)
-  bbox <- bbox %>% sf::st_transform(2253)
+  bbox <- bbox %>% sf::st_transform(4326)
   data <- dsmSearch::get_lidar(bbox=bbox, 
                                folder='path/to/save/file')
 }
@@ -79,7 +79,7 @@ for(each in d_grid) {
 for(each in sample_grids) {
   bbox <- sf::st_bbox(each)
   # convert the crs if it is not degree (optinal)
-  bbox <- bbox %>% sf::st_transform(2253)
+  bbox <- bbox %>% sf::st_transform(4326)
   data <- dsmSearch::get_lidar(bbox=bbox, 
                                folder='path/to/save/file')
 }
