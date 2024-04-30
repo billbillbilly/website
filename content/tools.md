@@ -10,6 +10,15 @@ I make either useful or useless tools for research (fun)
 
 <div class="pagecard">
 
+# [quickPWCR](https://github.com/billbillbilly/quickPWCR)
+![package](https://raw.githubusercontent.com/billbillbilly/quickPWCR/main/quickpwcr_hex.png)
+
+A collection of functions for constructing large pairwise comparisons and rating them using the Elo rating system with supporting parallel processing. The method of random sample pairs is based on Reservoir Sampling.
+
+</div>
+
+<div class="pagecard">
+
 # [viewscape](https://github.com/land-info-lab/viewscape)
 ![package](https://raw.githubusercontent.com/land-info-lab/viewscape/294ce6848e4dbeb4572b157b20455141613c4a00/viewscape_hex-01.png)
 

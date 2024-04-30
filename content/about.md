@@ -24,6 +24,8 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
 
 <a id='new' class="anch"></a>
 # [News] [<i class="fa-solid fa-turn-up"></i>](#top)
+🔥 R package: [`quickPWCR`](https://github.com/billbillbilly/quickPWCR) has been on [CRAN](https://cran.r-project.org/web/packages/quickPWCR/)!
+
 🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been on [CRAN](https://cran.r-project.org/web/packages/viewscape/)!
 
 🔥 R package: [`dsmSearch`](https://github.com/land-info-lab/dsmSearch) has been on [CRAN](https://cran.r-project.org/web/packages/dsmSearch/)!
@@ -32,6 +34,8 @@ I sees myself as an interdisciplinary researcher and is passionate about merging
 
 <a id='plc' class="anch"></a>
 # [Publications] [<i class="fa-solid fa-turn-up"></i>](#top)
+Yang, X., Fox, N., Van Berkel, D., & Lindquist, M. (2024). Viewscape: An R package for the spatial analysis of landscape perception and configurations in viewsheds of landscapes. SoftwareX, 26, 101662.
+
 Chen, C., Xia, Y., & Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027
 
 CHEN Chongxian, YANG Xiaohao, XIA Yu*. Impact of Sea Level Rise on Coastal Wetland Landscape Based on Sea Level Affecting Marshes Model[J]. Landscape Architecture, 2019, 26(9): 75-82. DOI: 10.14085/j.fjyl.2019.09.0075.08
