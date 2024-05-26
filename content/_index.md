@@ -18,7 +18,7 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
 <div style="display: flex;">
   <div style="flex: 50%; margin: 0 10px;">
     <p style="font-size: min(18px,3vw);">
-      In the recent years, I code (sit) in front of my computer over three hours (of course even more) every day. I often fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. I want to be defined by what I want to do instead of things I have done. 
+      In the recent years, I code (sit) in front of my computer over five hours (of course even more) every day. I often fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. I want to be defined by what I want to do instead of things I have done. 
     </p>
   </div>
   <div style="flex: 50%; margin: 15px 10px;">

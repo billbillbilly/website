@@ -13,17 +13,21 @@ date: ''
 <a id='me' class="anch"></a>
 # [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
 - I am a big fan of [**R**](https://cran.r-project.org/) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
-- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [[<b><ins>design</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/designworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>art</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/artworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>games</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/games/) <i class="fa-solid fa-hand-point-left"></i> ], and [[<b><ins>R tools</ins></b> <i class="fa-solid fa-link" alt="link"></i>](/tools/) <i class="fa-solid fa-hand-point-left"></i> ] (`viewscape` and `dsmSearch`).
+- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [[<b><ins>design</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/designworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>art</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/artworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>games</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/games/) <i class="fa-solid fa-hand-point-left"></i> ], and [[<b><ins>R tools</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/tools/) <i class="fa-solid fa-hand-point-left"></i> ] (`viewscape` and `dsmSearch`).
 - I am trying to do everything I think is interesting even if I know I can't. 
+- I am currently working on a self-motivated project about generative streetscape.
 
 I am doing research on soundscape and landscape, under the supervison of Dr.Mark Lindquist and Dr.Derek Van Berkel, at the University of Michigan, Ann Arbor.
 My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019). 
-I sees myself as an interdisciplinary researcher and is passionate about merging data and a design perspective to uncover the relationship and interaction between the built environment and multi-sensory perception, with a focus on promoting environmental sustainability and encouraging human-centered design and decision-making.  
+I see myself as an interdisciplinary researcher and are passionate about merging data and a design perspective to uncover the relationship and interaction between the built environment and multi-sensory perception, with a focus on promoting environmental sustainability and encouraging human-centered design and decision-making.  
 
 ---
 
 <a id='new' class="anch"></a>
 # [News] [<i class="fa-solid fa-turn-up"></i>](#top)
+
+🔥 R package: [`streetscape`](https://github.com/land-info-lab/streetscape) has been on [CRAN](https://cran.r-project.org/web/packages/streetscape/)!
+
 🔥 R package: [`quickPWCR`](https://github.com/billbillbilly/quickPWCR) has been on [CRAN](https://cran.r-project.org/web/packages/quickPWCR/)!
 
 🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been on [CRAN](https://cran.r-project.org/web/packages/viewscape/)!
