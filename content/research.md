@@ -4,7 +4,21 @@ date: ''
 ---
 
 <a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> [Social media <i class="fa-solid fa-turn-down"></i> ](#sm) [Climate change <i class="fa-solid fa-turn-down"></i> ](#cc)
+<i class="fa-solid fa-hand-point-right"></i> [Urban science <i class="fa-solid fa-turn-down"></i> ](#us) [Social media <i class="fa-solid fa-turn-down"></i> ](#sm) [Climate change <i class="fa-solid fa-turn-down"></i> ](#cc)
+
+---
+
+<a id='us' class="anchors"></a>
+<div class="pagecard">
+
+# Mapping Perceived Safety Around Bus Stops In Detroit Using Crowdsourced Street Views [<i class="fa-solid fa-turn-up"></i>](#top)
+![](https://github.com/billbillbilly/perceived-safety-around-bus-stops/blob/main/images/roadmap.png?raw=true) 
+
+<div style="padding:54.3% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/937453327?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Perceived Safety Around Bus Stops In Detroit"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+The concept of social infrastructure takes into account the physical places and organizations that shape the way people interact. This project is rooted in the idea that bus stops are not merely transit locations but pivotal social infrastructures that contribute significantly to the urban social fabric. Perceived safety is a critical aspect of an accessible public transport system. The motivation behind this project is the recognition that the safety of these social spaces is paramount for fostering community interactions and ensuring the well-being of citizens. In Detroit, where the social infrastructure is in a critical phase of redevelopment, ensuring the safety of public spaces is essential for nurturing trust and community spirit. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/perceived-safety-around-bus-stops?tab=readme-ov-file) [[<i class="fa-solid fa-diagram-project"></i>]](https://billbillbilly.github.io/perceived-safety-around-bus-stops/)
+
+</div>
 
 ---
 
