@@ -46,7 +46,7 @@ A VR game that provides an unforgettable experience in Phillips House. Two key e
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/776872619?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Demo of PlantPlace"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-This app aims to make it more convenient and economical for people to network with other plant lovers and get their favorite plants or offer their plants. This app allows people to post and share their wish lists and offer lists, and give the individuals with the right information based on the information of plants and other personal preferences. The app thus provides a map that displays all locations of community gardens and nurseries within the proximity of users. 
+This app aims to make it more convenient and economical for people to network with other plant lovers and get their favorite plants or offer their plants. This app allows people to post and share their wish lists and offer lists, and give the individuals with the right information based on the information of plants and other personal preferences. The app thus provides a map that displays all locations of community gardens and nurseries within the proximity of users. [[<i class="fa-regular fa-map"></i>]](https://xiaohaoy.wixsite.com/geolandscape/copy-of-vr-for-arch)
 
 </div>
 
@@ -63,9 +63,67 @@ This is a simple script developed with `RhinoScriptSyntax`. A simple agent metho
 
 <div class="pagecard">
 
-# terrain [<i class="fa-solid fa-turn-up"></i>](#top)
+# flow 2D [<i class="fa-solid fa-turn-up"></i>](#top)
+One way             |  Two ways
+:-------------------------:|:-------------------------:
+![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/1_flow_2D/one_flow.png?raw=true) | ![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/1_flow_2D/two_flow.png?raw=true)
+
+2D flow - uses curve(s) as attractor(s) to control direction and size.
+
+</div>
+
+<div class="pagecard">
+
+# flow 3D [<i class="fa-solid fa-turn-up"></i>](#top)
 ![](/images/terrain.gif)
-This script enable generating 3D terrain with interaction in Rhino.
+3D flow - generates dynamic flow through 3D terrain.
+
+</div>
+
+<div class="pagecard">
+
+# Tower [<i class="fa-solid fa-turn-up"></i>](#top)
+![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/3_tower/tower.png?raw=true)
+Spiral tower generated with a series of random curves and complex 3D lofted surfaces based on these curves.
+
+</div>
+
+<div class="pagecard">
+
+# Terrain [<i class="fa-solid fa-turn-up"></i>](#top)
+![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/4_terrain/terrain.png?raw=true)
+When a single attractor curve is applied, two scenarios are depicted: one where the UV points are not relocated by the attractor, resulting in a regular 3D surface, and another where the UV points are adjusted according to the attractor curve, creating a deformed surface that follows the curve's contour. Similarly, with multiple attractor curves, a grid remains regular without relocation, leading to a uniform 3D surface. However, when the UV points are relocated based on the multiple attractor curves, the grid becomes more complex and irregular, resulting in a uniquely shaped 3D surface.
+
+</div>
+
+<div class="pagecard">
+
+# Recursive structure [<i class="fa-solid fa-turn-up"></i>](#top)
+![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/5_recursive_structure/structure.png?raw=true)
+
+_             |  _
+:-------------------------:|:-------------------------:
+![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/5_recursive_structure/frame.png?raw=true) | ![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/5_recursive_structure/render.png?raw=true)
+
+Initially, a triangle with a specified radius is set up. This triangle undergoes a series of recursive "crack" operations three times, progressively breaking down the shape into smaller triangles. Following this, a first branch is established, and the structure undergoes another series of recursive branching operations, also repeated three times. This recursive branching generates an intricate, multi-layered 3D form. The attractor surface and branches guide the shape's development, resulting in a detailed and complex geometric structure. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/generativeRhinoScript/tree/main/5_recursive_structure)
+
+</div>
+
+<div class="pagecard">
+
+# Recompose [<i class="fa-solid fa-turn-up"></i>](#top)
+![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/6_recompose/recompose.png?raw=true)
+
+Transform an input surface into a complex 3D pipe structure through a series of geometric operations. It begins with an initial surface, from which surfaces are generated using a UV point matrix to create a grid pattern. These surfaces are then randomly scaled while preserving their slope, area, and vertices. Next, the scaled surfaces are relocated vertically based on their slope, and circles are created at the vertices, scaled according to the area and slope. Finally, these circles are connected to form a continuous 3D pipe structure that twists and turns, reflecting the characteristics of the original surface. This process demonstrates how an initial geometric shape can be transformed into a complex, intricate 3D form. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/generativeRhinoScript/tree/main/6_recompose)
+
+</div>
+
+<div class="pagecard">
+
+# Agent [<i class="fa-solid fa-turn-up"></i>](#top)
+![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/8_agent/agent.png?raw=true)
+
+Simulate the movement of agents in a 3D space, where agents interact with each other and their environment, leaving trails behind them. The interactions include attracting or repelling agents based on their proximity, and detouring around obstacles represented by meshes. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/generativeRhinoScript/tree/main/8_agent)
 
 </div>
 

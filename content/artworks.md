@@ -13,7 +13,7 @@ Coding art is fun. I got one self-motivated project (the first one) and several 
 # Pop-upColor 
 ![](https://billbillbilly.github.io/portfolio-content/images/ffffff_d400ff_04ff00.gif)
 
-**Pop-upColor** is an generative art project I started in 2021. Initially, I just played with celular autometa to create some 3D patterns with Python in [Rhinoceros](https://www.rhino3d.com/). I thought it would be interesting to make a more interactive web application to customize and generate these patterns. So, I used [`Three.js`](https://threejs.org/) to write this project. [[<i class="fa-solid fa-diagram-project"></i>]](https://billbillbilly.github.io/portfolio-content/) [[<i class="fa-solid fa-code"></i>]](https://glitch.com/~pop-upcolor)
+**Pop-upColor** is an generative art project I started in 2021. Initially, I just played with celular autometa to create some 3D patterns with Python in [Rhinoceros](https://www.rhino3d.com/). I thought it would be interesting to make a more interactive web application to customize and generate these patterns. So, I used [`Three.js`](https://threejs.org/) to write this project. [[<i class="fa-solid fa-diagram-project"></i>]](https://billbillbilly.github.io/portfolio-content/) [[<i class="fa-solid fa-code"></i>]](https://pop-upcolor.glitch.me/)
 
 </div>
 
@@ -32,7 +32,7 @@ Coding art is fun. I got one self-motivated project (the first one) and several 
 # spank2skate (It is cool and could be cooler)
 Skateboarding is always cool. However, some people may be unable to enjoy playing it physically as well as others due to some limitations such as skills, age, disabilities, and even psychological fear. The concept of `spank2skate` is to embrace more people outside the skateboard community and let them have some fun. 
 
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/916832247?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="spank2skate"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/916832247?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="spank2skate"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <br>
 
 </div>
