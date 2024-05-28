@@ -19,7 +19,7 @@ menu:
       url: /post/
       weight: 2
     - name: Research
-      url: /research/
+      url: https://www.xiaohaoy.com/
       weight: 3
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
