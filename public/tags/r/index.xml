@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on xiaohaoyang</title>
+    <title>R on xiaohao yang | 楊瀟豪</title>
     <link>/tags/r/</link>
-    <description>Recent content in R on xiaohaoyang</description>
+    <description>Recent content in R on xiaohao yang | 楊瀟豪</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download large-scale LiDAR data using dsmSearch</title>
+      <link>/2024/03/12/dsmsearch/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>/2024/03/12/dsmsearch/</guid>
+      <description>LiDAR (Light Detection and Ranging) or point cloud data is useful when we are conducting high-resolution spatial analysis such as viewshed/viewscape, watershed runoff, and other analysis based on digital surface/terrain models. But collecting LiDAR data may challenge for data download and storage because the data is huge even for a median-scale area like a city. Converting a large amount of point cloud into a raster for spatial analysis could be even more computationally expensive.</description>
+    </item>
+    <item>
+      <title>A symbiotic relationship between boba-tea shops and restaurants?</title>
+      <link>/2024/03/10/boba-tea-restaurants/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>/2024/03/10/boba-tea-restaurants/</guid>
+      <description>1 Introduction Babo tea - &amp;ldquo;波霸奶茶&amp;rdquo; in Chinese (also known as pearl milk tea or bubble milk tea) - with its origins in Taiwan, holds particular appeal among customers interested in Asian cuisines and cultural experiences. Enjoying boba tea while waiting for a table at a restaurant or as a delightful treat after dining is a widespread practice in urban areas like Los Angeles, CA. Boba-tea shops and restaurants often serve as complementary businesses.</description>
+    </item>
     <item>
       <title>Customize the website with blogdown</title>
       <link>/2024/02/16/customize-the-website-with-blogdown/</link>
@@ -20,7 +34,7 @@
       <link>/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       <guid>/2024/02/13/viewscape/</guid>
-      <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for computing the viewshed even if this is the core of the package.</description>
+      <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for just computing the viewshed even if this is the core of the package.</description>
     </item>
   </channel>
 </rss>

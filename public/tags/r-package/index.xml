@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R package on xiaohaoyang</title>
+    <title>R package on xiaohao yang | 楊瀟豪</title>
     <link>/tags/r-package/</link>
-    <description>Recent content in R package on xiaohaoyang</description>
+    <description>Recent content in R package on xiaohao yang | 楊瀟豪</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/r-package/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download large-scale LiDAR data using dsmSearch</title>
+      <link>/2024/03/12/dsmsearch/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>/2024/03/12/dsmsearch/</guid>
+      <description>LiDAR (Light Detection and Ranging) or point cloud data is useful when we are conducting high-resolution spatial analysis such as viewshed/viewscape, watershed runoff, and other analysis based on digital surface/terrain models. But collecting LiDAR data may challenge for data download and storage because the data is huge even for a median-scale area like a city. Converting a large amount of point cloud into a raster for spatial analysis could be even more computationally expensive.</description>
+    </item>
     <item>
       <title>viewscape in R</title>
       <link>/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       <guid>/2024/02/13/viewscape/</guid>
-      <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for computing the viewshed even if this is the core of the package.</description>
+      <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for just computing the viewshed even if this is the core of the package.</description>
     </item>
   </channel>
 </rss>

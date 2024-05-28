@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title> - xiaohaoyang</title>
-<meta property="og:title" content=" - xiaohaoyang">
+<title>TOOLS - xiaohao yang | 楊瀟豪</title>
+<meta property="og:title" content="TOOLS - xiaohao yang | 楊瀟豪">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -39,18 +39,19 @@
          height="50"
          alt="Logo">
   </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/post/">Posts</a></li>
-    
-    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
-    
+  <ul class="nav-links" id="navlist">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/research/">Research</a></li>
+      
   </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
 </nav>
 
+        <div class="banner" id="banner"></div>
       </header>
 
 
@@ -59,20 +60,36 @@
   <article class="article">
     
 
-    <h1 class="article-title"></h1>
+    <h1 class="article-title">TOOLS</h1>
 
     
 
     <div class="article-content">
       
       <p>I make either useful or useless tools for research (fun)</p>
+<div class="splitline">
+  <hr>
+</div>
+<div class="pagecard">
+<h1 id="quickpwcrhttpsgithubcomland-info-labstreetscape"><a href="https://github.com/land-info-lab/streetscape">quickPWCR</a></h1>
+<p><img src="https://raw.githubusercontent.com/land-info-lab/streetscape/main/images/streetscape_hex.png" alt="package"></p>
+<p>A collection of functions to search and download street view imagery  and to extract, quantify, and visualize visual features. Moreover, there are functions provided to generate Qualtrics survey in TXT format with street views.</p>
+</div>
+<div class="pagecard">
+<h1 id="quickpwcrhttpsgithubcombillbillbillyquickpwcr"><a href="https://github.com/billbillbilly/quickPWCR">quickPWCR</a></h1>
+<p><img src="https://raw.githubusercontent.com/billbillbilly/quickPWCR/main/quickpwcr_hex.png" alt="package"></p>
+<p>A collection of functions for constructing large pairwise comparisons and rating them using the Elo rating system with supporting parallel processing. The method of random sample pairs is based on Reservoir Sampling.</p>
+</div>
+<div class="pagecard">
 <h1 id="viewscapehttpsgithubcomland-info-labviewscape"><a href="https://github.com/land-info-lab/viewscape">viewscape</a></h1>
 <p><img src="https://raw.githubusercontent.com/land-info-lab/viewscape/294ce6848e4dbeb4572b157b20455141613c4a00/viewscape_hex-01.png" alt="package"></p>
 <p>Viewshed-based viewscape analysis supports a range of scientific domains, including urban planning and ecosystem service research, focusing on enhancing well-being benefits. However, most viewshed tools and applications are proprietary and may not be accessible to all. Here, we introduce the open-source R package viewscape created for reproducible calculations of visual landscape metrics within the R environment.</p>
-<hr>
+</div>
+<div class="pagecard">
 <h1 id="dsmsearchhttpsgithubcomland-info-labdsmsearch"><a href="https://github.com/land-info-lab/dsmSearch">dsmSearch</a></h1>
 <p><img src="https://raw.githubusercontent.com/land-info-lab/dsmSearch/master/dsmsearch_hex-02.png" alt="package"></p>
 <p>The package dsmSearch offers functions for retrieving high-resolution Digital Surface Models (DSM) and Light Detection and Ranging (LiDAR) data, providing a toolkit to collect remote sensing data effectively for research and analysis in fields such as ecology, geography, urban planning, and forestry.</p>
+</div>
 
     </div>
   </article>
@@ -82,13 +99,11 @@
 
 </main>
 
+
       <footer class="footer">
         <ul class="footer-links">
+          © Xiaohao Yang 2024
           
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
-          </li>
         </ul>
       </footer>
 
@@ -98,6 +113,15 @@
     
 
     
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
 

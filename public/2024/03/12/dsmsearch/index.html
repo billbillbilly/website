@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.122.0">
+
+
+<title>Download large-scale LiDAR data using dsmSearch - xiaohao yang | 楊瀟豪</title>
+<meta property="og:title" content="Download large-scale LiDAR data using dsmSearch - xiaohao yang | 楊瀟豪">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+<script src="https://kit.fontawesome.com/8a2a3f076e.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+  <ul class="nav-links" id="navlist">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/research/">Research</a></li>
+      
+  </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
+</nav>
+
+        <div class="banner" id="banner"></div>
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Download large-scale LiDAR data using dsmSearch</h1>
+
+    
+    <span class="article-date">2024-03-12</span>
+    <br>
+    
+    <a class="tags" href="/tags/r">R</a>
+    
+    <a class="tags" href="/tags/r-package">R package</a>
+    
+    
+
+    <div class="article-content">
+      
+      <p>LiDAR (Light Detection and Ranging) or point cloud data is useful when we are conducting high-resolution spatial analysis such as viewshed/viewscape, watershed runoff, and other analysis based on digital surface/terrain models. But collecting LiDAR data may challenge for data download and storage because the data is huge even for a median-scale area like a city. Converting a large amount of point cloud into a raster for spatial analysis could be even more computationally expensive. To facilitate data search and downloading, I wrote a simple R packge - <code>dsmSearch</code>, which is basically a wrapped API using R as an interface. I have introduced a little about this package in one of my previous tutorial. The package can help search and download LiDAR data sourced from USGS (United States Geological Survey) But I think that post was definitely not enough to make the large-scale data collection easier. Overall, the package itself does not computationally address the challenge of the large-scale data collection. There is a trick we can use to play with this package to make the large-scale data collection process more efficient.</p>
+<p>The trick introduced in this tutorial may be usable in the case that one has a large number of geo-located samples across a large-scale area and does not need an entire piece of terrain data. Basically, it is based on the concept of grid search. A large-scale study area can be sliced into a set of subarea, which can stabilize the downloading process and make the further data analysis and conversion easier. I use the city of Detroit, MI as an example to demonstrate the idea.</p>
+<h1 id="1-create-grids-given-a-focus-area">1 Create grids given a focus area</h1>
+<p>There are two ways to generated a set of grids: bounding box and point samples.</p>
+<p>First, I got a bbox of Detroit and randomly samples 50 points with the bbox.</p>
+<pre><code class="language-r"># set up grids on the bbox
+# download the shapefile of Detroit and create a bbox
+poly &lt;- tigris::places('MI', progress_bar=FALSE)
+d_poly &lt;- poly[poly$NAME=='Detroit',]
+d_grid &lt;- sf::st_make_grid(
+  d_poly,
+  n=c(10,10),
+  crs = sf::st_crs(d_poly)
+)
+# only keep those grids overlapping with the bondary of Detroit
+grid_binary &lt;- sf::st_intersects(d_grid, d_poly)
+grid_binary &lt;- as.data.frame(grid_binary)[,1]
+d_grid &lt;- d_grid[grid_binary]
+
+# set up grids by sampled locations
+# create 50 samples
+samples &lt;- sf::st_sample(d_poly, size = 50, type = 'regular')
+
+# use each point as a center point to create a set of grids
+library(tidyr)
+sample_grids &lt;- lapply(samples, function(pt) {
+  coor &lt;- sf::st_coordinates(pt)
+  p &lt;- as.data.frame(coor) %&gt;% 
+    sf::st_as_sf(coords=c('X', 'Y'), crs = 4326) %&gt;%
+    sf::st_transform(2253)
+  # set a buffer with 3280ft (1km)
+  buffer &lt;- sf::st_buffer(p, 3280)
+  buffer &lt;- sf::st_transform(buffer, 4326)
+  # grid &lt;- sf::st_make_grid(
+  #   buffer,
+  #   n=c(1,1),
+  #   crs = sf::st_crs(buffer)
+  # )
+  # return(grid[[1]])
+})
+sample_grids &lt;- do.call(rbind, sample_grids)
+sample_grids &lt;- sf::st_as_sf(sample_grids)
+</code></pre>
+<img src="/2024/03/12/dsmsearch/index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+<h1 id="2-download-lidar-data-grid-by-grid">2 Download LiDAR data grid by grid</h1>
+<p>The function <code>get_lidar</code> can download data and store it in the memory if the directory for saving is not specified. However, for the large-scale data collection, the total size of data may be run out of the memory capacity, crashing the process. Therefore, I recommend to specify a directory to download the data to a hard drive. Once the data collection is done, we can convert each LiDAR file into raster or extract other information for further data analysis.</p>
+<pre><code class="language-r">for(each in d_grid) {
+  bbox &lt;- sf::st_bbox(each)
+  # convert the crs if it is not degree (optinal)
+  bbox &lt;- bbox %&gt;% sf::st_transform(4326)
+  data &lt;- dsmSearch::get_lidar(bbox=bbox, 
+                               folder='path/to/save/file')
+}
+
+for(each in sample_grids) {
+  bbox &lt;- sf::st_bbox(each)
+  # convert the crs if it is not degree (optinal)
+  bbox &lt;- bbox %&gt;% sf::st_transform(4326)
+  data &lt;- dsmSearch::get_lidar(bbox=bbox, 
+                               folder='path/to/save/file')
+}
+</code></pre>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+<script src="https://utteranc.es/client.js"
+        repo="billbillbilly/website"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+      <footer class="footer">
+        <ul class="footer-links">
+          © Xiaohao Yang 2024
+          
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>
+

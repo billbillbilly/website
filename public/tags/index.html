@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title>Tags - xiaohaoyang</title>
-<meta property="og:title" content="Tags - xiaohaoyang">
+<title>Tags - xiaohao yang | 楊瀟豪</title>
+<meta property="og:title" content="Tags - xiaohao yang | 楊瀟豪">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -20,7 +20,7 @@
 
 
 
-<link href="/tags/index.xml" rel="alternate" type="application/rss+xml" title="xiaohaoyang" />
+<link href="/tags/index.xml" rel="alternate" type="application/rss+xml" title="xiaohao yang | 楊瀟豪" />
 
 
 
@@ -41,18 +41,19 @@
          height="50"
          alt="Logo">
   </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/post/">Posts</a></li>
-    
-    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
-    
+  <ul class="nav-links" id="navlist">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/research/">Research</a></li>
+      
   </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
 </nav>
 
+        <div class="banner" id="banner"></div>
       </header>
 
 
@@ -65,16 +66,23 @@
     <h2 class="archive-title">2024</h2>
     
     <article class="archive-item">
-      <a href="/tags/r/" class="archive-item-link">R</a>
+      <a href="/tags/r-package/" class="archive-item-link">R package</a>
       <span class="archive-item-date">
-        2024/02/16
+        2024/03/12
       </span>
     </article>
     
     <article class="archive-item">
-      <a href="/tags/r-package/" class="archive-item-link">R package</a>
+      <a href="/tags/r/" class="archive-item-link">R</a>
       <span class="archive-item-date">
-        2024/02/13
+        2024/03/12
+      </span>
+    </article>
+    
+    <article class="archive-item">
+      <a href="/tags/topic/" class="archive-item-link">Topic</a>
+      <span class="archive-item-date">
+        2024/03/10
       </span>
     </article>
     
@@ -85,11 +93,8 @@
 
       <footer class="footer">
         <ul class="footer-links">
+          © Xiaohao Yang 2024
           
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
-          </li>
         </ul>
       </footer>
 
@@ -99,6 +104,15 @@
     
 
     
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
 

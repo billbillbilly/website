@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title>Customize the website with blogdown - xiaohaoyang</title>
-<meta property="og:title" content="Customize the website with blogdown - xiaohaoyang">
+<title>Customize the website with blogdown - xiaohao yang | 楊瀟豪</title>
+<meta property="og:title" content="Customize the website with blogdown - xiaohao yang | 楊瀟豪">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -44,18 +44,19 @@
          height="50"
          alt="Logo">
   </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/post/">Posts</a></li>
-    
-    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
-    
+  <ul class="nav-links" id="navlist">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/research/">Research</a></li>
+      
   </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
 </nav>
 
+        <div class="banner" id="banner"></div>
       </header>
 
 
@@ -225,13 +226,19 @@ Data: 75.2.60.5
 
 </main>
 
+<script src="https://utteranc.es/client.js"
+        repo="billbillbilly/website"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
       <footer class="footer">
         <ul class="footer-links">
+          © Xiaohao Yang 2024
           
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
-          </li>
         </ul>
       </footer>
 
@@ -256,6 +263,15 @@ Data: 75.2.60.5
 
 
     
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
 

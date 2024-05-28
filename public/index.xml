@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>xiaohaoyang</title>
+    <title>Hi, I am Xiaohao Yang | 楊瀟豪 on xiaohao yang | 楊瀟豪</title>
     <link>/</link>
-    <description>Recent content on xiaohaoyang</description>
+    <description>Recent content in Hi, I am Xiaohao Yang | 楊瀟豪 on xiaohao yang | 楊瀟豪</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download large-scale LiDAR data using dsmSearch</title>
+      <link>/2024/03/12/dsmsearch/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>/2024/03/12/dsmsearch/</guid>
+      <description>LiDAR (Light Detection and Ranging) or point cloud data is useful when we are conducting high-resolution spatial analysis such as viewshed/viewscape, watershed runoff, and other analysis based on digital surface/terrain models. But collecting LiDAR data may challenge for data download and storage because the data is huge even for a median-scale area like a city. Converting a large amount of point cloud into a raster for spatial analysis could be even more computationally expensive.</description>
+    </item>
+    <item>
+      <title>A symbiotic relationship between boba-tea shops and restaurants?</title>
+      <link>/2024/03/10/boba-tea-restaurants/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>/2024/03/10/boba-tea-restaurants/</guid>
+      <description>1 Introduction Babo tea - &amp;ldquo;波霸奶茶&amp;rdquo; in Chinese (also known as pearl milk tea or bubble milk tea) - with its origins in Taiwan, holds particular appeal among customers interested in Asian cuisines and cultural experiences. Enjoying boba tea while waiting for a table at a restaurant or as a delightful treat after dining is a widespread practice in urban areas like Los Angeles, CA. Boba-tea shops and restaurants often serve as complementary businesses.</description>
+    </item>
     <item>
       <title>Customize the website with blogdown</title>
       <link>/2024/02/16/customize-the-website-with-blogdown/</link>
@@ -20,42 +34,49 @@
       <link>/2024/02/13/viewscape/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       <guid>/2024/02/13/viewscape/</guid>
-      <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for computing the viewshed even if this is the core of the package.</description>
+      <description>This is an integrated tutorial about viewscape and dsmSearch. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the dsmSearch, which was two functions for searching and downloading point cloud data via API.&#xA;Of course, viewscape is not designed for just computing the viewshed even if this is the core of the package.</description>
     </item>
     <item>
-      <title></title>
+      <title>ABOUT</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/about/</guid>
-      <description>[Me] [News] [Publications] [Resume] [This Website] [Contact]&#xA;[Me] I am a big fan of R and cellular automata! I am a coder [] of design , art , games , and R tools (viewscape and dsmSearch). I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019).</description>
+      <description>Me News Publications Peer review Resume This website Contact [Me] I am a big fan of R and cellular automata! I am a coder [] of [design ] ], [art ] ], [games ] ], and [R tools ] ] (viewscape and dsmSearch). I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. I am currently working on a self-motivated project about generative streetscape.</description>
     </item>
     <item>
-      <title></title>
+      <title>ARTWORKS</title>
       <link>/artworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/artworks/</guid>
-      <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some interesting 3D patterns with Python in Rhinoceros. [] []&#xA;Yo-yoCap Yo-yoCap explores the enhancement of yo-yo performance art through the application of motion capture technology, aiming to create a more dynamic and interactive audio-visual spectacle.</description>
+      <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some 3D patterns with Python in Rhinoceros. I thought it would be interesting to make a more interactive web application to customize and generate these patterns. So, I used Three.js to write this project. [] []</description>
     </item>
     <item>
-      <title></title>
+      <title>DESIGNS</title>
       <link>/designworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/designworks/</guid>
-      <description>Maybe I would do some games in R one day. I coded 3D with RhinoScriptSyntax in Python.&#xA;randomStairBranch This is a simple script developed with RhinoScriptSyntax. A simple agent method integrated with random walk was implemented.&#xA;terrain This script enable generating 3D terrain with interaction in Rhino.</description>
+      <description>I am trying to do something interesting/funny/hopefully useful with XR (VR/AR). Sometimes, I code 3D with RhinoScriptSyntax in Python.&#xA;AR/VR Design computation Landscape VR Phillips House A VR game that provides an unforgettable experience in Phillips House. Two key experiences: Menu includes two modes: building sequence and visit tour. Team: Chung-Han Huang|Xiaohao Yang (Contribution: 3D model compiling, interaction coding)|Zixuan Zhao []&#xA;AR for design engagement AR for environmental education PlantPlace - Mobile Application for Plant-lover Community This app aims to make it more convenient and economical for people to network with other plant lovers and get their favorite plants or offer their plants.</description>
     </item>
     <item>
-      <title></title>
+      <title>GAMES</title>
       <link>/games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/games/</guid>
-      <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card. Now, I am working on a game series called SillySimilation.&#xA;SillySimilation There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games.</description>
+      <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card. I used to play and make some VR games deployed on Oculus quest 2, but I am not a fan of VR because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2.</description>
     </item>
     <item>
-      <title></title>
+      <title>RESEARCH</title>
+      <link>/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/research/</guid>
+      <description>Urban science Social media Climate change Mapping Perceived Safety Around Bus Stops In Detroit Using Crowdsourced Street Views The concept of social infrastructure takes into account the physical places and organizations that shape the way people interact. This project is rooted in the idea that bus stops are not merely transit locations but pivotal social infrastructures that contribute significantly to the urban social fabric. Perceived safety is a critical aspect of an accessible public transport system.</description>
+    </item>
+    <item>
+      <title>TOOLS</title>
       <link>/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tools/</guid>
-      <description>I make either useful or useless tools for research (fun)&#xA;viewscape Viewshed-based viewscape analysis supports a range of scientific domains, including urban planning and ecosystem service research, focusing on enhancing well-being benefits. However, most viewshed tools and applications are proprietary and may not be accessible to all. Here, we introduce the open-source R package viewscape created for reproducible calculations of visual landscape metrics within the R environment.&#xA;dsmSearch The package dsmSearch offers functions for retrieving high-resolution Digital Surface Models (DSM) and Light Detection and Ranging (LiDAR) data, providing a toolkit to collect remote sensing data effectively for research and analysis in fields such as ecology, geography, urban planning, and forestry.</description>
+      <description>I make either useful or useless tools for research (fun)&#xA;quickPWCR A collection of functions to search and download street view imagery and to extract, quantify, and visualize visual features. Moreover, there are functions provided to generate Qualtrics survey in TXT format with street views.&#xA;quickPWCR A collection of functions for constructing large pairwise comparisons and rating them using the Elo rating system with supporting parallel processing. The method of random sample pairs is based on Reservoir Sampling.</description>
     </item>
   </channel>
 </rss>

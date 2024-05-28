@@ -2,23 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/2024/03/12/dsmsearch/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/r/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/r-package/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-03-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/2024/03/10/boba-tea-restaurants/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/topic/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/2024/02/16/customize-the-website-with-blogdown/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/r/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2024-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/r-package/</loc>
-    <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/2024/02/13/viewscape/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
@@ -30,6 +39,8 @@
     <loc>/designworks/</loc>
   </url><url>
     <loc>/games/</loc>
+  </url><url>
+    <loc>/research/</loc>
   </url><url>
     <loc>/tools/</loc>
   </url>

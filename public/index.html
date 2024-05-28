@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title>xiaohaoyang</title>
-<meta property="og:title" content="xiaohaoyang">
+<title>xiaohao yang | 楊瀟豪</title>
+<meta property="og:title" content="xiaohao yang | 楊瀟豪">
 <meta property="og:type" content="website">
 
 
@@ -21,7 +21,7 @@
 
 
 
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="xiaohaoyang" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="xiaohao yang | 楊瀟豪" />
 
 
 
@@ -42,18 +42,19 @@
          height="50"
          alt="Logo">
   </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/post/">Posts</a></li>
-    
-    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
-    
+  <ul class="nav-links" id="navlist">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/research/">Research</a></li>
+      
   </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
 </nav>
 
+        <div class="banner" id="banner"></div>
       </header>
 
 
@@ -62,9 +63,38 @@
   
   <article class="article">
     
+    <h1 class="article-title">Hi, I am Xiaohao Yang | 楊瀟豪</h1>
+    
     <div class="article-content">
-      <p><img src="/images/myhead.jpeg" alt="headshot"></p>
-<p>Hi, I am Xiaohao Yang|楊瀟豪, an environment <a href="https://scholar.google.com/citations?hl=en&amp;user=7gBKKAUAAAAJ">researcher</a> on soundscape and landscape, under the supervison of <a href="https://seas.umich.edu/research/faculty/mark-lindquist">Dr.Mark Lindquist</a> and <a href="https://seas.umich.edu/research/faculty/derek-van-berkel">Dr.Derek Van Berkel</a>, at the University of Michigan, Ann Arbor.</p>
+      <p><a href="https://github.com/billbillbilly">#<strong>github</strong></a>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=7gBKKAUAAAAJ">#<strong>googlescholar</strong></a>
+<a href="https://www.instagram.com/xiaohao._y/?utm_source=ig_embed&amp;utm_campaign=loading">#<strong>instagram</strong></a></p>
+<div>
+  <audio id="audio">
+    <source src="/images/xiaohao.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div style="display: flex;">
+  <div style="flex: 50%; margin: 0 10px;">
+    <p style="font-size: min(18px,3vw);">
+      In the recent years, I code (sit) in front of my computer over five hours (of course even more) every day. I often fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. I want to be defined by what I want to do instead of things I have done. 
+    </p>
+  </div>
+  <div style="flex: 50%; margin: 15px 10px;">
+    <img src="/images/myhead.png" alt="Alt text" style="width: 100%;">
+    <p style="font-size: min(18px,3vw); margin: 0 0 0;">How to pronounce "Xiao-hao"
+    <i class="fa-solid fa-volume-low" id="play-button"></i>
+  </p>
+  </div>
+</div>
+<script>
+  const audio = document.getElementById("audio");
+  const playPauseButton = document.getElementById("play-button");
+  playPauseButton.addEventListener("click", () => {
+    audio.play();
+  });
+</script>
 
     </div>
   </article>
@@ -74,11 +104,8 @@
 
       <footer class="footer">
         <ul class="footer-links">
+          © Xiaohao Yang 2024
           
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
-          </li>
         </ul>
       </footer>
 
@@ -88,6 +115,15 @@
     
 
     
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
 

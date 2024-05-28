@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title> - xiaohaoyang</title>
-<meta property="og:title" content=" - xiaohaoyang">
+<title>GAMES - xiaohao yang | 楊瀟豪</title>
+<meta property="og:title" content="GAMES - xiaohao yang | 楊瀟豪">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -39,18 +39,19 @@
          height="50"
          alt="Logo">
   </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/post/">Posts</a></li>
-    
-    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
-    
+  <ul class="nav-links" id="navlist">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/research/">Research</a></li>
+      
   </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
 </nav>
 
+        <div class="banner" id="banner"></div>
       </header>
 
 
@@ -59,21 +60,28 @@
   <article class="article">
     
 
-    <h1 class="article-title"></h1>
+    <h1 class="article-title">GAMES</h1>
 
     
 
     <div class="article-content">
       
-      <p>I like video games (PC/XBOX/SWITCH/Mobile games&hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows. Thanks to Mac&rsquo;s graphic card. Now, I am working on a game series called <strong>SillySimilation</strong>.</p>
+      <p>I like video games (PC/XBOX/SWITCH/Mobile games&hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows. Thanks to Mac&rsquo;s graphic card. I used to play and make some VR games deployed on Oculus quest 2, but I am not a fan of VR because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2. Now, I am working on a game series called <strong>SillySimilation</strong> with Unity. Maybe I could do some games in R one day.</p>
+<div class="splitline">
+  <hr>
+</div>
 <h1 id="sillysimilation">SillySimilation</h1>
-<p>There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game. <a href="https://github.com/billbillbilly/SillySimulation">[Github]</a></p>
+<p>There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game. <a href="https://github.com/billbillbilly/SillySimulation">[<strong>Github</strong>]</a></p>
+<div class="pagecard">
 <h3 id="1-cowland-i-classfa-solid-fa-gamepadihttpscowlandnetlifyapp">1. CowLand <a href="https://cowland.netlify.app">[<i class="fa-solid fa-gamepad"></i>]</a></h3>
-<p>In <strong>Cowland</strong>, the cow can propagate and eat grass very fast until it dies. Even if grass can recover (super slowly), the grassland will be destroyed by cows, which will die without grass (food) as the population increases. Players can choose an avatar in participant the game and may be able to change the simulation process.</p>
+<p>In <strong>Cowland</strong>, the cow can propagate and eat grass very fast until it dies. Even if grass can recover (super slowly), the grassland will be destroyed by cows, which will die without grass (food) as the population increases. Players can choose an avatar in participant the game and may be able to change the simulation process. This game implemented a very simple &ldquo;random walk&rdquo; method to make the cow wander and stop and go.</p>
 <p><img src="https://raw.githubusercontent.com/billbillbilly/SillySimulation/main/cowland/images/cowland_diagram-01.jpg" alt="game_fig"></p>
+</div>
+<div class="pagecard">
 <h3 id="2-island-i-classfa-solid-fa-gamepadihttpssillyislandnetlifyapp">2. Island <a href="https://sillyisland.netlify.app">[<i class="fa-solid fa-gamepad"></i>]</a></h3>
-<p><strong>Island</strong> is the imagination of urbanization in the doomsday. Most of the land has been submerged as the sea level keeps rising. The trash, however, becomes an important resource for survivors.</p>
+<p><strong>Island</strong> is the imagination of urbanization in the doomsday. Most of the land has been submerged as the sea level keeps rising. The trash, however, becomes an important resource for survivors. Survivors are building their last homes while the rising sea level is nibbling away their settlements. The player will be a manager of this community, deciding whether to force people to work overnight to build higher settlements before it is too late.</p>
 <p><img src="https://raw.githubusercontent.com/billbillbilly/SillySimulation/main/island/images/relation.png" alt="game_fig"></p>
+</div>
 <h3 id="3-tbd">3. TBD</h3>
 
     </div>
@@ -84,13 +92,11 @@
 
 </main>
 
+
       <footer class="footer">
         <ul class="footer-links">
+          © Xiaohao Yang 2024
           
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
-          </li>
         </ul>
       </footer>
 
@@ -100,6 +106,15 @@
     
 
     
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
 

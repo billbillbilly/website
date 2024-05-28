@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.122.0">
 
 
-<title>viewscape in R - xiaohaoyang</title>
-<meta property="og:title" content="viewscape in R - xiaohaoyang">
+<title>viewscape in R - xiaohao yang | 楊瀟豪</title>
+<meta property="og:title" content="viewscape in R - xiaohao yang | 楊瀟豪">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -44,18 +44,19 @@
          height="50"
          alt="Logo">
   </a>
-
-  <ul class="nav-links">
-    
-    <li><a href="/about/">About</a></li>
-    
-    <li><a href="/post/">Posts</a></li>
-    
-    <li><a href="https://www.xiaohaoy.com/">Archived Projects</a></li>
-    
+  <ul class="nav-links" id="navlist">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/research/">Research</a></li>
+      
   </ul>
+  <i class="fa-solid fa-bars fa-2xl nav-list" id="toggleNav" style="color: #b3b3b3"></i>
 </nav>
 
+        <div class="banner" id="banner"></div>
       </header>
 
 
@@ -63,7 +64,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">5 min read</span>
     
 
     <h1 class="article-title">viewscape in R</h1>
@@ -81,20 +82,20 @@
     <div class="article-content">
       
       <p>This is an integrated tutorial about <code>viewscape</code> and <code>dsmSearch</code>. These two packages were initially one before getting published because I thought it would be cool if one can just specify a geographical area without DSM/DEM to compute a viewshed(s). This has been explained the purpose of making the <code>dsmSearch</code>, which was two functions for searching and downloading point cloud data via API.</p>
-<p>Of course, <code>viewscape</code> is not designed for computing the viewshed even if this is the core of the package. A set of function for calculating viewscape metrics (<a href="https://github.com/land-info-lab/viewscape/blob/master/README.md">see details</a>) is the main contribution of this package. What&rsquo;s more, it provides the functionality to subset the viewshed based on the angle and orientation of the field of view.</p>
-<p>What is &lsquo;viewshed&rsquo; and what is &lsquo;viewscape&rsquo; by the way? Basically, I would say viewscape is a concept of analysis relying on viewshed, which is the visible area that can be seen from the  location of a observer. Viewscape analysis is to understand the composition of landscape and the structure of viewshed itself and visible objects within the viewshed.</p>
+<p>Of course, <code>viewscape</code> is not designed for just computing the viewshed even if this is the core of the package. A set of function for calculating viewscape metrics (<a href="https://github.com/land-info-lab/viewscape/blob/master/README.md">see details</a>) is the main contribution of this package. What&rsquo;s more, it provides the functionality to subset the viewshed based on the angle and orientation of the field of view and compute the <a href="">visual magnitude</a> within the viewshed.</p>
+<p>Before I start, what is &lsquo;viewshed&rsquo; and what is &lsquo;viewscape&rsquo; by the way? Basically, I would say viewscape is a concept of analysis relying on viewshed, which is the visible area that can be seen from the  location of a observer. Viewscape analysis is to understand the composition of landscape and the structure of viewshed itself and visible objects within the viewshed.</p>
 <pre><code class="language-r"># install packages
-install.pakcages(&quot;lidR&quot;)
 install.pakcages(&quot;viewscape&quot;)
 install.pakcages(&quot;dsmSearch&quot;)
 </code></pre>
 <h3 id="1compute-viewshed">1.Compute viewshed</h3>
-<p>To compute a viewshed, a viewpoint and a DSM are essential. Let&rsquo;s download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate the area to download the data. <code>lidR</code>, a powerful tool for processing LiDAR data, is used to generate DSM/DEM.</p>
+<p>To compute a viewshed, a viewpoint and a DSM are essential. Let&rsquo;s download the LiDAR data from a small part of a city. In this tutorial, I take the Central Park (NYC) as an example. First, a bounding box (bbox) is used to locate an area to download the data. <code>lidR</code>, a powerful tool for processing LiDAR data, is used to generate DSM/DEM.</p>
 <pre><code class="language-r"># bbox finder: http://bboxfinder.com/
 bbox &lt;- c(-73.976440,40.768793,-73.969628,40.773295)
 
 # download LiDAR (.las) 
 las &lt;- dsmSearch::get_lidar(bbox = bbox, epsg = 2263)
+
 # constrct DSM and DEM using .las data
 dsm &lt;- lidR::rasterize_canopy(las, 5, lidR::dsmtin())
 dem &lt;- lidR::rasterize_terrain(las, 5, lidR::tin())
@@ -126,8 +127,121 @@ terra::plot(viewshed_raster, add=TRUE, col = &quot;red&quot;)
 <p>Binary viewshed only present the locations of visible contents, however, people may be also interested in quantifying the contribution of the visible content in a scene. Therefore, visual magnitude is used to estimate the proportion of each visible area unit within a viewshed. <code>visual_magnitude</code> function implements the visual magnitude algorithm for this purpose.</p>
 <pre><code class="language-r">vm &lt;- viewscape::visual_magnitude(viewshed, dsm)
 </code></pre>
-<h3 id="3-compute-viewscape-metrics">3. Compute viewscape metrics</h3>
-<p>Viewscape metrics are meaningful in understanding the experience of urban landscapes, such as percieved restorativeness and visual walkability.</p>
+<h3 id="3-compute-viewscape-metrics-for-multiple-viewpoints">3. Compute viewscape metrics for multiple viewpoints</h3>
+<p>Viewscape metrics are meaningful in understanding the experience of urban landscapes, such as perceived restorativeness and visual walkability. I used built-in data of this package to demonstrate whole process of computing viewscape metrics for multiple viewpoints.</p>
+<p>First, I loaded in all data needed for the viewscape analysis. If you don&rsquo;t have DSM (or DTM), you can use your DTM (or DSM) as DSM (or DTM).</p>
+<pre><code class="language-r"># read a viewpoint
+viewpoints &lt;- sf::read_sf(system.file(&quot;test_viewpoints.shp&quot;, 
+                                     package = &quot;viewscape&quot;))
+
+# read DSM and DTM
+dsm &lt;- terra::rast(system.file(&quot;test_dsm.tif&quot;,
+                               package =&quot;viewscape&quot;))
+dtm &lt;- terra::rast(system.file(&quot;test_dtm.tif&quot;, 
+                               package =&quot;viewscape&quot;))
+
+# read rasters of land use, canopy coverage, and building footprints
+landuse &lt;- terra::rast(system.file(&quot;test_landuse.tif&quot;,
+                                   package =&quot;viewscape&quot;))
+canopy &lt;- terra::rast(system.file(&quot;test_canopy.tif&quot;, 
+                                  package =&quot;viewscape&quot;))
+building &lt;- terra::rast(system.file(&quot;test_building.tif&quot;, 
+                                    package =&quot;viewscape&quot;))
+</code></pre>
+<pre><code class="language-r">terra::plot(dsm)
+terra::plot(dtm)
+terra::plot(landuse)
+terra::plot(canopy)
+terra::plot(building)
+</code></pre>
+<p><img src="/2024/02/13/viewscape/index_files/figure-html/figures-side-1.png" width="50%" /><img src="/2024/02/13/viewscape/index_files/figure-html/figures-side-2.png" width="50%" /><img src="/2024/02/13/viewscape/index_files/figure-html/figures-side-3.png" width="50%" /><img src="/2024/02/13/viewscape/index_files/figure-html/figures-side-4.png" width="50%" /><img src="/2024/02/13/viewscape/index_files/figure-html/figures-side-5.png" width="50%" /></p>
+<p>Second, I computed viewsheds for multiple viewpoints and specified <code>parallel</code> and <code>workers</code> in <code>compute_viewshed()</code>.</p>
+<pre><code class="language-r"># compute viewshed
+viewsheds &lt;- viewscape::compute_viewshed(dsm = dsm,
+                                         viewpoints = viewpoints, 
+                                         offset_viewpoint = 6)
+</code></pre>
+<p>Third, I used functions, including <code>calculate_diversity()</code>, <code>calculate_feature()</code>, and <code>calculate_viewmetrics()</code>, to calculate:</p>
+<ul>
+<li>Shanon Diversity Index (SDI),</li>
+<li>depth,</li>
+<li>vdepth,</li>
+<li>extent,</li>
+<li>horizontal,</li>
+<li>relief,</li>
+<li>skyline,</li>
+<li>percentage of canopy and building,</li>
+<li>Number of patches (Nump),</li>
+<li>Mean shape index (MSI),</li>
+<li>Edge density (ED),</li>
+<li>Patch size (PS),</li>
+<li>Patch density (PD)</li>
+</ul>
+<p>Let&rsquo;s define a wrapped function. This has been saying that if one doesn&rsquo;t have some layers, for example canopy and buildings</p>
+<pre><code class="language-r">calculate &lt;- function(viewsheds, dsm, dtm, land, canopy, building) {
+  results &lt;- matrix(0,length(viewsheds),16)
+  colnames(results) &lt;- c(&quot;x&quot;, &quot;y&quot;, &quot;Nump&quot;, &quot;MSI&quot;, &quot;ED&quot;, &quot;PS&quot;, &quot;PD&quot;,
+                         &quot;extent&quot;, &quot;depth&quot;, &quot;vdepth&quot;,
+                         &quot;horizontal&quot;, &quot;relief&quot;, &quot;skyline&quot;,
+                         &quot;sdi&quot;, &quot;canopy&quot;, &quot;building&quot;)
+  masks &lt;- list(canopy, building)
+  for (i in 1:length(viewsheds)) {
+    this_viewshed &lt;- viewsheds[[i]]
+    v_point &lt;- this_viewshed@viewpoint
+    metrics &lt;- viewscape::calculate_viewmetrics(this_viewshed, 
+                                                dsm, 
+                                                dtm, 
+                                                masks = masks)
+    results[i,1] &lt;- v_point[1] # x
+    results[i,2] &lt;- v_point[2] # y
+    results[i,3] &lt;- metrics$Nump # Nump
+    results[i,4] &lt;- metrics$MSI # MSI
+    results[i,5] &lt;- metrics$ED # ED
+    results[i,6] &lt;- metrics$PS # PS
+    results[i,7] &lt;- metrics$PD # PD
+    results[i,8] &lt;- metrics$extent # extent
+    results[i,9] &lt;- metrics$depth # depth
+    results[i,10] &lt;- metrics$vdepth # vdepth
+    results[i,11] &lt;- metrics$horizontal # horizontal
+    results[i,12] &lt;- metrics$relief # relief
+    results[i,13] &lt;- metrics$skyline # skyline
+    results[i,14] &lt;- viewscape::calculate_diversity(this_viewshed, land) # sdi
+    results[i,15] &lt;- viewscape::calculate_feature(this_viewshed, 
+                                                  canopy, type = 2,
+                                                  exclude_value = 0) # canopy
+    results[i,16] &lt;- viewscape::calculate_feature(this_viewshed, 
+                                                  building, type = 2,
+                                                  exclude_value = 0) # building
+  }
+  return(results)
+} 
+</code></pre>
+<p>Now, run the function and check out the result.</p>
+<pre><code class="language-r">result &lt;- calculate(viewsheds, dsm, dtm, landuse, canopy, building)
+head(result)
+</code></pre>
+<pre><code>##             x        y Nump      MSI        ED        PS          PD extent
+## [1,] 13294104 282359.0   47 2.650869 1.1041271  640.0387 0.007910045  63952
+## [2,] 13293655 282911.7   20 2.794595 1.0541423  548.8783 0.007541369  28544
+## [3,] 13293348 282548.5   66 2.839629 1.7903992  655.1316 0.010958980  64820
+## [4,] 13293706 282004.4   75 3.504171 0.6253678  251.1605 0.012314330  65552
+## [5,] 13293792 282431.5   12 2.013014 1.7917977 2543.1148 0.004046765  31916
+## [6,] 13293971 283116.7   22 3.432804 1.4155829  717.2525 0.009962424  23768
+##          depth    vdepth horizontal    relief  skyline   sdi    canopy
+## [1,] 1018.8023 275.49927      48372 0.6656973 6.002534 0.790 0.2945334
+## [2,]  446.5672  79.26814      17824 0.5784103 7.687110 0.128 0.3768217
+## [3,]  748.8922 137.91273      38632 0.7132422 8.298789 0.733 0.2523295
+## [4,]  889.6976 207.63062      52676 0.7954506 5.068768 0.947 0.1613986
+## [5,]  843.2357 200.06310      26128 0.4780468 5.072695 0.693 0.2702093
+## [6,]  445.0698 105.49972      14484 0.4915405 8.954859 1.160 0.3266577
+##        building
+## [1,] 0.10701776
+## [2,] 0.07455157
+## [3,] 0.27645788
+## [4,] 0.08243837
+## [5,] 0.06830430
+## [6,] 0.22164254
+</code></pre>
 
     </div>
   </article>
@@ -137,13 +251,19 @@ terra::plot(viewshed_raster, add=TRUE, col = &quot;red&quot;)
 
 </main>
 
+<script src="https://utteranc.es/client.js"
+        repo="billbillbilly/website"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
       <footer class="footer">
         <ul class="footer-links">
+          © Xiaohao Yang 2024
           
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
-            <a href="https://bookdown.org/yihui/blogdown/" class="footer-links-kudos">Via <img src="/images/hex-blogdown.png" width="22" height="22"></a>
-          </li>
         </ul>
       </footer>
 
@@ -163,8 +283,20 @@ terra::plot(viewshed_raster, add=TRUE, col = &quot;red&quot;)
 
 
     
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
     
+
+    <script>
+      document.getElementById('toggleNav').addEventListener('click', function() {
+        var ul = document.getElementById('navlist');
+        var banner = document.getElementById('banner');
+        banner.classList.toggle('open');
+        ul.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>
 
