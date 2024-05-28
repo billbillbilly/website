@@ -30,6 +30,9 @@ menu:
     - name: Artwork
       url: /artworks/
       weight: 6
+    - name: Games
+      url: /games/
+      weight: 7
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

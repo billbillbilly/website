@@ -68,7 +68,7 @@ One way             |  Two ways
 :-------------------------:|:-------------------------:
 ![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/1_flow_2D/one_flow.png?raw=true) | ![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/1_flow_2D/two_flow.png?raw=true)
 
-2D flow - uses curve(s) as attractor(s) to control direction and size.
+2D flow - uses curve(s) as attractor(s) to control direction and size. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/generativeRhinoScript/tree/main/2_flow_2D)
 
 </div>
 
@@ -76,7 +76,7 @@ One way             |  Two ways
 
 # flow 3D [<i class="fa-solid fa-turn-up"></i>](#top)
 ![](/images/terrain.gif)
-3D flow - generates dynamic flow through 3D terrain.
+3D flow - generates dynamic flow through 3D terrain. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/generativeRhinoScript/tree/main/2_flow_3D)
 
 </div>
 
@@ -84,7 +84,7 @@ One way             |  Two ways
 
 # Tower [<i class="fa-solid fa-turn-up"></i>](#top)
 ![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/3_tower/tower.png?raw=true)
-Spiral tower generated with a series of random curves and complex 3D lofted surfaces based on these curves.
+Spiral tower generated with a series of random curves and complex 3D lofted surfaces based on these curves. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/generativeRhinoScript/tree/main/3_tower)
 
 </div>
 
@@ -92,7 +92,7 @@ Spiral tower generated with a series of random curves and complex 3D lofted surf
 
 # Terrain [<i class="fa-solid fa-turn-up"></i>](#top)
 ![](https://github.com/billbillbilly/generativeRhinoScript/blob/main/4_terrain/terrain.png?raw=true)
-When a single attractor curve is applied, two scenarios are depicted: one where the UV points are not relocated by the attractor, resulting in a regular 3D surface, and another where the UV points are adjusted according to the attractor curve, creating a deformed surface that follows the curve's contour. Similarly, with multiple attractor curves, a grid remains regular without relocation, leading to a uniform 3D surface. However, when the UV points are relocated based on the multiple attractor curves, the grid becomes more complex and irregular, resulting in a uniquely shaped 3D surface.
+When a single attractor curve is applied, two scenarios are depicted: one where the UV points are not relocated by the attractor, resulting in a regular 3D surface, and another where the UV points are adjusted according to the attractor curve, creating a deformed surface that follows the curve's contour. Similarly, with multiple attractor curves, a grid remains regular without relocation, leading to a uniform 3D surface. However, when the UV points are relocated based on the multiple attractor curves, the grid becomes more complex and irregular, resulting in a uniquely shaped 3D surface. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/generativeRhinoScript/tree/main/4_terrain)
 
 </div>
 
@@ -139,6 +139,6 @@ As a shrinking city, the renewal of Detroit faces many challenges and problems l
 
 Climate change has both positive and negative impacts on the environment of Detroit. Increased temperature may increase the frequency and length of extreme heat events and heavy precipitation events. Those communities with less canopy coverage and of high-density population and imperviousness could suffer more from extreme weather. On the other hand, climate change will also bring some opportunities including longer growing seasons and more irrigation water.
 
-This project proposed a phasing strategy using the vacant land and urban agriculture to provide a solution to these problems and make a more sustainable and resilient development for future Detroit. [[<i class="fa-solid fa-code"></i>]](https://xiaohaoy.wixsite.com/geolandscape/lots-for-future)
+This project proposed a phasing strategy using the vacant land and urban agriculture to provide a solution to these problems and make a more sustainable and resilient development for future Detroit. [[<i class="fa-regular fa-map"></i>]](https://xiaohaoy.wixsite.com/geolandscape/lots-for-future)
 
 </div>
