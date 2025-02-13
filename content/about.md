@@ -12,10 +12,11 @@ date: ''
 
 <a id='me' class="anch"></a>
 # [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
-- I am a big fan of [**R**](https://cran.r-project.org/) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
+- I am a big fan of [**R**](https://cran.r-project.org/) (even if I use Python much more than it for my work) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
 - I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [[<b><ins>design</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/designworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>art</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/artworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>games</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/games/) <i class="fa-solid fa-hand-point-left"></i> ], and [[<b><ins>R tools</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/tools/) <i class="fa-solid fa-hand-point-left"></i> ] (`viewscape` and `dsmSearch`).
+- I am working several projects in terms of LLMs.
 - I am trying to do everything I think is interesting even if I know I can't. 
-- I am currently working on a self-motivated project about generative streetscape.
+- I am currently working on a self-motivated project about integrating generative art and computational design.
 
 I am doing research on soundscape and landscape, under the supervison of Dr.Mark Lindquist and Dr.Derek Van Berkel, at the University of Michigan, Ann Arbor.
 My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019). 
@@ -26,18 +27,18 @@ I see myself as an interdisciplinary researcher and are passionate about merging
 <a id='new' class="anch"></a>
 # [News] [<i class="fa-solid fa-turn-up"></i>](#top)
 
-🔥 R package: [`streetscape`](https://github.com/land-info-lab/streetscape) has been on [CRAN](https://cran.r-project.org/web/packages/streetscape/)!
+🔥 Two videos games are available on itch: [cowland](https://billbillbilly.itch.io/sillysimulation1cowland) and [island](https://billbillbilly.itch.io/sillysimulation-2-island)
 
-🔥 R package: [`quickPWCR`](https://github.com/billbillbilly/quickPWCR) has been on [CRAN](https://cran.r-project.org/web/packages/quickPWCR/)!
+🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been updated!
 
-🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been on [CRAN](https://cran.r-project.org/web/packages/viewscape/)!
-
-🔥 R package: [`dsmSearch`](https://github.com/land-info-lab/dsmSearch) has been on [CRAN](https://cran.r-project.org/web/packages/dsmSearch/)!
+🔥 A handy toolkit for using OpenAI API to fintune models and predict data is [here](https://github.com/billbillbilly/GPT_Pytools)
 
 ---
 
 <a id='plc' class="anch"></a>
 # [Publications] [<i class="fa-solid fa-turn-up"></i>](#top)
+Yang, X., Lindquist, M., & Van Berkel, D. (2025). “streetscape” package in R: A reproducible method for analyzing open-source street view datasets and facilitating research for urban analytics. SoftwareX, 29, 101981.
+
 Yang, X., Fox, N., Van Berkel, D., & Lindquist, M. (2024). Viewscape: An R package for the spatial analysis of landscape perception and configurations in viewsheds of landscapes. SoftwareX, 26, 101662.
 
 Chen, C., Xia, Y., & Yang, X. (2020). Resilience Strategies to Impacts of Sea Level Rise on the Agricultural Areas in Nansha District of Guangzhou. Landscape Architecture Frontiers, 8(3), 10-25. https://doi.org/10.15302/J-LAF-1-020027
@@ -133,11 +134,6 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
   <tr style="line-height:normal; font-family:Monospace;">
     <td style="width:max(15vw, 150px); vertical-align:top">
       <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">9.2017</b>
-    </td>
-    <td style="font-family:Monospace">
-      <b style="font-size:15px">2017 Second Prize of The Student Design Competition, Chinese Society of Landscape Architecture (CHSLA)</b>
-      <br>
-      <b style="font-size:12px">Back to Canal: The Street without Ground</b>
     </td>
   </tr>
 </table>
@@ -260,10 +256,19 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
   <tr><td style="visibility:collapse">-</td></tr>
   <tr style="line-height:normal; font-family:Monospace">
     <td style="width:max(15vw, 150px); vertical-align:top">
-      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">2023 Fall</b>
+      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">2024 Fall</b>
     </td>
     <td>
-      <b style="font-size:15px">Graduate Student Instructor in EAS 587 Place Making, SEAS, UMich</b>
+      <b style="font-size:15px">Graduate Student Instructor in EAS 648 Advanced Geovisualization, SEAS, UMich</b>
+    </td>
+  </tr>
+  <tr><td style="visibility:collapse">-</td></tr>
+  <tr style="line-height:normal; font-family:Monospace">
+    <td style="width:max(15vw, 150px); vertical-align:top">
+      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">2025 Winter</b>
+    </td>
+    <td>
+      <b style="font-size:15px">Graduate Student Instructor in EAS 687 Landscape Modeling&Planning, SEAS, UMich</b>
     </td>
   </tr>
 </table>
@@ -285,10 +290,19 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
   
   <tr style="line-height:normal; font-family:Monospace">
     <td style="width:max(15vw, 150px); vertical-align:top">
-      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">Modeling</b>
+      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">Framework</b>
     </td>
     <td>
-      <b style="font-size:15px">Rhino (Grasshopper, Rhinoscript), Unity, Unreal Engine, Twinmotion, AutoCAD, Blender, SketchUp</b>
+      <b style="font-size:15px">Pytorch (Python), Streamlit (Python), React Naive (Javascript),  Leaf.js (Javascript), Three.js (Javascript) </b>
+    </td>
+  </tr>
+  
+  <tr style="line-height:normal; font-family:Monospace">
+    <td style="width:max(15vw, 150px); vertical-align:top">
+      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">Design</b>
+    </td>
+    <td>
+      <b style="font-size:15px">Rhino (Grasshopper, Rhinoscript), Unity, Unreal Engine, Twinmotion, AutoCAD, Blender</b>
     </td>
   </tr>
   
