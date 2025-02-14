@@ -3,13 +3,13 @@ title: 'GAMES'
 date: ''
 ---
 
-I like video games (PC/XBOX/SWITCH/Mobile games...) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows (while spending more time on Nintendo Switch and Gameboy). I was trying to play and make some VR games for cardboard and Oculus quest 2, but I am not a fan of VR right now because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2. Now, I am working on a game series called **SillySimilation** with Unity. Also, I am interested in doing some games in R and JS.
+I like video games (PC/XBOX/SWITCH/Mobile games...) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows (while spending more time on Nintendo Switch and Gameboy). I was trying to play and make some VR games for cardboard and Oculus quest 2, but I am not a fan of VR right now because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2. Now, I am working on a game series called **SillySimulation** with Unity. Also, I am interested in doing some games in R and JS.
 
 <div class="splitline">
   <hr>
 </div>
 
-# SillySimilation
+# SillySimulation
 There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game. [[**Github**]](https://github.com/billbillbilly/SillySimulation)
 
 <div class="pagecard">
@@ -21,6 +21,7 @@ There are three games in the SillySimilation series. Each of them tells a story 
 In **Cowland**, the cow can propagate and eat grass very fast until it dies. Even if grass can recover (super slowly), the grassland will be destroyed by cows, which will die without grass (food) as the population increases. Players can choose an avatar in participant the game and may be able to change the simulation process. This game implemented a very simple "random walk" method to make the cow wander and stop and go.
 
 ![game_fig_cow1](https://raw.githubusercontent.com/billbillbilly/SillySimulation/refs/heads/main/cowland/images/Screenshot.png)
+
 ![game_fig_cow2](https://raw.githubusercontent.com/billbillbilly/SillySimulation/main/cowland/images/cowland_diagram-01.jpg)
 
 </div>
@@ -34,8 +35,9 @@ In **Cowland**, the cow can propagate and eat grass very fast until it dies. Eve
 **Island** is the imagination of urbanization in the doomsday. Most of the land has been submerged as the sea level keeps rising. The trash, however, becomes an important resource for survivors. Survivors are building their last homes while the rising sea level is nibbling away their settlements. The player will be a manager of this community, deciding whether to force people to work overnight to build higher settlements before it is too late. The games was developed based on the idea of [**random branch**](https://github.com/billbillbilly/Random_stair_branch) I developed.
 
 ![game_fig_island1](https://raw.githubusercontent.com/billbillbilly/SillySimulation/refs/heads/main/island/images/Screenshot1.png)
+
 ![game_fig_island2](https://raw.githubusercontent.com/billbillbilly/SillySimulation/main/island/images/relation.png)
 
 </div>
 
-### 3. TBD
+### 3. To Be Continued 

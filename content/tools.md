@@ -10,7 +10,7 @@ I make either useful or useless tools for research (fun)
 
 <div class="pagecard">
 
-# [quickPWCR](https://github.com/land-info-lab/streetscape)
+# [streetscape](https://github.com/land-info-lab/streetscape)
 ![package](https://raw.githubusercontent.com/land-info-lab/streetscape/main/images/streetscape_hex.png)
 
 A collection of functions to search and download street view imagery  and to extract, quantify, and visualize visual features. Moreover, there are functions provided to generate Qualtrics survey in TXT format with street views.
