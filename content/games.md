@@ -10,7 +10,7 @@ I like video games (PC/XBOX/SWITCH/Mobile games...) and have spent a lot of time
 </div>
 
 # SillySimulation
-There are three games in the SillySimilation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game. [[**Github**]](https://github.com/billbillbilly/SillySimulation)
+There are three games in the SillySimulation series. Each of them tells a story about survival. The environment has been extremely simplified and accelerated in games. There is always some trade-off in the game. [[**Github**]](https://github.com/billbillbilly/SillySimulation)
 
 <div class="pagecard">
 
