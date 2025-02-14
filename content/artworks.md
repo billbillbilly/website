@@ -1,5 +1,5 @@
 ---
-title: 'ARTWORKS'
+title: 'COMPUTATIONAL ARTWORKS'
 date: ''
 ---
 Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.

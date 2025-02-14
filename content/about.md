@@ -12,11 +12,11 @@ date: ''
 
 <a id='me' class="anch"></a>
 # [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
-- I am a big fan of [**R**](https://cran.r-project.org/) (even if I use Python much more than it for my work) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
-- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [[<b><ins>design</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/designworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>art</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/artworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>games</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/games/) <i class="fa-solid fa-hand-point-left"></i> ], and [[<b><ins>R tools</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/tools/) <i class="fa-solid fa-hand-point-left"></i> ] (`viewscape` and `dsmSearch`).
+- I am a big fan of [**R**](https://cran.r-project.org/) (even if I have to use Python much more than it for my work) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
+- I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [[<b><ins>design</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/designworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>art</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/artworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>games</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/games/) <i class="fa-solid fa-hand-point-left"></i> ], and [[<b><ins>R tools</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/tools/) <i class="fa-solid fa-hand-point-left"></i> ].
 - I am working several projects in terms of LLMs.
-- I am trying to do everything I think is interesting even if I know I can't. 
-- I am currently working on a self-motivated project about integrating generative art and computational design.
+- I am trying to do everything I think is interesting even if I need to overcome a lot of challenges. 
+- I am currently working on a self-motivated project [**"pop-upColor"**](https://billbillbilly.github.io/portfolio-content/) currently focusing on integrating computational fabrication collaborating with [*Qingru*](https://qingruya.myportfolio.com/).
 
 I am doing research on soundscape and landscape, under the supervison of Dr.Mark Lindquist and Dr.Derek Van Berkel, at the University of Michigan, Ann Arbor.
 My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019). 
@@ -27,11 +27,11 @@ I see myself as an interdisciplinary researcher and are passionate about merging
 <a id='new' class="anch"></a>
 # [News] [<i class="fa-solid fa-turn-up"></i>](#top)
 
-🔥 Two videos games are available on itch: [cowland](https://billbillbilly.itch.io/sillysimulation1cowland) and [island](https://billbillbilly.itch.io/sillysimulation-2-island)
+🔥 Two videos games are available on itch: [**cowland**](https://billbillbilly.itch.io/sillysimulation1cowland) and [**island**](https://billbillbilly.itch.io/sillysimulation-2-island)
 
-🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been updated!
+🔥 R package: [`viewscape`](https://github.com/land-info-lab/viewscape) has been updated! More fucntions !!!
 
-🔥 A handy toolkit for using OpenAI API to fintune models and predict data is [here](https://github.com/billbillbilly/GPT_Pytools)
+🔥 A handy toolkit for using OpenAI API to fintune models and predict data is [**here**](https://github.com/billbillbilly/GPT_Pytools)
 
 ---
 
@@ -105,6 +105,8 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
   </tr>
 </table>
 
+---
+
 <table border="0">
   <tr>
     <b style="font-family:Monospace">Honour</b>
@@ -128,12 +130,6 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
       <b style="font-size:15px">2019 IFLA Asia-Pac Professional Award of Excellence (Team), International Federation of Landscape Architecture (IFLA)</b>
       <br>
       <b style="font-size:12px">From Risk to Resilience: Assessment and strategy of the complex urban system to future sea-level rise in Guangzhou</b>
-    </td>
-  </tr>
-  <tr><td style="visibility:collapse">-</td></tr>
-  <tr style="line-height:normal; font-family:Monospace;">
-    <td style="width:max(15vw, 150px); vertical-align:top">
-      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">9.2017</b>
     </td>
   </tr>
 </table>
@@ -277,14 +273,14 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
 
 <table border="0">
   <tr>
-    <b style="font-family:Monospace">Tools</b>
+    <b style="font-family:Monospace">Skills</b>
   </tr>
   <tr style="line-height:normal; font-family:Monospace">
     <td style="width:max(15vw, 150px); vertical-align:top">
       <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">Coding</b>
     </td>
     <td>
-      <b style="font-size:15px">Python, R, C#, C++, Javascript, HTML</b>
+      <b style="font-size:15px">Python, R, C#, C++, Javascript, HTML, Bash</b>
     </td>
   </tr>
   

@@ -3,7 +3,7 @@ title: 'DESIGNS'
 date: ''
 ---
 
-I am trying to do something interesting/funny/hopefully useful with XR (VR/AR). Sometimes, I code 3D with [`RhinoScriptSyntax`](https://developer.rhino3d.com/api/RhinoScriptSyntax/) in Python.
+I am trying to do something interesting/funny/hopefully useful with XR (VR/AR). Sometimes, I code 3D with [`RhinoScriptSyntax`](https://developer.rhino3d.com/api/RhinoScriptSyntax/) in Rhino.
 
 <a id='top' class="anchors"></a>
 <i class="fa-solid fa-hand-point-right"></i> [AR/VR <i class="fa-solid fa-turn-down"></i> ](#xr) [Design computation <i class="fa-solid fa-turn-down"></i> ](#dc) [Landscape <i class="fa-solid fa-turn-down"></i> ](#la) 

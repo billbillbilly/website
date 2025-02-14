@@ -18,11 +18,12 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
 <div style="display: flex;">
   <div style="flex: 50%; margin: 0 10px;">
     <p style="font-size: min(18px,3vw);">
-      In the recent years, I code (sit) in front of my computer over five hours (of course even more) every day. I often fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. I want to be defined by what I want to do instead of things I have done. 
+      In the recent years, I code (sit in front of my computer) over five hours (of course sometimes even more) a day. I sometimes fully fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. I want to be defined by what I am doing instead of things I have done. 
     </p>
   </div>
   <div style="flex: 50%; margin: 15px 10px;">
-    <img src="/images/myhead.png" alt="Alt text" style="width: 100%;">
+    <img src="/images/meANDcat.png" alt="Alt text" style="width: 100%;">
+    <p style="font-size: min(10px,2vw); margin: 0 0 0;">Xiaohao and his friend "Eggxolotl"</p>
     <p style="font-size: min(18px,3vw); margin: 0 0 0;">How to pronounce "Xiao-hao"
     <i class="fa-solid fa-volume-low" id="play-button"></i>
   </p>
