@@ -12,7 +12,7 @@ date: ''
 
 <a id='me' class="anch"></a>
 # [Me] [<i class="fa-solid fa-turn-up"></i>](#top)
-- I am a big fan of [**R**](https://cran.r-project.org/) (even if I have to use Python much more than it for my work) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
+- I am a big fan of [**R**](https://cran.r-project.org/) (even if I have to use Python and Javascript much more than it for my work) and [cellular automata](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/cellular-automata)!
 - I am a coder [[<i class="fa-brands fa-git"></i>]](https://github.com/billbillbilly) of [[<b><ins>design</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/designworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>art</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/artworks/) <i class="fa-solid fa-hand-point-left"></i> ], [[<b><ins>games</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/games/) <i class="fa-solid fa-hand-point-left"></i> ], and [[<b><ins>R tools</ins></b> <i class="fa-solid fa-link" alt="link"></i>]](/tools/) <i class="fa-solid fa-hand-point-left"></i> ].
 - I am working several projects in terms of LLMs.
 - I am trying to do everything I think is interesting even if I need to overcome a lot of challenges. 

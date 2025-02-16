@@ -3,10 +3,19 @@ title: 'GAMES'
 date: ''
 ---
 
-I like video games (PC/XBOX/SWITCH/Mobile games...) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows (while spending more time on Nintendo Switch and Gameboy). I was trying to play and make some VR games for cardboard and Oculus quest 2, but I am not a fan of VR right now because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2. Now, I am working on a game series called **SillySimulation** with Unity. Also, I am interested in doing some games in R and JS.
+I like video games (PC/SWITCH/GameBoy/Mobile games...) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows (while spending more time on Nintendo Switch and Gameboy). I was trying to play and make some VR games for cardboard and Oculus quest 2, but I am not a fan of VR right now because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2. Now, I am working on a game series called **SillySimulation** with Unity. Also, I am interested in doing some games in R and JS.
 
 <div class="splitline">
   <hr>
+</div>
+
+<div class="pagecard">
+
+### Monster World (VR Cardboard)
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1057192765?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="monster_world"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+Okay, **Monster World** is first game I did (with Unity). Even if it is messy and rough, I implemented all key features and interactions that can be deployed for VR Cardboard such as menu buttons, teleportation, grabbing, triggering, and populating prefabs as well as sound effects. Well, it is not a fantastic game but I think it is sloppy in a funny way.
 </div>
 
 # SillySimulation

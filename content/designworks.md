@@ -3,10 +3,10 @@ title: 'DESIGNS'
 date: ''
 ---
 
-I am trying to do something interesting/funny/hopefully useful with XR (VR/AR). Sometimes, I code 3D with [`RhinoScriptSyntax`](https://developer.rhino3d.com/api/RhinoScriptSyntax/) in Rhino.
+As a generative designer, I code 3D with [`RhinoScriptSyntax`](https://developer.rhino3d.com/api/RhinoScriptSyntax/) in Rhino. As an interaction designer and frontend engineer, I design application, prototype user interface, and deploy APPs on different devices. I am trying to do something interesting/funny/hopefully useful with XR (VR/AR). 
 
 <a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> [AR/VR <i class="fa-solid fa-turn-down"></i> ](#xr) [Design computation <i class="fa-solid fa-turn-down"></i> ](#dc) [Landscape <i class="fa-solid fa-turn-down"></i> ](#la) 
+<i class="fa-solid fa-hand-point-right"></i> [AR/VR <i class="fa-solid fa-turn-down"></i> ](#xr) [Interaction Design <i class="fa-solid fa-turn-down"></i> ](#in) [Design computation <i class="fa-solid fa-turn-down"></i> ](#dc) [Landscape <i class="fa-solid fa-turn-down"></i> ](#la) 
 
 <div class="splitline">
   <hr>
@@ -39,9 +39,22 @@ A VR game that provides an unforgettable experience in Phillips House. Two key e
 <br>
 </div>
 
+<a id='in' class="anch"></a>
 <div class="pagecard">
 
-# PlantPlace - Mobile Application for Plant-lover Community [<i class="fa-solid fa-turn-up"></i>](#top)
+# GBCamera - Nostalgia for the GameBoy camera (Mobile App design&development) [<i class="fa-solid fa-turn-up"></i>](#top)
+
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1034998804?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RPReplay_Final1733032674"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+Pixel art lovers such as Nintendo Game Boy (GB) console users and photographers are interested in taking photos with the GB console+camera cartridge or upgrading the hardware (such as the camera lens and sensors) for better photography experiences. The mobile app is a pixel-art photograph tool enabling users to capture GB-like photos/videos. [[<i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/final-project-poke) 
+
+The Game Boy Camera is an accessory released by Nintendo in 1998 for the original Game Boy handheld console. With the low resolution and only four shades of grayscale, it became iconic in the retro gaming and pixel art communities. Although it was a novelty at the time, the Game Boy Camera has a cult following today. Now, both the GB series console and the cart have yet to be produced, which makes it unavailable for many followers. The devices and carts used in markets (such as eBay) are becoming expensive. The proposed project can provide users with an alternative and more fun experience, allowing users to adjust the focal length by taking the advance on cellphone cameras. In addition, users will be able to build up their GB photo albums and share photos with others.
+
+</div>
+
+<div class="pagecard">
+
+# PlantPlace - Mobile Application for Plant-lover Community (Interface prototype) [<i class="fa-solid fa-turn-up"></i>](#top)
 ![](https://static.wixstatic.com/media/3d9996_34e4f32d81e547bdb06e48a60836bc02~mv2.jpg/v1/fill/w_684,h_804,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/QOC_Page_5.jpg)
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/776872619?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Demo of PlantPlace"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
