@@ -18,9 +18,7 @@ date: ''
 - I am trying to do everything I think is interesting even if I need to overcome a lot of challenges. 
 - I am currently working on a self-motivated project [**"pop-upColor"**](https://billbillbilly.github.io/portfolio-content/) currently focusing on integrating computational fabrication collaborating with [*Qingru*](https://qingruya.myportfolio.com/).
 
-I am doing research on soundscape and landscape, under the supervison of Dr.Mark Lindquist and Dr.Derek Van Berkel, at the University of Michigan, Ann Arbor.
-My education background is initially rooted in landscape architecture (7 years) and now overlaps with Data Sciense and Human-computer Interaction (since 2019). 
-I see myself as an interdisciplinary researcher and are passionate about merging data and a design perspective to uncover the relationship and interaction between the built environment and multi-sensory perception, with a focus on promoting environmental sustainability and encouraging human-centered design and decision-making.  
+Trained as an urban researcher and working as a data analyst and software/game developer, I see myself as an interdisciplinary designer merging data and computation, with a focus on human-centered design and decision-making. My education background is initially in landscape architecture (7 years) and now overlaps with Data Science and Human-computer Interaction (since 2019).
 
 ---
 

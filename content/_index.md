@@ -24,7 +24,7 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
   <div style="flex: 50%; margin: 15px 10px;">
     <img src="/images/meANDcat.png" alt="Alt text" style="width: 100%;">
     <p style="font-size: min(10px,2vw); margin: 0 0 0;">Xiaohao and his friend "Eggxolotl"</p>
-    <p style="font-size: min(18px,3vw); margin: 0 0 0;">How to pronounce "Xiao-hao"
+    <p style="font-size: min(15px,2vw); margin: 0 0 0;">Xiao hao pronounced as "see-ow how" 
     <i class="fa-solid fa-volume-low" id="play-button"></i>
   </p>
   </div>
