@@ -18,7 +18,7 @@ date: ''
 - I am trying to do everything I think is interesting even if I need to overcome a lot of challenges. 
 - I am currently working on a self-motivated project [**"pop-upColor"**](https://billbillbilly.github.io/portfolio-content/) currently focusing on integrating computational fabrication collaborating with [*Qingru*](https://qingruya.myportfolio.com/).
 
-Trained as an urban researcher and working as a data analyst and software/game developer, I see myself as an interdisciplinary designer merging data and computation, with a focus on human-centered design and decision-making. My education background is initially in landscape architecture (7 years) and now overlaps with Data Science and Human-computer Interaction (since 2019).
+Trained as an urban researcher and working as a data analyst and software/game developer, I see myself as an interdisciplinary designer merging data and computation, with a focus on human-centered design and decision-making. My education background overlaps Design with Data Science and Human-computer Interaction (since 2019).
 
 ---
 
@@ -128,24 +128,6 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
       <b style="font-size:15px">2019 IFLA Asia-Pac Professional Award of Excellence (Team), International Federation of Landscape Architecture (IFLA)</b>
       <br>
       <b style="font-size:12px">From Risk to Resilience: Assessment and strategy of the complex urban system to future sea-level rise in Guangzhou</b>
-    </td>
-  </tr>
-</table>
-
----
-
-<table border="0">
-  <tr>
-    <b style="font-family:Monospace">Presentation</b>
-  </tr>
-  <tr style="line-height:normal; font-family:Monospace">
-    <td style="width:max(15vw, 150px); vertical-align:top">
-      <b style="font-size:max(1.3vw, 15px); margin-right:max(5vw, 20px)">02.23.2024</b>
-    </td>
-    <td>
-      <b style="font-size:15px">Graduate Conference in Religion & Ecology AT YALE DIVINITY SCHOOL</b>
-      <br>
-      <b style="font-size:12px">Exploring Acoustic Landscapes of Places of Worship for Environmental Planning</b>
     </td>
   </tr>
 </table>
