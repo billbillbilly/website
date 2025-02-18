@@ -41,10 +41,10 @@
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/about/</guid>
-      <description>Me News Publications Peer review Resume This website Contact [Me] I am a big fan of R and cellular automata! I am a coder [] of [design ] ], [art ] ], [games ] ], and [R tools ] ] (viewscape and dsmSearch). I am trying to do everything I think is interesting even if I know I can&amp;rsquo;t. I am currently working on a self-motivated project about generative streetscape.</description>
+      <description>Me News Publications Peer review Resume This website Contact [Me] I am a big fan of R (even if I have to use Python and Javascript much more than it for my work) and cellular automata! I am a coder [] of [design ] ], [art ] ], [games ] ], and [R tools ] ]. I am working several projects in terms of LLMs. I am trying to do everything I think is interesting even if I need to overcome a lot of challenges.</description>
     </item>
     <item>
-      <title>ARTWORKS</title>
+      <title>COMPUTATIONAL ARTWORKS</title>
       <link>/artworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/artworks/</guid>
@@ -55,14 +55,14 @@
       <link>/designworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/designworks/</guid>
-      <description>I am trying to do something interesting/funny/hopefully useful with XR (VR/AR). Sometimes, I code 3D with RhinoScriptSyntax in Python.&#xA;AR/VR Design computation Landscape VR Phillips House A VR game that provides an unforgettable experience in Phillips House. Two key experiences: Menu includes two modes: building sequence and visit tour. Team: Chung-Han Huang|Xiaohao Yang (Contribution: 3D model compiling, interaction coding)|Zixuan Zhao []&#xA;AR for design engagement AR for environmental education PlantPlace - Mobile Application for Plant-lover Community This app aims to make it more convenient and economical for people to network with other plant lovers and get their favorite plants or offer their plants.</description>
+      <description>AR/VR Interaction Design Design computation Landscape As a generative designer, I code 3D with RhinoScriptSyntax in Rhino. As an interaction designer and frontend engineer, I design application, prototype user interface, and deploy APPs on different devices. I am trying to do something interesting/funny/hopefully useful with XR (VR/AR).&#xA;VR Phillips House A VR game that provides an unforgettable experience in Phillips House. Two key experiences: Menu includes two modes: building sequence and visit tour.</description>
     </item>
     <item>
       <title>GAMES</title>
       <link>/games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/games/</guid>
-      <description>I like video games (PC/XBOX/SWITCH/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows. Thanks to Mac&amp;rsquo;s graphic card. I used to play and make some VR games deployed on Oculus quest 2, but I am not a fan of VR because dizziness just made me so uncomfortable. 15 min is the maximum time I can play with my quest 2.</description>
+      <description>I like video games (PC/SWITCH/GameBoy/Mobile games&amp;hellip;) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows (while spending more time on Nintendo Switch and Gameboy). I was trying to play and make some VR games for cardboard and Oculus quest 2, but I am not a fan of VR right now because dizziness just made me so uncomfortable.</description>
     </item>
     <item>
       <title>RESEARCH</title>
@@ -76,7 +76,7 @@
       <link>/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tools/</guid>
-      <description>I make either useful or useless tools for research (fun)&#xA;quickPWCR A collection of functions to search and download street view imagery and to extract, quantify, and visualize visual features. Moreover, there are functions provided to generate Qualtrics survey in TXT format with street views.&#xA;quickPWCR A collection of functions for constructing large pairwise comparisons and rating them using the Elo rating system with supporting parallel processing. The method of random sample pairs is based on Reservoir Sampling.</description>
+      <description>I make either useful or useless tools for research (fun)&#xA;streetscape A collection of functions to search and download street view imagery and to extract, quantify, and visualize visual features. Moreover, there are functions provided to generate Qualtrics survey in TXT format with street views.&#xA;quickPWCR A collection of functions for constructing large pairwise comparisons and rating them using the Elo rating system with supporting parallel processing. The method of random sample pairs is based on Reservoir Sampling.</description>
     </item>
   </channel>
 </rss>

@@ -224,7 +224,8 @@ div.open {
   max-width: 670px;
   margin: auto;
   border-radius: 10px;
-  padding: 0px 0.84em 0.1em 0.84em;
+  padding: 1px 0.84em 0.1em 0.84em;
+  margin-bottom: 2em;
 }
 
 .content .pagecard::after {
