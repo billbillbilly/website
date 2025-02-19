@@ -19,19 +19,16 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
   </audio>
 </div>
 
-<div style="display: flex;">
-  <div style="flex: 60%; margin: 0 10px;">
-    <p style="font-size: min(18px,3vw);">
-      In the recent years, I code (sit in front of my computer) over five hours (of course sometimes even more) a day. I sometimes fully fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. My cat gives me so much emotional support and I think I can do better now. 
-    </p>
-  </div>
-  <div style="flex: 40%; margin: 15px 10px;">
-    <img src="/images/meANDcat.png" alt="Alt text" style="width: max(9vw,160px);">
-    <p style="font-size: min(10px,2vw); margin: 0 0 0;">Xiaohao and his friend "Eggxolotl"</p>
-  </div>
+
+<div margin: 0 10px;>
+  <p style="font-size: min(18px,3vw);">
+    In the recent years, I code (sit in front of my computer) over five hours (of course sometimes even more) a day. 
+    I sometimes fully fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. 
+    My cat gives me so much emotional support and I think I can do better now. 
+  </p>
 </div>
 
-<p style="font-size: min(18px,3vw);"> 
+<p style="font-size: min(15px,3vw);"> 
   Actively working this project, feel free to interact with it and learn more in 
   <a href="/artworks/"><b>Artwork</b></a>
 </p> 
