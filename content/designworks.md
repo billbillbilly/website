@@ -16,8 +16,26 @@ As a generative designer, I code 3D with [`RhinoScriptSyntax`](https://developer
 
 # VR Phillips House [<i class="fa-solid fa-turn-up"></i>](#top)
 ![](https://github.com/billbillbilly/arch_509_AT_projs/blob/main/preview/bs.gif?raw=true)
-A VR game that provides an unforgettable experience in Phillips House. Two key experiences: Menu includes two modes: building sequence and visit tour. Team: Chung-Han Huang|Xiaohao Yang (Contribution: 3D model compiling, interaction coding)|Zixuan Zhao [[**source** <i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/arch_509_AT_projs/tree/main)
+A VR game that provides an unforgettable experience in Phillips House. Two key experiences: 
+Menu includes two modes: building sequence and visit tour. 
+Team: Chung-Han Huang | Xiaohao Yang (Contribution: 3D model compiling and interaction coding) | Zixuan Zhao [[**source** <i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/arch_509_AT_projs/tree/main)
 
+</div>
+<br>
+<div class="pagecard">
+
+# Motion capture - Virtual Garden [<i class="fa-solid fa-turn-up"></i>](#top)
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1058083076?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Virtual Garden - motion capture"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+This study presents an application for crafting
+a 3D environment using a limited set of
+intuitive hand gestures. The application
+captures hand gestures through the use of a
+Qualisys motion capture system and uses them
+to manipulate objects in a virtual 3D game
+space created with Unity. The result allows the
+user to quickly manipulate a virtual terrain at a
+1:1 scale. Team: David Minnix | Faith Gowe | Rushal Butala | Xiaohao Yang (Contribution: interaction design and coding)
 </div>
 <br>
 <div class="pagecard">
@@ -47,9 +65,18 @@ A VR game that provides an unforgettable experience in Phillips House. Two key e
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1034998804?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RPReplay_Final1733032674"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-Pixel art lovers such as Nintendo Game Boy (GB) console users and photographers are interested in taking photos with the GB console+camera cartridge or upgrading the hardware (such as the camera lens and sensors) for better photography experiences. The mobile app is a pixel-art photograph tool enabling users to capture GB-like photos/videos. [[**source** <i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/final-project-poke) 
+Pixel art lovers such as Nintendo Game Boy (GB) console users and photographers are interested in 
+taking photos with the GB console+camera cartridge or upgrading the hardware (such as the camera lens and sensors) 
+for better photography experiences. The mobile app is a pixel-art photograph tool enabling users to capture GB-like 
+photos/videos. [[**source** <i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/final-project-poke) 
 
-The Game Boy Camera is an accessory released by Nintendo in 1998 for the original Game Boy handheld console. With the low resolution and only four shades of grayscale, it became iconic in the retro gaming and pixel art communities. Although it was a novelty at the time, the Game Boy Camera has a cult following today. Now, both the GB series console and the cart have yet to be produced, which makes it unavailable for many followers. The devices and carts used in markets (such as eBay) are becoming expensive. The proposed project can provide users with an alternative and more fun experience, allowing users to adjust the focal length by taking the advance on cellphone cameras. In addition, users will be able to build up their GB photo albums and share photos with others.
+The Game Boy Camera is an accessory released by Nintendo in 1998 for the original Game Boy handheld console. 
+With the low resolution and only four shades of grayscale, it became iconic in the retro gaming and pixel art communities. 
+Although it was a novelty at the time, the Game Boy Camera has a cult following today. Now, both the GB series console 
+and the cart have yet to be produced, which makes it unavailable for many followers. The devices and carts used in markets 
+(such as eBay) are becoming expensive. The proposed project can provide users with an alternative and more fun experience, 
+allowing users to adjust the focal length by taking the advance on cellphone cameras. In addition, users will be able to 
+build up their GB photo albums and share photos with others.
 
 </div>
 <br>
