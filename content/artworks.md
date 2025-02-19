@@ -13,7 +13,7 @@ Coding art is fun. I got one self-motivated project (the first one) and several 
 # Pop-upColor 
 ![](https://billbillbilly.github.io/portfolio-content/images/ffffff_d400ff_04ff00.gif)
 
-**Pop-upColor** is an generative art project I started in 2021. Initially, I just played with celular autometa to create some 3D patterns with Python in [Rhinoceros](https://www.rhino3d.com/). I thought it would be interesting to make a more interactive web application to customize and generate these patterns. So, I used [`Three.js`](https://threejs.org/) to write this project. [[<i class="fa-solid fa-diagram-project"></i>]](https://billbillbilly.github.io/portfolio-content/) [[<i class="fa-solid fa-code"></i>]](https://pop-upcolor.glitch.me/)
+**Pop-upColor** is an generative art project I started in 2021. Initially, I just played with celular autometa to create some 3D patterns with Python in [Rhinoceros](https://www.rhino3d.com/). I thought it would be interesting to make a more interactive web application to customize and generate these patterns. So, I used [`Three.js`](https://threejs.org/) to write this project. [[**project website** <i class="fa-solid fa-diagram-project"></i>]](https://billbillbilly.github.io/portfolio-content/) [[**source** <i class="fa-solid fa-code"></i>]](https://pop-upcolor.glitch.me/)
 
 </div>
 

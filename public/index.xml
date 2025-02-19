@@ -48,14 +48,14 @@
       <link>/artworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/artworks/</guid>
-      <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some 3D patterns with Python in Rhinoceros. I thought it would be interesting to make a more interactive web application to customize and generate these patterns. So, I used Three.js to write this project. [] []</description>
+      <description>Coding art is fun. I got one self-motivated project (the first one) and several course-based projects.&#xA;Pop-upColor Pop-upColor is an generative art project I started in 2021. Initially, I just played with celular autometa to create some 3D patterns with Python in Rhinoceros. I thought it would be interesting to make a more interactive web application to customize and generate these patterns. So, I used Three.js to write this project. [project website ] [source ]</description>
     </item>
     <item>
       <title>DESIGNS</title>
       <link>/designworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/designworks/</guid>
-      <description>AR/VR Interaction Design Design computation Landscape As a generative designer, I code 3D with RhinoScriptSyntax in Rhino. As an interaction designer and frontend engineer, I design application, prototype user interface, and deploy APPs on different devices. I am trying to do something interesting/funny/hopefully useful with XR (VR/AR).&#xA;VR Phillips House A VR game that provides an unforgettable experience in Phillips House. Two key experiences: Menu includes two modes: building sequence and visit tour.</description>
+      <description>AR/VR Mobile App Computation Urban As a generative designer, I code 3D with RhinoScriptSyntax in Rhino. As an interaction designer and frontend engineer, I design application, prototype user interface, and deploy APPs on different devices. I am trying to do something interesting/funny/hopefully useful with XR (VR/AR).&#xA;VR Phillips House A VR game that provides an unforgettable experience in Phillips House. Two key experiences: Menu includes two modes: building sequence and visit tour.</description>
     </item>
     <item>
       <title>GAMES</title>

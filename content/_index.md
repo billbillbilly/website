@@ -4,6 +4,10 @@ home: true
 title: "Hi, I am Xiaohao Yang | 楊瀟豪"
 ---
 
+<p style="font-size: min(15px,2vw); margin: 0 0 0;">Xiao hao pronounced as "see-ow how" 
+  <i class="fa-solid fa-volume-low" id="play-button"></i>
+</p>
+
 [#**github**](https://github.com/billbillbilly)
 [#**googlescholar**](https://scholar.google.com/citations?hl=en&user=7gBKKAUAAAAJ)
 [#**instagram**](https://www.instagram.com/xiaohao._y/?utm_source=ig_embed&amp;utm_campaign=loading)
@@ -24,11 +28,10 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
   <div style="flex: 50%; margin: 15px 10px;">
     <img src="/images/meANDcat.png" alt="Alt text" style="width: 100%;">
     <p style="font-size: min(10px,2vw); margin: 0 0 0;">Xiaohao and his friend "Eggxolotl"</p>
-    <p style="font-size: min(15px,2vw); margin: 0 0 0;">Xiao hao pronounced as "see-ow how" 
-    <i class="fa-solid fa-volume-low" id="play-button"></i>
-  </p>
   </div>
 </div>
+
+
 
 <script>
   const audio = document.getElementById("audio");
