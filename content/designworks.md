@@ -12,6 +12,7 @@ As a generative designer, I code 3D with [`RhinoScriptSyntax`](https://developer
 </div>
 
 <a id='xr' class="anch"></a>
+<a id='vr_house' class="anch"></a>
 <div class="pagecard">
 
 # VR Phillips House [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -22,6 +23,7 @@ Team: Chung-Han Huang | Xiaohao Yang (Contribution: 3D model compiling and inter
 
 </div>
 <br>
+<a id='motionCap' class="anch"></a>
 <div class="pagecard">
 
 # Motion capture - Virtual Garden [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -38,6 +40,7 @@ user to quickly manipulate a virtual terrain at a
 1:1 scale. Team: David Minnix | Faith Gowe | Rushal Butala | Xiaohao Yang (Contribution: interaction design and coding)
 </div>
 <br>
+<a id='AR_enga' class="anch"></a>
 <div class="pagecard">
 
 # AR for design engagement [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -47,6 +50,7 @@ user to quickly manipulate a virtual terrain at a
 <br>
 </div>
 <br>
+<a id='ARedu' class="anch"></a>
 <div class="pagecard">
 
 # AR for environmental education [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -59,6 +63,7 @@ user to quickly manipulate a virtual terrain at a
 ---
 
 <a id='in' class="anch"></a>
+<a id='GBcamera' class="anch"></a>
 <div class="pagecard">
 
 # GBCamera - Nostalgia for GameBoy camera [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -80,6 +85,7 @@ build up their GB photo albums and share photos with others.
 
 </div>
 <br>
+<a id='plantAPP' class="anch"></a>
 <div class="pagecard">
 
 # PlantPlace - for Plant-lover Community (Interface prototype) [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -94,6 +100,7 @@ This app aims to make it more convenient and economical for people to network wi
 ---
 
 <a id='dc' class="anch"></a>
+<a id='branch' class="anch"></a>
 <div class="pagecard">
 
 # randomStairBranch [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -171,6 +178,7 @@ Simulate the movement of agents in a 3D space, where agents interact with each o
 ---
 
 <a id='la' class="anch"></a>
+<a id='detroitLOT' class="anch"></a>
 <div class="pagecard">
 
 # Lots for future [<i class="fa-solid fa-turn-up"></i>](#top)

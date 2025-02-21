@@ -260,6 +260,35 @@ div.open {
   box-shadow: 0px 2px 25px gray;
 } */
 
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gap {
+  --gap: 1em;
+  gap: var(--gap);
+}
+
+.flex-container div {
+  flex-grow: 1;
+  background-color:white;
+  width: calc(100% / 4 - calc(var(--gap)));
+}
+
+.flex-container div img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) contrast(125%);
+}
+
+.flex-container div img:hover {
+  -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(10%) contrast(35%);
+}
+
+
 .tags {
   font-size: 14px;
   color: white;

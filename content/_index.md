@@ -20,22 +20,95 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
 </div>
 
 
-<div margin: 0 10px;>
-  <p style="font-size: min(18px,3vw);">
-    In the recent years, I code (sit in front of my computer) over five hours (of course sometimes even more) a day. 
+<div margin: 0 5px;>
+  <p style="font-size: min(13px,2vw);">
     I sometimes fully fill (ruin) my schedule with my work (interests). Well, deadline always pushes me back to work. 
     My cat gives me so much emotional support and I think I can do better now. 
   </p>
 </div>
 
-<p style="font-size: min(15px,3vw);"> 
-  Actively working this project, feel free to interact with it and learn more in 
-  <a href="/artworks/"><b>Artwork</b></a>
-</p> 
 <div style="width:100%; padding-bottom:56.25%; position:relative;">
   <iframe src="https://popupcolor-demo.glitch.me/"
 	  style="position:absolute; top:0px; left:0px; width:100%; height:100%; border: none; overflow: hidden;" title="app">
 	</iframe>
+</div>
+<div>
+<p style="font-size: min(12px,2vw);"> 
+  Actively working this project↑ , feel free to interact with it and learn more in 
+  <a href="/artworks/"><b>Artwork</b></a>
+</p>
+</div>
+
+<div class="flex-container gap">
+  <div>
+    <a href="/research/#busstop"><img src="/images/thumbnail/busstop.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#vr_house"><img src="/images/thumbnail/vr_house.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#AR_enga"><img src="/images/thumbnail/AR_enga.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#ARedu"><img src="/images/thumbnail/ARedu.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#branch"><img src="/images/thumbnail/branch.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#GBcamera"><img src="/images/thumbnail/GBcamera.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#plantAPP"><img src="/images/thumbnail/plantAPP.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#detroitLOT"><img src="/images/thumbnail/detroitLOT.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/games/#cowL"><img src="/images/thumbnail/cowL.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/games/#isL"><img src="/images/thumbnail/isL.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/games/#monster"><img src="/images/thumbnail/monster.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/designworks/#motionCap"><img src="/images/thumbnail/motionCap.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/artworks/#yoyocap"><img src="/images/thumbnail/yoyocap.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/artworks/#popup"><img src="/images/thumbnail/popup.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/artworks/#tapskate"><img src="/images/thumbnail/tapskate.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/artworks/#fakeVR"><img src="/images/thumbnail/fakeVR.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/research/#centeralP"><img src="/images/thumbnail/centeralP.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/research/#sealevel"><img src="/images/thumbnail/sealevel.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/research/#wetland"><img src="/images/thumbnail/wetland.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/research/#parkproxi"><img src="/images/thumbnail/parkproxi.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+    <a href="/research/#covid"><img src="/images/thumbnail/covid.png" alt="Alt text" style="width: 100%;"></a>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
 </div>
 
 <script>

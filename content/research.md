@@ -9,6 +9,7 @@ date: ''
 ---
 
 <a id='us' class="anchors"></a>
+<a id='busstop' class="anchors"></a>
 <div class="pagecard">
 
 # Mapping Perceived Safety Around Bus Stops In Detroit Using Crowdsourced Street Views [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -23,6 +24,7 @@ The concept of social infrastructure takes into account the physical places and 
 ---
 
 <a id='sm' class="anch"></a>
+<a id='covid' class="anchors"></a>
 <div class="pagecard">
 
 # Subjective Geography of COVID-19 [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -32,6 +34,7 @@ COVID-19 is an international disaster that has negative influences on people's w
 
 </div>
 
+<a id='centeralP' class="anchors"></a>
 <div class="pagecard">
 
 # Visualizing hotspot areas in public park [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -41,6 +44,7 @@ As there is a huge number of photos that were taken in the public parks uploaded
 
 </div>
 
+<a id='parkproxi' class="anchors"></a>
 <div class="pagecard">
 
 # Urban Park Proximity [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -53,6 +57,7 @@ Taking the parks in Guangahou's core urban areas as the research object. The stu
 ---
 
 <a id='cc' class="anch"></a>
+<a id='wetland' class="anchors"></a>
 <div class="pagecard">
 
 # From Risk to Productivity: A Successional Salty Agriculture System in the Pearl River Delta [2019 ASLA Student Awards] [<i class="fa-solid fa-turn-up"></i>](#top)
@@ -62,7 +67,7 @@ Based on the traditional reclamation agricultural model, our proposal is to inte
 
 </div>
 
-
+<a id='sealevel' class="anchors"></a>
 <div class="pagecard">
 
 # From Risk to Resilience: Assessment and Strategy of Complex Urban System Future Sea-level Rise in Guangzhou [2019 IFLA Asia-Pac Professional Award of Excellence] [<i class="fa-solid fa-turn-up"></i>](#top)
