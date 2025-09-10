@@ -14,25 +14,23 @@ menu:
   main:
     - name: About
       url: /about/
-      weight: 7
+      weight: 6
     - name: Posts
       url: /post/
-      weight: 6
+      weight: 5
     - name: Research
       url: /research/
-      weight: 4
+      weight: 3
     - name: Design
       url: /designworks/
       weight: 1
     - name: Tools
       url: /tools/
-      weight: 5
+      weight: 4
     - name: Artwork
       url: /artworks/
       weight: 2
-    - name: Games
-      url: /games/
-      weight: 3
+
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5

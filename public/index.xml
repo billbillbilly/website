@@ -41,7 +41,7 @@
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/about/</guid>
-      <description>Me News Publications Peer review Resume This website Contact [Me] I am a big fan of R (even if I have to use Python and Javascript much more than it for my work) and cellular automata! I am a coder [] of [design ] ], [art ] ], [games ] ], and [tools ] ]. I am working several projects in terms of LLMs. I am trying to do everything I think is interesting even if I need to overcome a lot of challenges.</description>
+      <description>Me News Publications Peer review Resume This website Contact [Me] I am a big fan of R (even if I have to use Python and Javascript much more than it for my work) and cellular automata! I am a coder [] of [design ] ], [art ] ], and [tools ] ]. I am working several projects in terms of LLMs. I am trying to do everything I think is interesting even if I need to overcome a lot of challenges.</description>
     </item>
     <item>
       <title>COMPUTATIONAL ARTWORKS</title>
@@ -55,7 +55,7 @@
       <link>/designworks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/designworks/</guid>
-      <description>AR/VR Mobile App Computation Urban As a generative designer, I code 3D with RhinoScriptSyntax in Rhino. As an interaction designer and frontend engineer, I design application, prototype user interface, and deploy APPs on different devices. I am trying to do something interesting/funny/hopefully useful with XR (VR/AR).&#xA;VR Phillips House A VR game that provides an unforgettable experience in Phillips House. Two key experiences: Menu includes two modes: building sequence and visit tour.</description>
+      <description>AR/VR Mobile App Computational Design Urban/Landscape Video Game As a generative designer, I code 3D with `RhinoScriptSyntax` in Rhino. As an interaction designer and frontend engineer, I design application, prototype user interface, and deploy APPs on different devices. I am trying to do something interesting/funny/hopefully useful with XR (VR/AR). I like video games (PC/SWITCH/GameBoy/Mobile games...) and have spent a lot of time on it. I almost get rid of PC games after I switched to Mac from Windows (while spending more time on Nintendo Switch and Gameboy).</description>
     </item>
     <item>
       <title>GAMES</title>
@@ -69,14 +69,14 @@
       <link>/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/research/</guid>
-      <description>Urban science Social media Climate change Mapping Perceived Safety Around Bus Stops In Detroit Using Crowdsourced Street Views The concept of social infrastructure takes into account the physical places and organizations that shape the way people interact. This project is rooted in the idea that bus stops are not merely transit locations but pivotal social infrastructures that contribute significantly to the urban social fabric. Perceived safety is a critical aspect of an accessible public transport system.</description>
+      <description>Project: Urban science Social media Climate change Mapping Perceived Safety Around Bus Stops In Detroit Using Crowdsourced Street Views The concept of social infrastructure takes into account the physical places and organizations that shape the way people interact. This project is rooted in the idea that bus stops are not merely transit locations but pivotal social infrastructures that contribute significantly to the urban social fabric. Perceived safety is a critical aspect of an accessible public transport system.</description>
     </item>
     <item>
       <title>TOOLS</title>
       <link>/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tools/</guid>
-      <description>I make either useful or useless tools for research (fun)&#xA;streetscape A collection of functions to search and download street view imagery and to extract, quantify, and visualize visual features. Moreover, there are functions provided to generate Qualtrics survey in TXT format with street views.&#xA;quickPWCR A collection of functions for constructing large pairwise comparisons and rating them using the Elo rating system with supporting parallel processing. The method of random sample pairs is based on Reservoir Sampling.</description>
+      <description>I make either useful or useless tools for research (fun)&#xA;Urban-Worm Urban-Worm is a Python library that integrates remote sensing imagery, street view data, and vision-language models (VLMs) to assess urban units. Using APIs for data collection and VLMs for inference, Urban-Worm is designed to support the automation of the evaluation for urban environments, including roof integrity, structural condition, landscape quality, and urban perception.&#xA;gloBFPr The gloBFPr package allows R users to search, download, and process global building footprint tiles with associated height information, derived from the 3D-GloBFP dataset published by Che et al.</description>
     </item>
   </channel>
 </rss>

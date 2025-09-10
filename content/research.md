@@ -4,7 +4,8 @@ date: ''
 ---
 
 <a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> [**Urban science** <i class="fa-solid fa-turn-down"></i> ](#us) [**Social media** <i class="fa-solid fa-turn-down"></i> ](#sm) [**Climate change** <i class="fa-solid fa-turn-down"></i> ](#cc)
+
+<span style="font-size: 1.2em"><b>Project:</b></span> <i class="fa-solid fa-hand-point-right"></i> [**Urban science** <i class="fa-solid fa-turn-down"></i> ](#us) [**Social media** <i class="fa-solid fa-turn-down"></i> ](#sm) [**Climate change** <i class="fa-solid fa-turn-down"></i> ](#cc)
 
 ---
 

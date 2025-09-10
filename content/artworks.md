@@ -20,7 +20,7 @@ I just played with celular autometa to create some 3D patterns with Python in
 a more interactive web application to customize and generate these patterns. 
 So, I used [`Three.js`](https://threejs.org/) to write this project. 
 [[**project website** <i class="fa-solid fa-diagram-project"></i>]](https://billbillbilly.github.io/portfolio-content/) 
-[[**source** <i class="fa-solid fa-code"></i>]](https://pop-upcolor.glitch.me/)
+[[**source** <i class="fa-solid fa-code"></i>]](https://github.com/billbillbilly/popup_color/)
 
 </div>
 
