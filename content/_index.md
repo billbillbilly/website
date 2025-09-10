@@ -68,10 +68,10 @@ title: "Hi, I am Xiaohao Yang | 楊瀟豪"
     <a href="/games/#cowL"><img src="/images/thumbnail/cowL.png" alt="Alt text" style="width: 100%;"></a>
   </div>
   <div>
-    <a href="/games/#isL"><img src="/images/thumbnail/isL.png" alt="Alt text" style="width: 100%;"></a>
+    <a href="/designworks/#isL"><img src="/images/thumbnail/isL.png" alt="Alt text" style="width: 100%;"></a>
   </div>
   <div>
-    <a href="/games/#monster"><img src="/images/thumbnail/monster.png" alt="Alt text" style="width: 100%;"></a>
+    <a href="/designworks/#monster"><img src="/images/thumbnail/monster.png" alt="Alt text" style="width: 100%;"></a>
   </div>
   <div>
     <a href="/designworks/#motionCap"><img src="/images/thumbnail/motionCap.png" alt="Alt text" style="width: 100%;"></a>
