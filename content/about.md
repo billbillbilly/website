@@ -4,7 +4,7 @@ date: ''
 ---
 
 <a id='top' class="anchors"></a>
-<i class="fa-solid fa-hand-point-right"></i> [**Me** <i class="fa-solid fa-turn-down"></i> ](#me) [**News** <i class="fa-solid fa-turn-down"></i> ](#new) [**Publications** <i class="fa-solid fa-turn-down"></i> ](#plc) [**Peer review** <i class="fa-solid fa-turn-down"></i> ](#pr) [**Resume** <i class="fa-solid fa-turn-down"></i> ](#cv) [**This website** <i class="fa-solid fa-turn-down"></i> ](#site) [**Contact** <i class="fa-solid fa-turn-down"></i> ](#contact)
+<i class="fa-solid fa-hand-point-right"></i> [**Me** <i class="fa-solid fa-turn-down"></i> ](#me) [**News** <i class="fa-solid fa-turn-down"></i> ](#new) [**Publications** <i class="fa-solid fa-turn-down"></i> ](#plc) [**Peer review** <i class="fa-solid fa-turn-down"></i> ](#pr) [**Resume** <i class="fa-solid fa-turn-down"></i> ](#cv) [**This website** <i class="fa-solid fa-turn-down"></i> ](#site) 
 
 <div class="splitline">
   <hr>
@@ -55,18 +55,20 @@ Guo, S., Zhou, Y., Yu, J., & Yang, L. (2022). Effects of the Combination of Audi
 
 ---
 
-<a id='cv' class="anch"></a>
-# [Resume] [<i class="fa-solid fa-turn-up"></i>](#top)
-
----
-
 <a id='site' class="anch"></a>
 # [Website] [<i class="fa-solid fa-turn-up"></i>](#top)
 I built this website with [`blogdown`](https://bookdown.org/yihui/blogdown/) using the default theme [(yihui/hugo-lithium)](https://github.com/yihui/hugo-lithium). 
 
 ---
 
-<a id='contact' class="anch"></a>
-# [Contact] [<i class="fa-solid fa-turn-up"></i>](#top)
-<i class="fa-regular fa-envelope"></i> xiaohaoy[at]umich[dot]edu <br>
+<a id='cv' class="anch"></a>
+# [Resume] [<i class="fa-solid fa-turn-up"></i>](#top)
+
+<div style="padding-bottom:30;">
+  <iframe src="/images/CV.pdf" width="100%" height="700" frameborder="0" />
+</div>
+
+---
+
+
 
